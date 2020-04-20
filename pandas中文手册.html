@@ -1,0 +1,210 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5"><title>Pandas中文手册 | 天镜云生</title><meta name="description" content="Pandas中文手册"><meta name="keywords" content="pandas"><meta name="author" content="TJYS"><meta name="copyright" content="TJYS"><meta name="format-detection" content="telephone=no"><link rel="shortcut icon" href="https://gitee.com/sky_mirrors_the_clouds/cloudimg/raw/master/img/favicon-32x32.png"><link rel="preconnect" href="//cdn.jsdelivr.net"><link rel="preconnect" href="https://fonts.googleapis.com" crossorigin><link rel="preconnect" href="//busuanzi.ibruce.info"><meta name="google-site-verification" content="U8rJyD20h0woBu9klduu2LxyjT8BUQxs_ORZlnNg8zI"><meta name="twitter:card" content="summary"><meta name="twitter:title" content="Pandas中文手册"><meta name="twitter:description" content="Pandas中文手册"><meta name="twitter:image" content="https://images.pexels.com/photos/868097/pexels-photo-868097.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=1&amp;w=500"><meta property="og:type" content="article"><meta property="og:title" content="Pandas中文手册"><meta property="og:url" content="http://sky_mirrors_the_clouds.gitee.io/blog/pandas%E4%B8%AD%E6%96%87%E6%89%8B%E5%86%8C"><meta property="og:site_name" content="天镜云生"><meta property="og:description" content="Pandas中文手册"><meta property="og:image" content="https://images.pexels.com/photos/868097/pexels-photo-868097.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=1&amp;w=500"><meta http-equiv="Cache-Control" content="no-transform"><meta http-equiv="Cache-Control" content="no-siteapp"><script src="https://cdn.jsdelivr.net/npm/js-cookie/dist/js.cookie.min.js"></script><script>const autoChangeMode = 'false'
+var t = Cookies.get("theme");
+if (autoChangeMode == '1'){
+const isDarkMode = window.matchMedia("(prefers-color-scheme: dark)").matches
+const isLightMode = window.matchMedia("(prefers-color-scheme: light)").matches
+const isNotSpecified = window.matchMedia("(prefers-color-scheme: no-preference)").matches
+const hasNoSupport = !isDarkMode && !isLightMode && !isNotSpecified
+
+if (t === undefined){
+  if (isLightMode) activateLightMode()
+  else if (isDarkMode) activateDarkMode()
+  else if (isNotSpecified || hasNoSupport){
+    console.log('You specified no preference for a color scheme or your browser does not support it. I Schedule dark mode during night time.')
+    now = new Date();
+    hour = now.getHours();
+    isNight = hour < 6 || hour >= 18
+    isNight ? activateDarkMode() : activateLightMode()
+}
+} else if (t == 'light') activateLightMode()
+else activateDarkMode()
+
+
+} else if (autoChangeMode == '2'){
+  now = new Date();
+  hour = now.getHours();
+  isNight = hour < 6 || hour >= 18
+  if(t === undefined) isNight? activateDarkMode() : activateLightMode()
+  else if (t === 'light') activateLightMode()
+  else activateDarkMode() 
+} else {
+  if ( t == 'dark' ) activateDarkMode()
+  else if ( t == 'light') activateLightMode()
+}
+
+function activateDarkMode(){
+  document.documentElement.setAttribute('data-theme', 'dark')
+  if (document.querySelector('meta[name="theme-color"]') !== null){
+    document.querySelector('meta[name="theme-color"]').setAttribute('content','#000')
+  }
+}
+function activateLightMode(){
+  document.documentElement.setAttribute('data-theme', 'light')
+  if (document.querySelector('meta[name="theme-color"]') !== null){
+  document.querySelector('meta[name="theme-color"]').setAttribute('content','#fff')
+  }
+}</script><link rel="stylesheet" href="/blog/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome@latest/css/font-awesome.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.css"><link rel="canonical" href="http://sky_mirrors_the_clouds.gitee.io/blog/pandas%E4%B8%AD%E6%96%87%E6%89%8B%E5%86%8C"><link rel="prev" title="十分钟搞定 pandas" href="http://sky_mirrors_the_clouds.gitee.io/blog/%E5%8D%81%E5%88%86%E9%92%9F%E6%90%9E%E5%AE%9Apandas.html"><link rel="next" title="机器学习课程" href="http://sky_mirrors_the_clouds.gitee.io/blog/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E8%AF%BE%E7%A8%8B.html"><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Titillium+Web"><script>var GLOBAL_CONFIG = { 
+  root: '/blog/',
+  algolia: undefined,
+  localSearch: {"path":"search.xml","languages":{"hits_empty":"找不到您查询的内容:${query}"}},
+  translate: {"defaultEncoding":2,"translateDelay":0,"cookieDomain":"https://xxx/","msgToTraditionalChinese":"繁","msgToSimplifiedChinese":"简"},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  bookmark: {
+    title: 'Snackbar.bookmark.title',
+    message_prev: '按',
+    message_next: '键将本页加入书签'
+  },
+  runtime_unit: '天',
+  runtime: true,
+  copyright: undefined,
+  ClickShowText: undefined,
+  medium_zoom: false,
+  fancybox: true,
+  Snackbar: undefined,
+  baiduPush: true,
+  isHome: false,
+  isPost: true
+  
+}</script><meta name="generator" content="Hexo 4.2.0"></head><body><canvas class="fireworks"></canvas><header> <div id="page-header"><span class="pull_left" id="blog_name"><a class="blog_title" id="site-name" href="/blog/">天镜云生</a></span><span class="toggle-menu pull_right close"><a class="site-page"><i class="fa fa-bars fa-fw" aria-hidden="true"></i></a></span><span class="pull_right menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="/blog/"><i class="fa-fw fa fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page"><i class="fa-fw fa fa-list" aria-hidden="true"></i><span> 清单</span><i class="fa fa-chevron-down menus-expand" aria-hidden="true"></i></a><ul class="menus_item_child"><li><a class="site-page" href="/blog/music/"><i class="fa-fw fa fa-music"></i><span> 音乐</span></a></li><li><a class="site-page" href="/blog/gallery/"><i class="fa-fw fa fa-picture-o"></i><span> 画廊</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/blog/archives/"><i class="fa-fw fa fa-archive"></i><span> 归档</span></a></div><div class="menus_item"><a class="site-page" href="/blog/tags/"><i class="fa-fw fa fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/blog/categories/"><i class="fa-fw fa fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/blog/shuoshuo/"><i class="fa-fw fa fa-commenting-o"></i><span> 说说</span></a></div><div class="menus_item"><a class="site-page" href="/blog/about/"><i class="fa-fw fa fa-heart"></i><span> 关于</span></a></div></div></span><span class="pull_right" id="search_button"><a class="site-page social-icon search"><i class="fa fa-search fa-fw"></i><span> 搜索</span></a></span></div></header><div id="mobile-sidebar"><div id="menu_mask"></div><div id="mobile-sidebar-menus"><div class="mobile_author_icon"><img class="avatar-img" src="/blog/img/avatar.png" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"></div><div class="mobile_post_data"><div class="mobile_data_item is-center"><div class="mobile_data_link"><a href="/blog/archives/"><div class="headline">文章</div><div class="length_num">5</div></a></div></div><div class="mobile_data_item is-center">      <div class="mobile_data_link"><a href="/blog/tags/"><div class="headline">标签</div><div class="length_num">3</div></a></div></div><div class="mobile_data_item is-center">     <div class="mobile_data_link"><a href="/blog/categories/"><div class="headline">分类</div><div class="length_num">7</div></a></div></div></div><hr><div class="menus_items"><div class="menus_item"><a class="site-page" href="/blog/"><i class="fa-fw fa fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page"><i class="fa-fw fa fa-list" aria-hidden="true"></i><span> 清单</span><i class="fa fa-chevron-down menus-expand" aria-hidden="true"></i></a><ul class="menus_item_child"><li><a class="site-page" href="/blog/music/"><i class="fa-fw fa fa-music"></i><span> 音乐</span></a></li><li><a class="site-page" href="/blog/gallery/"><i class="fa-fw fa fa-picture-o"></i><span> 画廊</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/blog/archives/"><i class="fa-fw fa fa-archive"></i><span> 归档</span></a></div><div class="menus_item"><a class="site-page" href="/blog/tags/"><i class="fa-fw fa fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/blog/categories/"><i class="fa-fw fa fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/blog/shuoshuo/"><i class="fa-fw fa fa-commenting-o"></i><span> 说说</span></a></div><div class="menus_item"><a class="site-page" href="/blog/about/"><i class="fa-fw fa fa-heart"></i><span> 关于</span></a></div></div></div><div id="mobile-sidebar-toc"><div class="toc_mobile_headline">目录</div><div class="sidebar-toc__content"><ol class="toc_mobile_items"><li class="toc_mobile_items-item toc_mobile_items-level-2"><a class="toc_mobile_items-link" href="#关键缩写和包导入"><span class="toc_mobile_items-number">1.</span> <span class="toc_mobile_items-text">关键缩写和包导入</span></a></li><li class="toc_mobile_items-item toc_mobile_items-level-2"><a class="toc_mobile_items-link" href="#导入数据"><span class="toc_mobile_items-number">2.</span> <span class="toc_mobile_items-text">导入数据</span></a></li><li class="toc_mobile_items-item toc_mobile_items-level-2"><a class="toc_mobile_items-link" href="#导出数据"><span class="toc_mobile_items-number">3.</span> <span class="toc_mobile_items-text">导出数据</span></a></li><li class="toc_mobile_items-item toc_mobile_items-level-2"><a class="toc_mobile_items-link" href="#创建测试对象"><span class="toc_mobile_items-number">4.</span> <span class="toc_mobile_items-text">创建测试对象</span></a></li><li class="toc_mobile_items-item toc_mobile_items-level-2"><a class="toc_mobile_items-link" href="#查看、检查数据"><span class="toc_mobile_items-number">5.</span> <span class="toc_mobile_items-text">查看、检查数据</span></a></li><li class="toc_mobile_items-item toc_mobile_items-level-2"><a class="toc_mobile_items-link" href="#数据选取"><span class="toc_mobile_items-number">6.</span> <span class="toc_mobile_items-text">数据选取</span></a></li><li class="toc_mobile_items-item toc_mobile_items-level-2"><a class="toc_mobile_items-link" href="#数据清理"><span class="toc_mobile_items-number">7.</span> <span class="toc_mobile_items-text">数据清理</span></a></li><li class="toc_mobile_items-item toc_mobile_items-level-2"><a class="toc_mobile_items-link" href="#数据处理：Filter-、Sort-和-GroupBy"><span class="toc_mobile_items-number">8.</span> <span class="toc_mobile_items-text">数据处理：Filter 、Sort 和 GroupBy</span></a></li><li class="toc_mobile_items-item toc_mobile_items-level-2"><a class="toc_mobile_items-link" href="#数据合并"><span class="toc_mobile_items-number">9.</span> <span class="toc_mobile_items-text">数据合并</span></a></li><li class="toc_mobile_items-item toc_mobile_items-level-2"><a class="toc_mobile_items-link" href="#数据统计"><span class="toc_mobile_items-number">10.</span> <span class="toc_mobile_items-text">数据统计</span></a></li></ol></div></div></div><div id="body-wrap"><i class="fa fa-arrow-right" id="toggle-sidebar" aria-hidden="true">     </i><div class="auto_open" id="sidebar"><div class="sidebar-toc"><div class="sidebar-toc__title">目录</div><div class="sidebar-toc__progress"><span class="progress-notice">你已经读了</span><span class="progress-num">0</span><span class="progress-percentage">%</span><div class="sidebar-toc__progress-bar">     </div></div><div class="sidebar-toc__content"><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#关键缩写和包导入"><span class="toc-number">1.</span> <span class="toc-text">关键缩写和包导入</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#导入数据"><span class="toc-number">2.</span> <span class="toc-text">导入数据</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#导出数据"><span class="toc-number">3.</span> <span class="toc-text">导出数据</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#创建测试对象"><span class="toc-number">4.</span> <span class="toc-text">创建测试对象</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#查看、检查数据"><span class="toc-number">5.</span> <span class="toc-text">查看、检查数据</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#数据选取"><span class="toc-number">6.</span> <span class="toc-text">数据选取</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#数据清理"><span class="toc-number">7.</span> <span class="toc-text">数据清理</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#数据处理：Filter-、Sort-和-GroupBy"><span class="toc-number">8.</span> <span class="toc-text">数据处理：Filter 、Sort 和 GroupBy</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#数据合并"><span class="toc-number">9.</span> <span class="toc-text">数据合并</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#数据统计"><span class="toc-number">10.</span> <span class="toc-text">数据统计</span></a></li></ol></div></div></div><main id="content-outer"><div id="top-container" style="background-image: url(https://images.pexels.com/photos/868097/pexels-photo-868097.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=1&amp;w=500)"><div id="post-info"><div id="post-title"><div class="posttitle">Pandas中文手册</div></div><div id="post-meta"><time class="post-meta__date"><i class="fa fa-calendar fa-fw" aria-hidden="true"></i> 发表于 2020-03-28<span class="post-meta__separator">|</span><i class="fa fa-history fa-fw" aria-hidden="true"></i> 更新于 2020-04-15</time><span class="post-meta__separator">|</span><span><i class="fa fa-inbox post-meta__icon fa-fw" aria-hidden="true"></i><a class="post-meta__categories" href="/blog/categories/Pandas/">Pandas</a></span><div class="post-meta-wordcount"><div class="post-meta-pv-cv"><span><i class="fa fa-eye post-meta__icon fa-fw" aria-hidden="true"> </i>阅读量:</span><span id="busuanzi_value_page_pv"></span></div></div></div></div></div><div class="layout layout_post" id="content-inner">   <article id="post"><div class="article-container" id="post-content"><p>如果你想学习Pandas，建议先看两个网站。</p>
+<p>（1）官网：Python Data Analysis Library</p>
+<p>（2）十分钟入门Pandas：10 Minutes to pandas</p>
+<h2 id="关键缩写和包导入"><a href="#关键缩写和包导入" class="headerlink" title="关键缩写和包导入"></a><strong>关键缩写和包导入</strong></h2><p>在这个速查手册中，我们使用如下缩写：</p>
+<blockquote>
+<p>df：任意的Pandas DataFrame对象</p>
+<p>s：任意的Pandas Series对象</p>
+</blockquote>
+<p>同时我们需要做如下的引入：</p>
+<blockquote>
+<p>import pandas as pd</p>
+<p>import numpy as np</p>
+</blockquote>
+<h2 id="导入数据"><a href="#导入数据" class="headerlink" title="导入数据"></a>导入数据</h2><ul>
+<li>pd.read_csv(filename)：从CSV文件导入数据</li>
+<li>pd.read_table(filename)：从限定分隔符的文本文件导入数据</li>
+<li>pd.read_excel(filename)：从Excel文件导入数据</li>
+<li>pd.read_sql(query, connection_object)：从SQL表/库导入数据</li>
+<li>pd.read_json(json_string)：从JSON格式的字符串导入数据</li>
+<li>pd.read_html(url)：解析URL、字符串或者HTML文件，抽取其中的tables表格</li>
+<li>pd.read_clipboard()：从你的粘贴板获取内容，并传给read_table()</li>
+<li>pd.DataFrame(dict)：从字典对象导入数据，Key是列名，Value是数据</li>
+</ul>
+<h2 id="导出数据"><a href="#导出数据" class="headerlink" title="导出数据"></a>导出数据</h2><ul>
+<li>df.to_csv(filename)：导出数据到CSV文件</li>
+<li>df.to_excel(filename)：导出数据到Excel文件</li>
+<li>df.to_sql(table_name, connection_object)：导出数据到SQL表</li>
+<li>df.to_json(filename)：以Json格式导出数据到文本文件</li>
+</ul>
+<h2 id="创建测试对象"><a href="#创建测试对象" class="headerlink" title="创建测试对象"></a>创建测试对象</h2><ul>
+<li>pd.DataFrame(np.random.rand(20,5))：创建20行5列的随机数组成的DataFrame对象</li>
+<li>pd.Series(my_list)：从可迭代对象my_list创建一个Series对象</li>
+<li>df.index = pd.date_range(‘1900/1/30’, periods=df.shape[0])：增加一个日期索引</li>
+</ul>
+<h2 id="查看、检查数据"><a href="#查看、检查数据" class="headerlink" title="查看、检查数据"></a>查看、检查数据</h2><ul>
+<li>df.head(n)：查看DataFrame对象的前n行</li>
+<li>df.tail(n)：查看DataFrame对象的最后n行</li>
+<li>df.shape()：查看行数和列数</li>
+<li><a href="http://df.info()：查看索引、数据类型和内存信息">http://df.info()：查看索引、数据类型和内存信息</a></li>
+<li>df.describe()：查看数值型列的汇总统计</li>
+<li>s.value_counts(dropna=False)：查看Series对象的唯一值和计数</li>
+<li>df.apply(pd.Series.value_counts)：查看DataFrame对象中每一列的唯一值和计数</li>
+</ul>
+<h2 id="数据选取"><a href="#数据选取" class="headerlink" title="数据选取"></a>数据选取</h2><ul>
+<li>df[col]：根据列名，并以Series的形式返回列</li>
+<li>df[[col1, col2]]：以DataFrame形式返回多列</li>
+<li>s.iloc[0]：按位置选取数据</li>
+<li>s.loc[‘index_one’]：按索引选取数据</li>
+<li>df.iloc[0,:]：返回第一行</li>
+<li>df.iloc[0,0]：返回第一列的第一个元素</li>
+</ul>
+<h2 id="数据清理"><a href="#数据清理" class="headerlink" title="数据清理"></a>数据清理</h2><ul>
+<li>df.columns = [‘a’,’b’,’c’]：重命名列名</li>
+<li>pd.isnull()：检查DataFrame对象中的空值，并返回一个Boolean数组</li>
+<li>pd.notnull()：检查DataFrame对象中的非空值，并返回一个Boolean数组</li>
+<li>df.dropna()：删除所有包含空值的行</li>
+<li>df.dropna(axis=1)：删除所有包含空值的列</li>
+<li>df.dropna(axis=1,thresh=n)：删除所有小于n个非空值的行</li>
+<li>df.fillna(x)：用x替换DataFrame对象中所有的空值</li>
+<li>s.astype(float)：将Series中的数据类型更改为float类型</li>
+<li>s.replace(1,’one’)：用‘one’代替所有等于1的值</li>
+<li>s.replace([1,3],[‘one’,’three’])：用’one’代替1，用’three’代替3</li>
+<li>df.rename(columns=lambda x: x + 1)：批量更改列名</li>
+<li>df.rename(columns={‘old_name’: ‘new_ name’})：选择性更改列名</li>
+<li>df.set_index(‘column_one’)：更改索引列</li>
+<li>df.rename(index=lambda x: x + 1)：批量重命名索引</li>
+</ul>
+<h2 id="数据处理：Filter-、Sort-和-GroupBy"><a href="#数据处理：Filter-、Sort-和-GroupBy" class="headerlink" title="数据处理：Filter 、Sort 和 GroupBy"></a>数据处理：Filter 、Sort 和 GroupBy</h2><ul>
+<li>df[df[col] &gt; 0.5]：选择col列的值大于0.5的行</li>
+<li>df.sort_values(col1)：按照列col1排序数据，默认升序排列</li>
+<li>df.sort_values(col2, ascending=False)：按照列col1降序排列数据</li>
+<li>df.sort_values([col1,col2], ascending=[True,False])：先按列col1升序排列，后按col2降序排列数据</li>
+<li>df.groupby(col)：返回一个按列col进行分组的Groupby对象</li>
+<li>df.groupby([col1,col2])：返回一个按多列进行分组的Groupby对象</li>
+<li>df.groupby(col1)[col2]：返回按列col1进行分组后，列col2的均值</li>
+<li>df.pivot_table(index=col1, values=[col2,col3], aggfunc=max)：创建一个按列col1进行分组，并计算col2和col3的最大值的数据透视表</li>
+<li>df.groupby(col1).agg(np.mean)：返回按列col1分组的所有列的均值</li>
+<li>data.apply(np.mean)：对DataFrame中的每一列应用函数np.mean</li>
+<li>data.apply(np.max,axis=1)：对DataFrame中的每一行应用函数np.max</li>
+</ul>
+<h2 id="数据合并"><a href="#数据合并" class="headerlink" title="数据合并"></a>数据合并</h2><ul>
+<li>df1.append(df2)：将df2中的行添加到df1的尾部</li>
+<li>df.concat([df1, df2],axis=1)：将df2中的列添加到df1的尾部</li>
+<li>df1.join(df2,on=col1,how=’inner’)：对df1的列和df2的列执行SQL形式的join</li>
+</ul>
+<h2 id="数据统计"><a href="#数据统计" class="headerlink" title="数据统计"></a>数据统计</h2><ul>
+<li>df.describe()：查看数据值列的汇总统计</li>
+<li>df.mean()：返回所有列的均值</li>
+<li>df.corr()：返回列与列之间的相关系数</li>
+<li>df.count()：返回每一列中的非空值的个数</li>
+<li>df.max()：返回每一列的最大值</li>
+<li>df.min()：返回每一列的最小值</li>
+<li>df.median()：返回每一列的中位数</li>
+<li>df.std()：返回每一列的标准差</li>
+</ul>
+</div></article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">文章作者: </span><span class="post-copyright-info"><a href="mailto:undefined">TJYS</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">文章链接: </span><span class="post-copyright-info"><a href="http://sky_mirrors_the_clouds.gitee.io/blog/pandas%E4%B8%AD%E6%96%87%E6%89%8B%E5%86%8C.html">http://sky_mirrors_the_clouds.gitee.io/blog/pandas%E4%B8%AD%E6%96%87%E6%89%8B%E5%86%8C.html</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" rel="noopener">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来自 <a href="http://sky_mirrors_the_clouds.gitee.io/blog">天镜云生</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/blog/tags/pandas/">pandas    </a></div><div class="post_share"><div class="social-share" data-image="https://images.pexels.com/photos/868097/pexels-photo-868097.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=1&amp;w=500" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/social-share.js/dist/css/share.min.css"><script src="https://cdn.jsdelivr.net/npm/social-share.js/dist/js/social-share.min.js"></script></div></div><div class="post-reward"><a class="reward-button button--primary button--animated"> <i class="fa fa-qrcode"></i> 打赏<div class="reward-main"><ul class="reward-all"><li class="reward-item"><img class="lazyload post-qr-code__img" src="/blog/img/wechatpay.png" alt="微信"><div class="post-qr-code__desc">微信</div></li><li class="reward-item"><img class="lazyload post-qr-code__img" src="/blog/img/alipay.jpg" alt="支付宝"><div class="post-qr-code__desc">支付宝</div></li></ul></div></a></div><nav class="pagination_post" id="pagination"><div class="prev-post pull_left"><a href="/blog/%E5%8D%81%E5%88%86%E9%92%9F%E6%90%9E%E5%AE%9Apandas.html"><img class="prev_cover lazyload" data-src="https://images.pexels.com/photos/1656687/pexels-photo-1656687.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=1&amp;w=500" onerror="onerror=null;src='/img/404.jpg'"><div class="label">上一篇</div><div class="prev_info"><span>十分钟搞定 pandas</span></div></a></div><div class="next-post pull_right"><a href="/blog/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E8%AF%BE%E7%A8%8B.html"><img class="next_cover lazyload" data-src="https://images.pexels.com/photos/390051/surfer-wave-sunset-the-indian-ocean-390051.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=1&amp;w=500" onerror="onerror=null;src='/img/404.jpg'"><div class="label">下一篇</div><div class="next_info"><span>机器学习课程</span></div></a></div></nav><div class="relatedPosts"><div class="relatedPosts_headline"><i class="fa fa-fw fa-thumbs-up" aria-hidden="true"></i><span> 相关推荐</span></div><div class="relatedPosts_list"><div class="relatedPosts_item"><a href="/blog/十分钟搞定pandas.html" title="十分钟搞定 pandas"><img class="relatedPosts_cover lazyload"data-src="https://images.pexels.com/photos/1656687/pexels-photo-1656687.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"><div class="relatedPosts_main is-center"><div class="relatedPosts_date"><i class="fa fa-calendar fa-fw" aria-hidden="true"></i> 2020-03-28</div><div class="relatedPosts_title">十分钟搞定 pandas</div></div></a></div></div><div class="clear_both"></div></div><hr><div id="post-comment"><div class="comment_headling"><i class="fa fa-comments fa-fw" aria-hidden="true"></i><span> 评论</span></div><div class="vcomment" id="vcomment"></div><script src="https://cdn.jsdelivr.net/npm/valine/dist/Valine.min.js"></script><script>var notify = true == true ? true : false;
+var verify = false == true ? true : false;
+var GUEST_INFO = ['nick','mail','link'];
+var guest_info = 'nick,mail,link'.split(',').filter(function(item){
+  return GUEST_INFO.indexOf(item) > -1
+});
+guest_info = guest_info.length == 0 ? GUEST_INFO :guest_info;
+
+window.valine = new Valine({
+  el:'#vcomment',
+  notify:notify,
+  verify:verify,
+  appId:'QJxW5v8BlvRP9LYqYmrNRekF-MdYXbMMI',
+  appKey:'YtfMVlMfTdU4Y4zTo9k0Pj3h',
+  placeholder:'Please leave your footprints',
+  avatar:'monsterid',
+  guest_info:guest_info,
+  pageSize:'10',
+  lang:'zh-cn',
+  recordIP: true
+});</script></div></div></main><footer id="footer" data-type="color"><div id="footer-wrap"><div class="copyright">&copy;2020 By TJYS</div><div class="framework-info"><span>驱动 </span><a href="http://hexo.io" target="_blank" rel="noopener"><span>Hexo</span></a><span class="footer-separator">|</span><span>主题 </span><a href="https://github.com/jerryc127/hexo-theme-butterfly" target="_blank" rel="noopener"><span>Butterfly</span></a></div></div></footer></div><section class="rightside" id="rightside"><div id="rightside-config-hide"><i class="fa fa-book" id="readmode" title="阅读模式"></i><i class="fa fa-plus" id="font_plus" title="放大字体"></i><i class="fa fa-minus" id="font_minus" title="缩小字体"></i><a class="translate_chn_to_cht" id="translateLink" href="javascript:translatePage();" title="简繁转换" target="_self">繁</a><i class="darkmode fa fa-moon-o" id="darkmode" title="夜间模式"></i></div><div id="rightside-config-show"><div id="rightside_config" title="设置"><i class="fa fa-cog" aria-hidden="true"></i></div><a id="to_comment" href="#post-comment" title="直达评论"><i class="scroll_to_comment fa fa-comments">  </i></a><i class="fa fa-list-ul close" id="mobile-toc-button" title="目录" aria-hidden="true"></i><i class="fa fa-arrow-up" id="go-up" title="回到顶部" aria-hidden="true"></i></div></section><script src="https://cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js"></script><script src="/blog/js/utils.js"></script><script src="/blog/js/main.js"></script><script src="/blog/js/tw_cn.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.js"></script><script type="text/x-mathjax-config">MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+    processEscapes: true,
+    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+  },
+  CommonHTML: {
+    linebreaks: { automatic: true, width: "90% container" }
+  },
+  "HTML-CSS": { 
+    linebreaks: { automatic: true, width: "90% container" }
+  },
+  "SVG": { 
+    linebreaks: { automatic: true, width: "90% container" }
+  }
+});
+</script><script type="text/x-mathjax-config">MathJax.Hub.Queue(function() {
+  var all = MathJax.Hub.getAllJax(), i;
+  for (i=0; i < all.length; i += 1) {
+    all[i].SourceElement().parentNode.className += ' has-jax';
+  }
+});
+</script><script src="https://cdn.jsdelivr.net/npm/mathjax/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script><script src="https://cdn.jsdelivr.net/npm/animejs@latest/anime.min.js"></script><script src="https://cdn.jsdelivr.net/gh/jerryc127/butterfly_cdn@2.1.0/js/fireworks.js"></script><script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script><script src="https://cdn.jsdelivr.net/npm/instant.page@latest/instantpage.min.js" type="module"></script><script src="https://cdn.jsdelivr.net/npm/lazysizes@latest/lazysizes.min.js" async=""></script><div class="search-dialog" id="local-search"><div class="search-dialog__title" id="local-search-title">本地搜索</div><div id="local-input-panel"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="搜索文章"></div></div></div><hr><div id="local-search-results"><div id="local-hits"></div><div id="local-stats"><div class="local-search-stats__hr" id="hr"><span>由</span> <a href="https://github.com/wzpan/hexo-generator-search" target="_blank" rel="noopener" style="color:#49B1F5;">hexo-generator-search</a>
+ <span>提供支持</span></div></div></div><span class="search-close-button"><i class="fa fa-times"></i></span></div><div class="search-mask"></div></body></html>
