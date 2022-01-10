@@ -1,0 +1,5264 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head hexo-theme='https://github.com/volantis-x/hexo-theme-volantis/tree/5.0.0-rc.1'>
+  <meta name="generator" content="Hexo 5.4.0">
+  <meta charset="utf-8">
+  <!-- SEO相关 -->
+  
+  <link rel="canonical" href="https://qikaile.tk/hexo-emoji.html"/>
+  <!-- 渲染优化 -->
+  <meta http-equiv='x-dns-prefetch-control' content='on' />
+  <link rel='dns-prefetch' href='https://cdn.jsdelivr.net'>
+  <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+  <meta name="renderer" content="webkit">
+  <meta name="force-rendering" content="webkit">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+  <meta name="HandheldFriendly" content="True" >
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5">
+  <meta content="云墨小站" name="application-name">
+  <meta content="云墨小站" name="apple-mobile-web-app-title">
+  <meta content="black-translucent" name="apple-mobile-web-app-status-bar-style">
+  <meta content="telephone=no" name="format-detection">
+  <link rel="preload" href="/css/style.css?time=1641785418108" as="style">
+  
+  <!-- 页面元数据 -->
+  <title>Hexo中使用emoji表情 - 云墨小站</title>
+  <meta name="keywords" content="Hexo,emoji,表情,TJYS 云生 博客 云墨小站">
+  <meta name="description" content="Hexo 开启欢乐的 emoji 之旅 💛">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Hexo中使用emoji表情">
+<meta property="og:url" content="https://qikaile.tk/hexo-emoji.html">
+<meta property="og:site_name" content="云墨小站">
+<meta property="og:description" content="Hexo 开启欢乐的 emoji 之旅 💛">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/Qikaile/cdn/img/favicon-16x16.png">
+<meta property="article:published_time" content="2021-01-20T03:13:23.000Z">
+<meta property="article:modified_time" content="2021-01-20T11:39:57.601Z">
+<meta property="article:author" content="TJYS">
+<meta property="article:tag" content="Hexo">
+<meta property="article:tag" content="Emoji">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://cdn.jsdelivr.net/gh/Qikaile/cdn/img/favicon-16x16.png">
+  <!-- feed -->
+    <link rel="alternate" href="/atom.xml" title="云墨小站" type="application/atom+xml">
+  <!-- import meta -->
+  <!-- link -->
+    <link rel="shortcut icon" type='image/x-icon' href="https://cdn.jsdelivr.net/gh/qikaile/cdn@master/img/favicon.ico">
+  <!-- import link -->
+      <link href="https://unpkg.zhimg.com/react-nice-resume@1.0.3/css/css2-NotoSerifSC_swap.css" rel="stylesheet" media="print" onload="this.media='all'">
+  <style>
+    /* 首屏样式 */
+    #safearea {
+  display: none;
+}
+/* 
+  * Workaround for Chrome bug, part 1
+  * Chunk rendering for all but the first article.
+  * /layout/_partial/scripts/content-visibility-scroll-fix.ejs
+*/
+.post-story + .post-story,
+article + article,
+.post-wrapper + .post-wrapper {
+  content-visibility: auto;
+  contain-intrinsic-size: 10px 500px;
+}
+:root {
+  --color-site-body: #f4f4f4;
+  --color-site-bg: #f4f4f4;
+  --color-site-inner: #fff;
+  --color-site-footer: #666;
+  --color-card: #fff;
+  --color-text: #444;
+  --color-block: #f6f6f6;
+  --color-inlinecode: #c74f00;
+  --color-codeblock: #fff7ea;
+  --color-h1: #3a3a3a;
+  --color-h2: #ad2121;
+  --color-h3: #0028bb;
+  --color-h4: #ad9521;
+  --color-h5: #555;
+  --color-h6: #666;
+  --color-p: #444;
+  --color-list: #666;
+  --color-list-hl: #36ac91;
+  --color-meta: #888;
+  --color-read-bkg: #e0d8c8;
+  --color-read-post: #f8f1e2;
+}
+* {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  outline: none;
+  margin: 0;
+  padding: 0;
+}
+html {
+  color: var(--color-text);
+  width: 100%;
+  height: 100%;
+  font-family: Noto Serif SC, Menlo, Monaco, monospace, sans-serif;
+  font-size: 16px;
+}
+html >::-webkit-scrollbar {
+  height: 4px;
+  width: 4px;
+}
+html >::-webkit-scrollbar-track-piece {
+  background: transparent;
+}
+html >::-webkit-scrollbar-thumb {
+  background: #44d7b6;
+  cursor: pointer;
+  border-radius: 2px;
+  -webkit-border-radius: 2px;
+}
+html >::-webkit-scrollbar-thumb:hover {
+  background: #ff5722;
+}
+body {
+  background-color: var(--color-site-body);
+  text-rendering: optimizelegibility;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  line-height: 1.6;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+body.modal-active {
+  overflow: hidden;
+}
+@media screen and (max-width: 680px) {
+  body.modal-active {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  }
+}
+a {
+  color: #1b79c4;
+  cursor: pointer;
+  text-decoration: none;
+  transition: all 0.28s ease;
+  -webkit-transition: all 0.28s ease;
+  -khtml-transition: all 0.28s ease;
+  -moz-transition: all 0.28s ease;
+  -o-transition: all 0.28s ease;
+  -ms-transition: all 0.28s ease;
+}
+a:hover {
+  color: #ff5722;
+}
+a:active,
+a:hover {
+  outline: 0;
+}
+ul,
+ol {
+  padding-left: 0;
+}
+ul li,
+ol li {
+  list-style: none;
+}
+header {
+  display: -webkit-box /* OLD - iOS 6-, Safari 3.1-6 */;
+  display: -moz-box /* OLD - Firefox 19- (buggy but mostly works) */;
+  display: block;
+}
+img {
+  border: 0;
+  background: none;
+  max-width: 100%;
+}
+svg:not(:root) {
+  overflow: hidden;
+}
+hr {
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  height: 0;
+  border: 0;
+  border-radius: 1px;
+  -webkit-border-radius: 1px;
+  border-bottom: 1px solid rgba(68,68,68,0.1);
+}
+button,
+input {
+  color: inherit;
+  font: inherit;
+  margin: 0;
+}
+button {
+  overflow: visible;
+  text-transform: none;
+  -webkit-appearance: button;
+  cursor: pointer;
+}
+@supports (backdrop-filter: blur(20px)) {
+  .blur {
+    background: rgba(255,255,255,0.9) !important;
+    backdrop-filter: saturate(200%) blur(20px);
+  }
+}
+.shadow {
+  box-shadow: 0 1px 2px 0px rgba(0,0,0,0.1);
+  -webkit-box-shadow: 0 1px 2px 0px rgba(0,0,0,0.1);
+}
+.shadow.floatable {
+  transition: all 0.28s ease;
+  -webkit-transition: all 0.28s ease;
+  -khtml-transition: all 0.28s ease;
+  -moz-transition: all 0.28s ease;
+  -o-transition: all 0.28s ease;
+  -ms-transition: all 0.28s ease;
+}
+.shadow.floatable:hover {
+  box-shadow: 0 2px 4px 0px rgba(0,0,0,0.1), 0 4px 8px 0px rgba(0,0,0,0.1), 0 8px 16px 0px rgba(0,0,0,0.1);
+  -webkit-box-shadow: 0 2px 4px 0px rgba(0,0,0,0.1), 0 4px 8px 0px rgba(0,0,0,0.1), 0 8px 16px 0px rgba(0,0,0,0.1);
+}
+#l_cover {
+  min-height: 64px;
+}
+.cover-wrapper {
+  top: 0;
+  left: 0;
+  max-width: 100%;
+  height: 100vh;
+  display: -webkit-box /* OLD - iOS 6-, Safari 3.1-6 */;
+  display: -moz-box /* OLD - Firefox 19- (buggy but mostly works) */;
+  display: -ms-flexbox /* TWEENER - IE 10 */;
+  display: -webkit-flex /* NEW - Chrome */;
+  display: flex /* NEW, Spec - Opera 12.1, Firefox 20+ */;
+  display: flex;
+  flex-wrap: nowrap;
+  -webkit-flex-wrap: nowrap;
+  -khtml-flex-wrap: nowrap;
+  -moz-flex-wrap: nowrap;
+  -o-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  -webkit-box-direction: normal;
+  -moz-box-direction: normal;
+  -webkit-box-orient: vertical;
+  -moz-box-orient: vertical;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  align-items: center;
+  align-self: center;
+  align-content: center;
+  color: var(--color-site-inner);
+  padding: 0 16px;
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  position: relative;
+  overflow: hidden;
+  margin-bottom: -100px;
+}
+.cover-wrapper .cover-bg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+}
+.cover-wrapper .cover-bg.lazyload:not(.loaded) {
+  opacity: 0;
+  -webkit-opacity: 0;
+  -moz-opacity: 0;
+}
+.cover-wrapper .cover-bg.lazyload.loaded {
+  animation-delay: 0s;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-out;
+  animation-name: fadeIn;
+}
+@-moz-keyframes fadeIn {
+  0% {
+    opacity: 0;
+    -webkit-opacity: 0;
+    -moz-opacity: 0;
+    filter: blur(12px);
+    transform: scale(1.02);
+    -webkit-transform: scale(1.02);
+    -khtml-transform: scale(1.02);
+    -moz-transform: scale(1.02);
+    -o-transform: scale(1.02);
+    -ms-transform: scale(1.02);
+  }
+  100% {
+    opacity: 1;
+    -webkit-opacity: 1;
+    -moz-opacity: 1;
+  }
+}
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+    -webkit-opacity: 0;
+    -moz-opacity: 0;
+    filter: blur(12px);
+    transform: scale(1.02);
+    -webkit-transform: scale(1.02);
+    -khtml-transform: scale(1.02);
+    -moz-transform: scale(1.02);
+    -o-transform: scale(1.02);
+    -ms-transform: scale(1.02);
+  }
+  100% {
+    opacity: 1;
+    -webkit-opacity: 1;
+    -moz-opacity: 1;
+  }
+}
+@-o-keyframes fadeIn {
+  0% {
+    opacity: 0;
+    -webkit-opacity: 0;
+    -moz-opacity: 0;
+    filter: blur(12px);
+    transform: scale(1.02);
+    -webkit-transform: scale(1.02);
+    -khtml-transform: scale(1.02);
+    -moz-transform: scale(1.02);
+    -o-transform: scale(1.02);
+    -ms-transform: scale(1.02);
+  }
+  100% {
+    opacity: 1;
+    -webkit-opacity: 1;
+    -moz-opacity: 1;
+  }
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    -webkit-opacity: 0;
+    -moz-opacity: 0;
+    filter: blur(12px);
+    transform: scale(1.02);
+    -webkit-transform: scale(1.02);
+    -khtml-transform: scale(1.02);
+    -moz-transform: scale(1.02);
+    -o-transform: scale(1.02);
+    -ms-transform: scale(1.02);
+  }
+  100% {
+    opacity: 1;
+    -webkit-opacity: 1;
+    -moz-opacity: 1;
+  }
+}
+.cover-wrapper .cover-body {
+  z-index: 1;
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.cover-wrapper#full {
+  height: calc(100vh + 100px);
+  padding-bottom: 100px;
+}
+.cover-wrapper#half {
+  max-height: 640px;
+  min-height: 400px;
+  height: calc(36vh - 64px + 200px);
+}
+.cover-wrapper #scroll-down {
+  width: 100%;
+  height: 64px;
+  position: absolute;
+  bottom: 100px;
+  text-align: center;
+  cursor: pointer;
+}
+.cover-wrapper #scroll-down .scroll-down-effects {
+  color: #fff;
+  font-size: 24px;
+  line-height: 64px;
+  position: absolute;
+  width: 24px;
+  left: calc(50% - 12px);
+  text-shadow: 0 1px 2px rgba(0,0,0,0.1);
+  animation: scroll-down-effect 1.5s infinite;
+  -webkit-animation: scroll-down-effect 1.5s infinite;
+  -khtml-animation: scroll-down-effect 1.5s infinite;
+  -moz-animation: scroll-down-effect 1.5s infinite;
+  -o-animation: scroll-down-effect 1.5s infinite;
+  -ms-animation: scroll-down-effect 1.5s infinite;
+}
+@-moz-keyframes scroll-down-effect {
+  0% {
+    top: 0;
+    opacity: 1;
+    -webkit-opacity: 1;
+    -moz-opacity: 1;
+  }
+  50% {
+    top: -16px;
+    opacity: 0.4;
+    -webkit-opacity: 0.4;
+    -moz-opacity: 0.4;
+  }
+  100% {
+    top: 0;
+    opacity: 1;
+    -webkit-opacity: 1;
+    -moz-opacity: 1;
+  }
+}
+@-webkit-keyframes scroll-down-effect {
+  0% {
+    top: 0;
+    opacity: 1;
+    -webkit-opacity: 1;
+    -moz-opacity: 1;
+  }
+  50% {
+    top: -16px;
+    opacity: 0.4;
+    -webkit-opacity: 0.4;
+    -moz-opacity: 0.4;
+  }
+  100% {
+    top: 0;
+    opacity: 1;
+    -webkit-opacity: 1;
+    -moz-opacity: 1;
+  }
+}
+@-o-keyframes scroll-down-effect {
+  0% {
+    top: 0;
+    opacity: 1;
+    -webkit-opacity: 1;
+    -moz-opacity: 1;
+  }
+  50% {
+    top: -16px;
+    opacity: 0.4;
+    -webkit-opacity: 0.4;
+    -moz-opacity: 0.4;
+  }
+  100% {
+    top: 0;
+    opacity: 1;
+    -webkit-opacity: 1;
+    -moz-opacity: 1;
+  }
+}
+@keyframes scroll-down-effect {
+  0% {
+    top: 0;
+    opacity: 1;
+    -webkit-opacity: 1;
+    -moz-opacity: 1;
+  }
+  50% {
+    top: -16px;
+    opacity: 0.4;
+    -webkit-opacity: 0.4;
+    -moz-opacity: 0.4;
+  }
+  100% {
+    top: 0;
+    opacity: 1;
+    -webkit-opacity: 1;
+    -moz-opacity: 1;
+  }
+}
+.cover-wrapper .cover-body {
+  margin-top: 64px;
+  margin-bottom: 100px;
+}
+.cover-wrapper .cover-body,
+.cover-wrapper .cover-body .top,
+.cover-wrapper .cover-body .bottom {
+  display: -webkit-box /* OLD - iOS 6-, Safari 3.1-6 */;
+  display: -moz-box /* OLD - Firefox 19- (buggy but mostly works) */;
+  display: -ms-flexbox /* TWEENER - IE 10 */;
+  display: -webkit-flex /* NEW - Chrome */;
+  display: flex /* NEW, Spec - Opera 12.1, Firefox 20+ */;
+  display: flex;
+  -webkit-box-direction: normal;
+  -moz-box-direction: normal;
+  -webkit-box-orient: vertical;
+  -moz-box-orient: vertical;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  -webkit-justify-content: center;
+  -khtml-justify-content: center;
+  -moz-justify-content: center;
+  -o-justify-content: center;
+  -ms-justify-content: center;
+  max-width: 100%;
+}
+.cover-wrapper .cover-body .bottom {
+  margin-top: 32px;
+}
+.cover-wrapper .cover-body .title {
+  font-family: Noto Serif SC, Menlo, Monaco, monospace, sans-serif;
+  font-size: 3.125rem;
+  line-height: 1.2;
+  text-shadow: 0 1px 2px rgba(0,0,0,0.1);
+}
+.cover-wrapper .cover-body .subtitle {
+  font-size: 20px;
+}
+.cover-wrapper .cover-body .logo {
+  max-height: 120px;
+  max-width: calc(100% - 4 * 16px);
+}
+@media screen and (min-height: 1024px) {
+  .cover-wrapper .cover-body .title {
+    font-size: 3rem;
+  }
+  .cover-wrapper .cover-body .subtitle {
+    font-size: 1.05rem;
+  }
+  .cover-wrapper .cover-body .logo {
+    max-height: 150px;
+  }
+}
+.cover-wrapper .cover-body .m_search {
+  position: relative;
+  max-width: calc(100% - 16px);
+  width: 320px;
+  vertical-align: middle;
+}
+.cover-wrapper .cover-body .m_search .form {
+  position: relative;
+  display: -webkit-box /* OLD - iOS 6-, Safari 3.1-6 */;
+  display: -moz-box /* OLD - Firefox 19- (buggy but mostly works) */;
+  display: block;
+  width: 100%;
+}
+.cover-wrapper .cover-body .m_search .icon,
+.cover-wrapper .cover-body .m_search .input {
+  transition: all 0.28s ease;
+  -webkit-transition: all 0.28s ease;
+  -khtml-transition: all 0.28s ease;
+  -moz-transition: all 0.28s ease;
+  -o-transition: all 0.28s ease;
+  -ms-transition: all 0.28s ease;
+}
+.cover-wrapper .cover-body .m_search .icon {
+  position: absolute;
+  display: -webkit-box /* OLD - iOS 6-, Safari 3.1-6 */;
+  display: -moz-box /* OLD - Firefox 19- (buggy but mostly works) */;
+  display: block;
+  line-height: 2.5rem;
+  width: 32px;
+  top: 0;
+  left: 5px;
+  color: rgba(68,68,68,0.75);
+}
+.cover-wrapper .cover-body .m_search .input {
+  display: -webkit-box /* OLD - iOS 6-, Safari 3.1-6 */;
+  display: -moz-box /* OLD - Firefox 19- (buggy but mostly works) */;
+  display: block;
+  height: 2.5rem;
+  width: 100%;
+  box-shadow: none;
+  -webkit-box-shadow: none;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  font-size: 0.875rem;
+  -webkit-appearance: none;
+  padding-left: 36px;
+  border-radius: 1.4rem;
+  -webkit-border-radius: 1.4rem;
+  background: rgba(255,255,255,0.6);
+  backdrop-filter: blur(10px);
+  border: none;
+  color: var(--color-text);
+}
+@media screen and (max-width: 500px) {
+  .cover-wrapper .cover-body .m_search .input {
+    padding-left: 36px;
+  }
+}
+.cover-wrapper .cover-body .m_search .input:hover {
+  background: rgba(255,255,255,0.8);
+}
+.cover-wrapper .cover-body .m_search .input:focus {
+  background: #fff;
+}
+.cover-wrapper .list-h {
+  display: -webkit-box /* OLD - iOS 6-, Safari 3.1-6 */;
+  display: -moz-box /* OLD - Firefox 19- (buggy but mostly works) */;
+  display: -ms-flexbox /* TWEENER - IE 10 */;
+  display: -webkit-flex /* NEW - Chrome */;
+  display: flex /* NEW, Spec - Opera 12.1, Firefox 20+ */;
+  display: flex;
+  -webkit-box-direction: normal;
+  -moz-box-direction: normal;
+  -webkit-box-orient: horizontal;
+  -moz-box-orient: horizontal;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
+  -khtml-flex-wrap: wrap;
+  -moz-flex-wrap: wrap;
+  -o-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  align-items: stretch;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+}
+.cover-wrapper .list-h a {
+  -webkit-box-flex: 1;
+  -moz-box-flex: 1;
+  -webkit-flex: 1 0;
+  -ms-flex: 1 0;
+  flex: 1 0;
+  display: -webkit-box /* OLD - iOS 6-, Safari 3.1-6 */;
+  display: -moz-box /* OLD - Firefox 19- (buggy but mostly works) */;
+  display: -ms-flexbox /* TWEENER - IE 10 */;
+  display: -webkit-flex /* NEW - Chrome */;
+  display: flex /* NEW, Spec - Opera 12.1, Firefox 20+ */;
+  display: flex;
+  font-weight: 600;
+}
+.cover-wrapper .list-h a img {
+  display: -webkit-box /* OLD - iOS 6-, Safari 3.1-6 */;
+  display: -moz-box /* OLD - Firefox 19- (buggy but mostly works) */;
+  display: block;
+  border-radius: 2px;
+  -webkit-border-radius: 2px;
+  margin: 4px;
+  min-width: 40px;
+  max-width: 44px;
+}
+@media screen and (max-width: 768px) {
+  .cover-wrapper .list-h a img {
+    min-width: 36px;
+    max-width: 40px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .cover-wrapper .list-h a img {
+    margin: 2px 4px;
+    min-width: 32px;
+    max-width: 36px;
+  }
+}
+@media screen and (max-width: 375px) {
+  .cover-wrapper .list-h a img {
+    min-width: 28px;
+    max-width: 32px;
+  }
+}
+.cover-wrapper {
+  max-width: 100%;
+}
+.cover-wrapper.search .bottom .menu {
+  margin-top: 16px;
+}
+.cover-wrapper.search .bottom .menu .list-h a {
+  white-space: nowrap;
+  -webkit-box-direction: normal;
+  -moz-box-direction: normal;
+  -webkit-box-orient: horizontal;
+  -moz-box-orient: horizontal;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  align-items: baseline;
+  padding: 2px;
+  margin: 4px;
+  color: var(--color-site-inner);
+  opacity: 0.75;
+  -webkit-opacity: 0.75;
+  -moz-opacity: 0.75;
+  text-shadow: 0 1px 2px rgba(0,0,0,0.05);
+  border-bottom: 2px solid transparent;
+}
+.cover-wrapper.search .bottom .menu .list-h a i {
+  margin-right: 4px;
+}
+.cover-wrapper.search .bottom .menu .list-h a p {
+  font-size: 0.9375rem;
+}
+.cover-wrapper.search .bottom .menu .list-h a:hover,
+.cover-wrapper.search .bottom .menu .list-h a.active,
+.cover-wrapper.search .bottom .menu .list-h a:active {
+  opacity: 1;
+  -webkit-opacity: 1;
+  -moz-opacity: 1;
+  border-bottom: 2px solid var(--color-site-inner);
+}
+.cover-wrapper.dock .menu,
+.cover-wrapper.featured .menu,
+.cover-wrapper.focus .menu {
+  border-radius: 6px;
+  -webkit-border-radius: 6px;
+}
+.cover-wrapper.dock .menu .list-h a,
+.cover-wrapper.featured .menu .list-h a,
+.cover-wrapper.focus .menu .list-h a {
+  -webkit-box-direction: normal;
+  -moz-box-direction: normal;
+  -webkit-box-orient: vertical;
+  -moz-box-orient: vertical;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  align-items: center;
+  padding: 12px;
+  line-height: 24px;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  border-bottom: none;
+  text-align: center;
+  align-content: flex-end;
+  color: rgba(68,68,68,0.7);
+  font-size: 1.5rem;
+}
+@media screen and (max-width: 500px) {
+  .cover-wrapper.dock .menu .list-h a,
+  .cover-wrapper.featured .menu .list-h a,
+  .cover-wrapper.focus .menu .list-h a {
+    padding: 12px 8px;
+  }
+}
+.cover-wrapper.dock .menu .list-h a i,
+.cover-wrapper.featured .menu .list-h a i,
+.cover-wrapper.focus .menu .list-h a i {
+  margin: 8px;
+}
+.cover-wrapper.dock .menu .list-h a p,
+.cover-wrapper.featured .menu .list-h a p,
+.cover-wrapper.focus .menu .list-h a p {
+  font-size: 0.875rem;
+}
+.cover-wrapper.dock .menu .list-h a.active,
+.cover-wrapper.featured .menu .list-h a.active,
+.cover-wrapper.focus .menu .list-h a.active {
+  background: var(--color-card);
+  backdrop-filter: none;
+}
+.cover-wrapper.dock .menu .list-h a.active i,
+.cover-wrapper.featured .menu .list-h a.active i,
+.cover-wrapper.focus .menu .list-h a.active i,
+.cover-wrapper.dock .menu .list-h a.active i+p,
+.cover-wrapper.featured .menu .list-h a.active i+p,
+.cover-wrapper.focus .menu .list-h a.active i+p {
+  color: #44d7b6;
+}
+.cover-wrapper.dock .menu .list-h a.active img+p,
+.cover-wrapper.featured .menu .list-h a.active img+p,
+.cover-wrapper.focus .menu .list-h a.active img+p {
+  color: var(--color-text);
+}
+.cover-wrapper.dock .menu .list-h a:hover,
+.cover-wrapper.featured .menu .list-h a:hover,
+.cover-wrapper.focus .menu .list-h a:hover {
+  background: var(--color-card);
+}
+.cover-wrapper.featured .menu .list-h {
+  margin: -2px;
+}
+.cover-wrapper.featured .menu .list-h a {
+  margin: 2px;
+  background: rgba(255,255,255,0.5);
+}
+@supports (backdrop-filter: blur(20px)) {
+  .cover-wrapper.featured .menu .list-h a {
+    background: rgba(255,255,255,0.5);
+    backdrop-filter: saturate(200%) blur(20px);
+  }
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-mode: 'dark';
+  }
+  :root:not([color-scheme]) {
+    --color-site-body: #000;
+    --color-read-bkg: #222;
+    --color-read-post: #333;
+    --color-site-bg: #222;
+    --color-site-inner: #eee;
+    --color-site-footer: #aaa;
+    --color-card: #333;
+    --color-text: #eee;
+    --color-block: #3a3a3a;
+    --color-codeblock: #343a3c;
+    --color-inlinecode: #d56d28;
+    --color-h1: #eee;
+    --color-h2: #eee;
+    --color-h3: #ddd;
+    --color-h4: #ddd;
+    --color-h5: #ddd;
+    --color-h6: #ddd;
+    --color-p: #bbb;
+    --color-list: #aaa;
+    --color-list-hl: #69dfc4;
+    --color-meta: #888;
+    --color-link: #888;
+  }
+  :root:not([color-scheme]) img {
+    filter: brightness(70%) !important;
+  }
+  :root:not([color-scheme]) #wrapper .title {
+    color: var(--color-meta) !important;
+  }
+  :root:not([color-scheme]) .l_header ul.nav-list-h>li>a,
+  :root:not([color-scheme]) ul.list-v >li>a {
+    color: var(--color-list) !important;
+  }
+  :root:not([color-scheme]) .blur {
+    background: var(--color-site-bg) !important;
+  }
+  :root:not([color-scheme]) .nav-main .u-search-input {
+    background: var(--color-card) !important;
+  }
+  :root:not([color-scheme]) #l_main .article .prev-next>a {
+    background: var(--color-block) !important;
+  }
+  :root:not([color-scheme]) #l_main .article .prev-next>a:hover {
+    background: var(--color-card) !important;
+  }
+  :root:not([color-scheme]) .article blockquote {
+    background: var(--color-block) !important;
+  }
+  :root:not([color-scheme]) .article-title a {
+    color: var(--color-h1) !important;
+  }
+  :root:not([color-scheme]) details>summary {
+    color: var(--color-p) !important;
+    background: var(--color-site-bg) !important;
+  }
+  :root:not([color-scheme]) details {
+    border: 1px solid var(--color-site-bg) !important;
+    background: var(--color-site-bg) !important;
+  }
+  :root:not([color-scheme]) #u-search .modal,
+  :root:not([color-scheme]) #u-search .modal-header,
+  :root:not([color-scheme]) #u-search .modal-body {
+    background: var(--color-card) !important;
+  }
+  :root:not([color-scheme]) #u-search .modal-body .modal-results .result:hover {
+    background: var(--color-block) !important;
+  }
+}
+[color-scheme='dark'] {
+  --color-site-body: #000;
+  --color-read-bkg: #222;
+  --color-read-post: #333;
+  --color-site-bg: #222;
+  --color-site-inner: #eee;
+  --color-site-footer: #aaa;
+  --color-card: #333;
+  --color-text: #eee;
+  --color-block: #3a3a3a;
+  --color-codeblock: #343a3c;
+  --color-inlinecode: #d56d28;
+  --color-h1: #eee;
+  --color-h2: #eee;
+  --color-h3: #ddd;
+  --color-h4: #ddd;
+  --color-h5: #ddd;
+  --color-h6: #ddd;
+  --color-p: #bbb;
+  --color-list: #aaa;
+  --color-list-hl: #69dfc4;
+  --color-meta: #888;
+  --color-link: #888;
+}
+[color-scheme='dark'] img {
+  filter: brightness(70%) !important;
+}
+[color-scheme='dark'] #wrapper .title {
+  color: var(--color-meta) !important;
+}
+[color-scheme='dark'] .l_header ul.nav-list-h>li>a,
+[color-scheme='dark'] ul.list-v >li>a {
+  color: var(--color-list) !important;
+}
+[color-scheme='dark'] .blur {
+  background: var(--color-site-bg) !important;
+}
+[color-scheme='dark'] .nav-main .u-search-input {
+  background: var(--color-card) !important;
+}
+[color-scheme='dark'] #l_main .article .prev-next>a {
+  background: var(--color-block) !important;
+}
+[color-scheme='dark'] #l_main .article .prev-next>a:hover {
+  background: var(--color-card) !important;
+}
+[color-scheme='dark'] .article blockquote {
+  background: var(--color-block) !important;
+}
+[color-scheme='dark'] .article-title a {
+  color: var(--color-h1) !important;
+}
+[color-scheme='dark'] details>summary {
+  color: var(--color-p) !important;
+  background: var(--color-site-bg) !important;
+}
+[color-scheme='dark'] details {
+  border: 1px solid var(--color-site-bg) !important;
+  background: var(--color-site-bg) !important;
+}
+[color-scheme='dark'] #u-search .modal,
+[color-scheme='dark'] #u-search .modal-header,
+[color-scheme='dark'] #u-search .modal-body {
+  background: var(--color-card) !important;
+}
+[color-scheme='dark'] #u-search .modal-body .modal-results .result:hover {
+  background: var(--color-block) !important;
+}
+@media screen and (max-width: 500px) {
+  [color-scheme='dark'] .l_header .m_search {
+    background: var(--color-site-bg) !important;
+  }
+}
+.l_header {
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  width: 100%;
+  height: 64px;
+  background: var(--color-card);
+  box-shadow: 0 1px 2px 0px rgba(0,0,0,0.1);
+  -webkit-box-shadow: 0 1px 2px 0px rgba(0,0,0,0.1);
+}
+.l_header.auto {
+  transition: opacity 0.4s ease;
+  -webkit-transition: opacity 0.4s ease;
+  -khtml-transition: opacity 0.4s ease;
+  -moz-transition: opacity 0.4s ease;
+  -o-transition: opacity 0.4s ease;
+  -ms-transition: opacity 0.4s ease;
+  visibility: hidden;
+}
+.l_header.auto.show {
+  opacity: 1 !important;
+  -webkit-opacity: 1 !important;
+  -moz-opacity: 1 !important;
+  visibility: visible;
+}
+.l_header .container {
+  margin-left: 16px;
+  margin-right: 16px;
+}
+.l_header #wrapper {
+  height: 100%;
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+}
+.l_header #wrapper .nav-main,
+.l_header #wrapper .nav-sub {
+  display: -webkit-box /* OLD - iOS 6-, Safari 3.1-6 */;
+  display: -moz-box /* OLD - Firefox 19- (buggy but mostly works) */;
+  display: -ms-flexbox /* TWEENER - IE 10 */;
+  display: -webkit-flex /* NEW - Chrome */;
+  display: flex /* NEW, Spec - Opera 12.1, Firefox 20+ */;
+  display: flex;
+  flex-wrap: nowrap;
+  -webkit-flex-wrap: nowrap;
+  -khtml-flex-wrap: nowrap;
+  -moz-flex-wrap: nowrap;
+  -o-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  justify-content: space-between;
+  -webkit-justify-content: space-between;
+  -khtml-justify-content: space-between;
+  -moz-justify-content: space-between;
+  -o-justify-content: space-between;
+  -ms-justify-content: space-between;
+  align-items: center;
+}
+.l_header #wrapper .nav-main {
+  transition: all 0.28s ease;
+  -webkit-transition: all 0.28s ease;
+  -khtml-transition: all 0.28s ease;
+  -moz-transition: all 0.28s ease;
+  -o-transition: all 0.28s ease;
+  -ms-transition: all 0.28s ease;
+}
+.l_header #wrapper.sub .nav-main {
+  transform: translateY(-64px);
+  -webkit-transform: translateY(-64px);
+  -khtml-transform: translateY(-64px);
+  -moz-transform: translateY(-64px);
+  -o-transform: translateY(-64px);
+  -ms-transform: translateY(-64px);
+}
+.l_header #wrapper .nav-sub {
+  transition: all 0.28s ease;
+  -webkit-transition: all 0.28s ease;
+  -khtml-transition: all 0.28s ease;
+  -moz-transition: all 0.28s ease;
+  -o-transition: all 0.28s ease;
+  -ms-transition: all 0.28s ease;
+  opacity: 0;
+  -webkit-opacity: 0;
+  -moz-opacity: 0;
+  height: 64px;
+  width: calc(100% - 2 * 16px);
+  position: absolute;
+}
+.l_header #wrapper .nav-sub ::-webkit-scrollbar {
+  display: -webkit-box /* OLD - iOS 6-, Safari 3.1-6 */;
+  display: -moz-box /* OLD - Firefox 19- (buggy but mostly works) */;
+  display: none;
+}
+@media screen and (min-width: 2048px) {
+  .l_header #wrapper .nav-sub {
+    max-width: 55vw;
+    margin: auto;
+  }
+}
+.l_header #wrapper.sub .nav-sub {
+  opacity: 1;
+  -webkit-opacity: 1;
+  -moz-opacity: 1;
+}
+.l_header #wrapper .title {
+  position: relative;
+  color: var(--color-text);
+  padding-left: 24px;
+  max-height: 64px;
+}
+.l_header #wrapper .nav-main .title {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  flex-shrink: 0;
+  line-height: 64px;
+  padding: 0 24px;
+  font-size: 1.25rem;
+  font-family: Noto Serif SC, Menlo, Monaco, monospace, sans-serif;
+}
+.l_header #wrapper .nav-main .title img {
+  height: 64px;
+}
+.l_header .nav-sub {
+  max-width: 1080px;
+  margin: auto;
+}
+.l_header .nav-sub .title {
+  font-weight: bold;
+  font-family: Noto Serif SC, Menlo, Monaco, monospace, sans-serif;
+  line-height: 1.2;
+  max-height: 64px;
+  white-space: normal;
+  flex-shrink: 1;
+}
+.l_header .switcher {
+  display: -webkit-box /* OLD - iOS 6-, Safari 3.1-6 */;
+  display: -moz-box /* OLD - Firefox 19- (buggy but mostly works) */;
+  display: none;
+  line-height: 64px;
+  align-items: center;
+}
+.l_header .switcher .s-toc {
+  display: -webkit-box /* OLD - iOS 6-, Safari 3.1-6 */;
+  display: -moz-box /* OLD - Firefox 19- (buggy but mostly works) */;
+  display: none;
+}
+@media screen and (max-width: 768px) {
+  .l_header .switcher .s-toc {
+    display: -webkit-box /* OLD - iOS 6-, Safari 3.1-6 */;
+    display: -moz-box /* OLD - Firefox 19- (buggy but mostly works) */;
+    display: -ms-flexbox /* TWEENER - IE 10 */;
+    display: -webkit-flex /* NEW - Chrome */;
+    display: flex /* NEW, Spec - Opera 12.1, Firefox 20+ */;
+    display: flex;
+  }
+}
+.l_header .switcher >li {
+  height: 48px;
+  transition: all 0.28s ease;
+  -webkit-transition: all 0.28s ease;
+  -khtml-transition: all 0.28s ease;
+  -moz-transition: all 0.28s ease;
+  -o-transition: all 0.28s ease;
+  -ms-transition: all 0.28s ease;
+  margin: 2px;
+}
+@media screen and (max-width: 500px) {
+  .l_header .switcher >li {
+    margin: 0 1px;
+    height: 48px;
+  }
+}
+.l_header .switcher >li >a {
+  display: -webkit-box /* OLD - iOS 6-, Safari 3.1-6 */;
+  display: -moz-box /* OLD - Firefox 19- (buggy but mostly works) */;
+  display: -ms-flexbox /* TWEENER - IE 10 */;
+  display: -webkit-flex /* NEW - Chrome */;
+  display: flex /* NEW, Spec - Opera 12.1, Firefox 20+ */;
+  display: flex;
+  justify-content: center;
+  -webkit-justify-content: center;
+  -khtml-justify-content: center;
+  -moz-justify-content: center;
+  -o-justify-content: center;
+  -ms-justify-content: center;
+  align-items: center;
+  width: 48px;
+  height: 48px;
+  padding: 0.85em 1.1em;
+  border-radius: 100px;
+  -webkit-border-radius: 100px;
+  border: none;
+  transition: all 0.28s ease;
+  -webkit-transition: all 0.28s ease;
+  -khtml-transition: all 0.28s ease;
+  -moz-transition: all 0.28s ease;
+  -o-transition: all 0.28s ease;
+  -ms-transition: all 0.28s ease;
+  color: #44d7b6;
+}
+.l_header .switcher >li >a:hover {
+  border: none;
+}
+.l_header .switcher >li >a.active,
+.l_header .switcher >li >a:active {
+  border: none;
+  background: var(--color-site-bg);
+}
+@media screen and (max-width: 500px) {
+  .l_header .switcher >li >a {
+    width: 36px;
+    height: 48px;
+  }
+}
+.l_header .nav-sub .switcher {
+  display: -webkit-box /* OLD - iOS 6-, Safari 3.1-6 */;
+  display: -moz-box /* OLD - Firefox 19- (buggy but mostly works) */;
+  display: -ms-flexbox /* TWEENER - IE 10 */;
+  display: -webkit-flex /* NEW - Chrome */;
+  display: flex /* NEW, Spec - Opera 12.1, Firefox 20+ */;
+  display: flex;
+}
+.l_header .m_search {
+  display: -webkit-box /* OLD - iOS 6-, Safari 3.1-6 */;
+  display: -moz-box /* OLD - Firefox 19- (buggy but mostly works) */;
+  display: -ms-flexbox /* TWEENER - IE 10 */;
+  display: -webkit-flex /* NEW - Chrome */;
+  display: flex /* NEW, Spec - Opera 12.1, Firefox 20+ */;
+  display: flex;
+  height: 64px;
+  width: 240px;
+  transition: all 0.28s ease;
+  -webkit-transition: all 0.28s ease;
+  -khtml-transition: all 0.28s ease;
+  -moz-transition: all 0.28s ease;
+  -o-transition: all 0.28s ease;
+  -ms-transition: all 0.28s ease;
+}
+@media screen and (max-width: 1024px) {
+  .l_header .m_search {
+    width: 44px;
+    min-width: 44px;
+  }
+  .l_header .m_search input::placeholder {
+    opacity: 0;
+    -webkit-opacity: 0;
+    -moz-opacity: 0;
+  }
+  .l_header .m_search:hover {
+    width: 240px;
+  }
+  .l_header .m_search:hover input::placeholder {
+    opacity: 1;
+    -webkit-opacity: 1;
+    -moz-opacity: 1;
+  }
+}
+@media screen and (min-width: 500px) {
+  .l_header .m_search:hover .input {
+    width: 100%;
+  }
+  .l_header .m_search:hover .input::placeholder {
+    opacity: 1;
+    -webkit-opacity: 1;
+    -moz-opacity: 1;
+  }
+}
+@media screen and (max-width: 500px) {
+  .l_header .m_search {
+    min-width: 0;
+  }
+  .l_header .m_search input::placeholder {
+    opacity: 1;
+    -webkit-opacity: 1;
+    -moz-opacity: 1;
+  }
+}
+.l_header .m_search .form {
+  position: relative;
+  display: -webkit-box /* OLD - iOS 6-, Safari 3.1-6 */;
+  display: -moz-box /* OLD - Firefox 19- (buggy but mostly works) */;
+  display: -ms-flexbox /* TWEENER - IE 10 */;
+  display: -webkit-flex /* NEW - Chrome */;
+  display: flex /* NEW, Spec - Opera 12.1, Firefox 20+ */;
+  display: flex;
+  width: 100%;
+  align-items: center;
+}
+.l_header .m_search .icon {
+  position: absolute;
+  width: 36px;
+  left: 5px;
+  color: var(--color-meta);
+}
+@media screen and (max-width: 500px) {
+  .l_header .m_search .icon {
+    display: -webkit-box /* OLD - iOS 6-, Safari 3.1-6 */;
+    display: -moz-box /* OLD - Firefox 19- (buggy but mostly works) */;
+    display: none;
+  }
+}
+.l_header .m_search .input {
+  display: -webkit-box /* OLD - iOS 6-, Safari 3.1-6 */;
+  display: -moz-box /* OLD - Firefox 19- (buggy but mostly works) */;
+  display: block;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  line-height: 1.3;
+  width: 100%;
+  color: var(--color-text);
+  background: #fafafa;
+  box-shadow: none;
+  -webkit-box-shadow: none;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  padding-left: 40px;
+  font-size: 0.875rem;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  border: none;
+  transition: all 0.28s ease;
+  -webkit-transition: all 0.28s ease;
+  -khtml-transition: all 0.28s ease;
+  -moz-transition: all 0.28s ease;
+  -o-transition: all 0.28s ease;
+  -ms-transition: all 0.28s ease;
+}
+@media screen and (min-width: 500px) {
+  .l_header .m_search .input:focus {
+    box-shadow: 0 4px 8px 0px rgba(0,0,0,0.1);
+    -webkit-box-shadow: 0 4px 8px 0px rgba(0,0,0,0.1);
+  }
+}
+@media screen and (max-width: 500px) {
+  .l_header .m_search .input {
+    background: var(--color-block);
+    padding-left: 8px;
+    border: none;
+  }
+  .l_header .m_search .input:hover,
+  .l_header .m_search .input:focus {
+    border: none;
+  }
+}
+@media (max-width: 500px) {
+  .l_header .m_search {
+    left: 0;
+    width: 0;
+    overflow: hidden;
+    position: absolute;
+    background: #fff;
+    transition: all 0.28s ease;
+    -webkit-transition: all 0.28s ease;
+    -khtml-transition: all 0.28s ease;
+    -moz-transition: all 0.28s ease;
+    -o-transition: all 0.28s ease;
+    -ms-transition: all 0.28s ease;
+  }
+  .l_header .m_search .input {
+    border-radius: 32px;
+    -webkit-border-radius: 32px;
+    margin-left: 16px;
+    padding-left: 16px;
+  }
+  .l_header.z_search-open .m_search {
+    width: 100%;
+  }
+  .l_header.z_search-open .m_search .input {
+    width: calc(100% - 120px);
+  }
+}
+ul.m-pc >li>a {
+  color: inherit;
+  border-bottom: 2px solid transparent;
+}
+ul.m-pc >li>a:active,
+ul.m-pc >li>a.active {
+  border-bottom: 2px solid #44d7b6;
+}
+ul.m-pc li:hover >ul.list-v,
+ul.list-v li:hover >ul.list-v {
+  display: -webkit-box /* OLD - iOS 6-, Safari 3.1-6 */;
+  display: -moz-box /* OLD - Firefox 19- (buggy but mostly works) */;
+  display: block;
+}
+ul.nav-list-h {
+  display: -webkit-box /* OLD - iOS 6-, Safari 3.1-6 */;
+  display: -moz-box /* OLD - Firefox 19- (buggy but mostly works) */;
+  display: -ms-flexbox /* TWEENER - IE 10 */;
+  display: -webkit-flex /* NEW - Chrome */;
+  display: flex /* NEW, Spec - Opera 12.1, Firefox 20+ */;
+  display: flex;
+  align-items: stretch;
+}
+ul.nav-list-h>li {
+  position: relative;
+  justify-content: center;
+  -webkit-justify-content: center;
+  -khtml-justify-content: center;
+  -moz-justify-content: center;
+  -o-justify-content: center;
+  -ms-justify-content: center;
+  height: 100%;
+  line-height: 2.4;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+}
+ul.nav-list-h>li >a {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-weight: 600;
+}
+ul.list-v {
+  z-index: 1;
+  display: -webkit-box /* OLD - iOS 6-, Safari 3.1-6 */;
+  display: -moz-box /* OLD - Firefox 19- (buggy but mostly works) */;
+  display: none;
+  position: absolute;
+  background: var(--color-card);
+  box-shadow: 0 2px 4px 0px rgba(0,0,0,0.08), 0 4px 8px 0px rgba(0,0,0,0.08), 0 8px 16px 0px rgba(0,0,0,0.08);
+  -webkit-box-shadow: 0 2px 4px 0px rgba(0,0,0,0.08), 0 4px 8px 0px rgba(0,0,0,0.08), 0 8px 16px 0px rgba(0,0,0,0.08);
+  margin-top: -6px;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  padding: 8px 0;
+}
+ul.list-v.show {
+  display: -webkit-box /* OLD - iOS 6-, Safari 3.1-6 */;
+  display: -moz-box /* OLD - Firefox 19- (buggy but mostly works) */;
+  display: block;
+}
+ul.list-v hr {
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+ul.list-v >li {
+  white-space: nowrap;
+  word-break: keep-all;
+}
+ul.list-v >li.header {
+  font-size: 0.78125rem;
+  font-weight: bold;
+  line-height: 2em;
+  color: var(--color-meta);
+  margin: 8px 16px 4px;
+}
+ul.list-v >li.header i {
+  margin-right: 8px;
+}
+ul.list-v >li ul {
+  margin-left: 0;
+  display: -webkit-box /* OLD - iOS 6-, Safari 3.1-6 */;
+  display: -moz-box /* OLD - Firefox 19- (buggy but mostly works) */;
+  display: none;
+  margin-top: -40px;
+}
+ul.list-v .aplayer-container {
+  min-height: 64px;
+  padding: 6px 16px;
+}
+ul.list-v >li>a {
+  transition: all 0.28s ease;
+  -webkit-transition: all 0.28s ease;
+  -khtml-transition: all 0.28s ease;
+  -moz-transition: all 0.28s ease;
+  -o-transition: all 0.28s ease;
+  -ms-transition: all 0.28s ease;
+  display: -webkit-box /* OLD - iOS 6-, Safari 3.1-6 */;
+  display: -moz-box /* OLD - Firefox 19- (buggy but mostly works) */;
+  display: block;
+  color: var(--color-list);
+  font-size: 0.875rem;
+  font-weight: bold;
+  line-height: 36px;
+  padding: 0 20px 0 16px;
+  text-overflow: ellipsis;
+  margin: 0 4px;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+}
+@media screen and (max-width: 1024px) {
+  ul.list-v >li>a {
+    line-height: 40px;
+  }
+}
+ul.list-v >li>a >i {
+  margin-right: 8px;
+}
+ul.list-v >li>a:active,
+ul.list-v >li>a.active {
+  color: var(--color-list-hl);
+}
+ul.list-v >li>a:hover {
+  color: var(--color-list-hl);
+  background: var(--color-site-bg);
+}
+.l_header .menu >ul>li>a {
+  display: -webkit-box /* OLD - iOS 6-, Safari 3.1-6 */;
+  display: -moz-box /* OLD - Firefox 19- (buggy but mostly works) */;
+  display: block;
+  padding: 0 8px;
+}
+.l_header .menu >ul>li>a >i {
+  margin-right: 4px;
+}
+.l_header ul.nav-list-h>li {
+  color: var(--color-list);
+  line-height: 64px;
+}
+.l_header ul.nav-list-h>li >a {
+  max-height: 64px;
+  overflow: hidden;
+  color: inherit;
+}
+.l_header ul.nav-list-h>li >a:active,
+.l_header ul.nav-list-h>li >a.active {
+  color: #44d7b6;
+}
+.l_header ul.nav-list-h>li:hover>a {
+  color: var(--color-list-hl);
+}
+.l_header ul.nav-list-h>li i.music {
+  animation: rotate-effect 1.5s linear infinite;
+  -webkit-animation: rotate-effect 1.5s linear infinite;
+  -khtml-animation: rotate-effect 1.5s linear infinite;
+  -moz-animation: rotate-effect 1.5s linear infinite;
+  -o-animation: rotate-effect 1.5s linear infinite;
+  -ms-animation: rotate-effect 1.5s linear infinite;
+}
+@-moz-keyframes rotate-effect {
+  0% {
+    transform: rotate(0);
+    -webkit-transform: rotate(0);
+    -khtml-transform: rotate(0);
+    -moz-transform: rotate(0);
+    -o-transform: rotate(0);
+    -ms-transform: rotate(0);
+  }
+  25% {
+    transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+    -khtml-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+  }
+  50% {
+    transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+    -khtml-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+  }
+  75% {
+    transform: rotate(270deg);
+    -webkit-transform: rotate(270deg);
+    -khtml-transform: rotate(270deg);
+    -moz-transform: rotate(270deg);
+    -o-transform: rotate(270deg);
+    -ms-transform: rotate(270deg);
+  }
+  100% {
+    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -khtml-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes rotate-effect {
+  0% {
+    transform: rotate(0);
+    -webkit-transform: rotate(0);
+    -khtml-transform: rotate(0);
+    -moz-transform: rotate(0);
+    -o-transform: rotate(0);
+    -ms-transform: rotate(0);
+  }
+  25% {
+    transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+    -khtml-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+  }
+  50% {
+    transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+    -khtml-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+  }
+  75% {
+    transform: rotate(270deg);
+    -webkit-transform: rotate(270deg);
+    -khtml-transform: rotate(270deg);
+    -moz-transform: rotate(270deg);
+    -o-transform: rotate(270deg);
+    -ms-transform: rotate(270deg);
+  }
+  100% {
+    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -khtml-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+  }
+}
+@-o-keyframes rotate-effect {
+  0% {
+    transform: rotate(0);
+    -webkit-transform: rotate(0);
+    -khtml-transform: rotate(0);
+    -moz-transform: rotate(0);
+    -o-transform: rotate(0);
+    -ms-transform: rotate(0);
+  }
+  25% {
+    transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+    -khtml-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+  }
+  50% {
+    transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+    -khtml-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+  }
+  75% {
+    transform: rotate(270deg);
+    -webkit-transform: rotate(270deg);
+    -khtml-transform: rotate(270deg);
+    -moz-transform: rotate(270deg);
+    -o-transform: rotate(270deg);
+    -ms-transform: rotate(270deg);
+  }
+  100% {
+    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -khtml-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+  }
+}
+@keyframes rotate-effect {
+  0% {
+    transform: rotate(0);
+    -webkit-transform: rotate(0);
+    -khtml-transform: rotate(0);
+    -moz-transform: rotate(0);
+    -o-transform: rotate(0);
+    -ms-transform: rotate(0);
+  }
+  25% {
+    transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+    -khtml-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+  }
+  50% {
+    transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+    -khtml-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+  }
+  75% {
+    transform: rotate(270deg);
+    -webkit-transform: rotate(270deg);
+    -khtml-transform: rotate(270deg);
+    -moz-transform: rotate(270deg);
+    -o-transform: rotate(270deg);
+    -ms-transform: rotate(270deg);
+  }
+  100% {
+    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -khtml-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+  }
+}
+.menu-phone li ul.list-v {
+  right: calc(100% - 0.5 * 16px);
+}
+.menu-phone li ul.list-v ul {
+  right: calc(100% - 0.5 * 16px);
+}
+#wrapper {
+  max-width: 1080px;
+  margin: auto;
+}
+@media screen and (min-width: 2048px) {
+  #wrapper {
+    max-width: 55vw;
+  }
+}
+#wrapper .menu {
+  -webkit-box-flex: 1;
+  -moz-box-flex: 1;
+  -webkit-flex: 1 1;
+  -ms-flex: 1 1;
+  flex: 1 1;
+  margin: 0 16px 0 0;
+}
+#wrapper .menu .list-v ul {
+  left: calc(100% - 0.5 * 16px);
+}
+.menu-phone {
+  display: -webkit-box /* OLD - iOS 6-, Safari 3.1-6 */;
+  display: -moz-box /* OLD - Firefox 19- (buggy but mostly works) */;
+  display: none;
+  margin-top: 16px;
+  right: 8px;
+  transition: all 0.28s ease;
+  -webkit-transition: all 0.28s ease;
+  -khtml-transition: all 0.28s ease;
+  -moz-transition: all 0.28s ease;
+  -o-transition: all 0.28s ease;
+  -ms-transition: all 0.28s ease;
+}
+.menu-phone ul {
+  right: calc(100% - 0.5 * 16px);
+}
+@media screen and (max-width: 500px) {
+  .menu-phone {
+    display: -webkit-box /* OLD - iOS 6-, Safari 3.1-6 */;
+    display: -moz-box /* OLD - Firefox 19- (buggy but mostly works) */;
+    display: block;
+  }
+}
+.l_header {
+  max-width: 65vw;
+  left: calc((100% - 65vw) * 0.5);
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+@media screen and (max-width: 2048px) {
+  .l_header {
+    max-width: 1112px;
+    left: calc((100% - 1112px) * 0.5);
+  }
+}
+@media screen and (max-width: 1112px) {
+  .l_header {
+    left: 0;
+    border-radius: 0;
+    -webkit-border-radius: 0;
+    max-width: 100%;
+  }
+}
+@media screen and (max-width: 500px) {
+  .l_header .container {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .l_header #wrapper .nav-main .title {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  .l_header #wrapper .nav-sub {
+    width: 100%;
+  }
+  .l_header #wrapper .nav-sub .title {
+    overflow-y: scroll;
+    margin-top: 2px;
+    padding: 8px 16px;
+  }
+  .l_header #wrapper .switcher {
+    display: -webkit-box /* OLD - iOS 6-, Safari 3.1-6 */;
+    display: -moz-box /* OLD - Firefox 19- (buggy but mostly works) */;
+    display: -ms-flexbox /* TWEENER - IE 10 */;
+    display: -webkit-flex /* NEW - Chrome */;
+    display: flex /* NEW, Spec - Opera 12.1, Firefox 20+ */;
+    display: flex;
+    margin-right: 8px;
+  }
+  .l_header .menu {
+    display: -webkit-box /* OLD - iOS 6-, Safari 3.1-6 */;
+    display: -moz-box /* OLD - Firefox 19- (buggy but mostly works) */;
+    display: none;
+  }
+}
+@media screen and (max-width: 500px) {
+  .list-v li {
+    max-width: 270px;
+  }
+}
+#u-search {
+  display: -webkit-box /* OLD - iOS 6-, Safari 3.1-6 */;
+  display: -moz-box /* OLD - Firefox 19- (buggy but mostly works) */;
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 60px 20px;
+  z-index: 1001;
+}
+@media screen and (max-width: 680px) {
+  #u-search {
+    padding: 0px;
+  }
+}
+@media screen and (prefers-color-scheme: dark) and (max-width: 500px) {
+  .l_header .m_search {
+    background: var(--color-site-bg) !important;
+  }
+}
+
+  </style>
+  <link rel="stylesheet" href="/css/style.css?time=1641785418108" media="print" onload="this.media='all';this.onload=null">
+  <noscript><link rel="stylesheet" href="/css/style.css?time=1641785418108"></noscript>
+    <script>
+      var userColorScheme=localStorage.getItem("color-scheme")
+      if(userColorScheme){
+        document.documentElement.setAttribute("color-scheme", userColorScheme);
+      }
+    </script>
+  
+<script>
+if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMode))
+    document.write(
+	'<style>'+
+		'html{'+
+			'overflow-x: hidden !important;'+
+			'overflow-y: hidden !important;'+
+		'}'+
+		'.kill-ie{'+
+			'text-align:center;'+
+			'height: 100%;'+
+			'margin-top: 15%;'+
+			'margin-bottom: 5500%;'+
+		'}'+
+    '.kill-t{'+
+      'font-size: 2rem;'+
+    '}'+
+    '.kill-c{'+
+      'font-size: 1.2rem;'+
+    '}'+
+		'#l_header,#l_body{'+
+			'display: none;'+
+		'}'+
+	'</style>'+
+    '<div class="kill-ie">'+
+        `<span class="kill-t"><b>抱歉，您的浏览器无法访问本站</b></span><br/>`+
+        `<span class="kill-c">微软已经于2016年终止了对 Internet Explorer (IE) 10 及更早版本的支持，<br/>继续使用存在极大的安全隐患，请使用当代主流的浏览器进行访问。</span><br/>`+
+        `<a target="_blank" rel="noopener" href="https://www.microsoft.com/zh-cn/WindowsForBusiness/End-of-IE-support"><strong>了解详情 ></strong></a>`+
+    '</div>');
+</script>
+
+
+<noscript>
+	<style>
+		html{
+			overflow-x: hidden !important;
+			overflow-y: hidden !important;
+		}
+		.kill-noscript{
+			text-align:center;
+			height: 100%;
+			margin-top: 15%;
+			margin-bottom: 5500%;
+		}
+    .kill-t{
+      font-size: 2rem;
+    }
+    .kill-c{
+      font-size: 1.2rem;
+    }
+		#l_header,#l_body{
+			display: none;
+		}
+	</style>
+    <div class="kill-noscript">
+        <span class="kill-t"><b>抱歉，您的浏览器无法访问本站</b></span><br/>
+        <span class="kill-c">本页面需要浏览器支持（启用）JavaScript</span><br/>
+        <a target="_blank" rel="noopener" href="https://www.baidu.com/s?wd=启用JavaScript"><strong>了解详情 ></strong></a>
+    </div>
+</noscript>
+
+
+  <script>
+  /************这个文件存放不需要重载的全局变量和全局函数*********/
+  window.volantis = {}; // volantis 全局变量
+  volantis.dom = {}; // 页面Dom see: /source/js/app.js etc.
+  /******************** volantis.EventListener ********************************/
+  // 事件监听器 see: /source/js/app.js
+  volantis.EventListener = {}
+  // 这里存放pjax切换页面时将被移除的事件监听器
+  volantis.EventListener.list = []
+  //构造方法
+  function volantisEventListener(type, f, ele) {
+    this.type = type
+    this.f = f
+    this.ele = ele
+  }
+  // 移除事件监听器
+  volantis.EventListener.remove = () => {
+    volantis.EventListener.list.forEach(function (i) {
+      i.ele.removeEventListener(i.type, i.f, false)
+    })
+    volantis.EventListener.list = []
+  }
+  /******************** volantis.dom.$ ********************************/
+  // 注：这里没有选择器，也没有forEach一次只处理一个dom，这里重新封装主题常用的dom方法，返回的是dom对象，对象包含了以下方法，同时保留dom的原生API
+  function volantisDom(ele) {
+    if (!ele) ele = document.createElement("div")
+    this.ele = ele;
+    // ==============================================================
+    this.ele.find = (c) => {
+      let q = this.ele.querySelector(c)
+      if (q)
+        return new volantisDom(q)
+    }
+    // ==============================================================
+    this.ele.hasClass = (c) => {
+      return this.ele.className.match(new RegExp('(\\s|^)' + c + '(\\s|$)'));
+    }
+    this.ele.addClass = (c) => {
+      this.ele.classList.add(c);
+      return this.ele
+    }
+    this.ele.removeClass = (c) => {
+      this.ele.classList.remove(c);
+      return this.ele
+    }
+    this.ele.toggleClass = (c) => {
+      if (this.ele.hasClass(c)) {
+        this.ele.removeClass(c)
+      } else {
+        this.ele.addClass(c)
+      }
+      return this.ele
+    }
+    // ==============================================================
+    // 参数 r 为 true 表示pjax切换页面时事件监听器将被移除，false不移除
+    this.ele.on = (c, f, r = 1) => {
+      this.ele.addEventListener(c, f, false)
+      if (r) {
+        volantis.EventListener.list.push(new volantisEventListener(c, f, this.ele))
+      }
+      return this.ele
+    }
+    this.ele.click = (f, r) => {
+      this.ele.on("click", f, r)
+      return this.ele
+    }
+    this.ele.scroll = (f, r) => {
+      this.ele.on("scroll", f, r)
+      return this.ele
+    }
+    // ==============================================================
+    this.ele.html = (c) => {
+      // if(c=== undefined){
+      //   return this.ele.innerHTML
+      // }else{
+      this.ele.innerHTML = c
+      return this.ele
+      // }
+    }
+    // ==============================================================
+    this.ele.hide = (c) => {
+      this.ele.style.display = "none"
+      return this.ele
+    }
+    this.ele.show = (c) => {
+      this.ele.style.display = "block"
+      return this.ele
+    }
+    // ==============================================================
+    return this.ele
+  }
+  volantis.dom.$ = (ele) => {
+    return !!ele ? new volantisDom(ele) : null;
+  }
+  /******************** RunItem ********************************/
+  function RunItem() {
+    this.list = []; // 存放回调函数
+    this.start = () => {
+      for (var i = 0; i < this.list.length; i++) {
+        this.list[i].run();
+      }
+    };
+    this.push = (fn, name, setRequestAnimationFrame = true) => {
+      let myfn = fn
+      if (setRequestAnimationFrame) {
+        myfn = ()=>{
+          volantis.requestAnimationFrame(fn)
+        }
+      }
+      var f = new Item(myfn, name);
+      this.list.push(f);
+    };
+    this.remove = (name) =>{
+      for (let index = 0; index < this.list.length; index++) {
+        const e = this.list[index];
+        if (e.name == name) {
+          this.list.splice(index,1);
+        }
+      }
+    }
+    // 构造一个可以run的对象
+    function Item(fn, name) {
+      // 函数名称
+      this.name = name || fn.name;
+      // run方法
+      this.run = () => {
+        try {
+          fn()
+        } catch (error) {
+          console.log(error);
+        }
+      };
+    }
+  }
+  /******************** Pjax ********************************/
+  // /layout/_plugins/pjax/index.ejs
+  // volantis.pjax.send(callBack[,"callBackName"]) 传入pjax:send回调函数
+  // volantis.pjax.push(callBack[,"callBackName"]) 传入pjax:complete回调函数
+  // volantis.pjax.error(callBack[,"callBackName"]) 传入pjax:error回调函数
+  volantis.pjax = {};
+  volantis.pjax.method = {
+    complete: new RunItem(),
+    error: new RunItem(),
+    send: new RunItem(),
+  };
+  volantis.pjax = {
+    ...volantis.pjax,
+    push: volantis.pjax.method.complete.push,
+    error: volantis.pjax.method.error.push,
+    send: volantis.pjax.method.send.push,
+  };
+  /********************  Dark Mode  ********************************/
+  // /layout/_partial/scripts/darkmode.ejs
+  // volantis.dark.mode 当前模式 dark or light
+  // volantis.dark.toggle() 暗黑模式触发器
+  // volantis.dark.push(callBack[,"callBackName"]) 传入触发器回调函数
+  volantis.dark = {};
+  volantis.dark.method = {
+    toggle: new RunItem(),
+  };
+  volantis.dark = {
+    ...volantis.dark,
+    push: volantis.dark.method.toggle.push,
+  };
+  /********************  Message  ********************************/
+  // /layout/_plugins/message/script.ejs
+  // volantis.message
+  /********************  isMobile  ********************************/
+  // /source/js/app.js
+  // volantis.isMobile
+  // volantis.isMobileOld
+  /********************脚本动态加载函数********************************/
+  // volantis.js(src, cb)  cb 可以传入onload回调函数 或者 JSON对象 例如: volantis.js("src", ()=>{}) 或 volantis.js("src", {defer:true,onload:()=>{}})
+  // volantis.css(src)
+
+  // 返回Promise对象，如下方法同步加载资源，这利于处理文件资源之间的依赖关系，例如：APlayer 需要在 MetingJS 之前加载
+  // (async () => {
+  //     await volantis.js("...theme.plugins.aplayer.js.aplayer...")
+  //     await volantis.js("...theme.plugins.aplayer.js.meting...")
+  // })();
+
+  // 已经加入了setTimeout
+  volantis.js = (src, cb) => {
+    return new Promise(resolve => {
+      setTimeout(function () {
+        var HEAD = document.getElementsByTagName("head")[0] || document.documentElement;
+        var script = document.createElement("script");
+        script.setAttribute("type", "text/javascript");
+        if (cb) {
+          if (JSON.stringify(cb)) {
+            for (let p in cb) {
+              if (p == "onload") {
+                script[p] = () => {
+                  cb[p]()
+                  resolve()
+                }
+              } else {
+                script[p] = cb[p]
+                script.onload = resolve
+              }
+            }
+          } else {
+            script.onload = () => {
+              cb()
+              resolve()
+            };
+          }
+        } else {
+          script.onload = resolve
+        }
+        script.setAttribute("src", src);
+        HEAD.appendChild(script);
+      });
+    });
+  }
+  volantis.css = (src) => {
+    return new Promise(resolve => {
+      setTimeout(function () {
+        var link = document.createElement('link');
+        link.rel = "stylesheet";
+        link.href = src;
+        link.onload = resolve;
+        document.getElementsByTagName("head")[0].appendChild(link);
+      });
+    });
+  }
+  /********************按需加载的插件********************************/
+  // volantis.import.jQuery().then(()=>{})
+  volantis.import = {
+    jQuery: () => {
+      if (typeof jQuery == "undefined") {
+        return volantis.js("https://unpkg.zhimg.com/jquery@3.5/dist/jquery.min.js")
+      } else {
+        return new Promise(resolve => {
+          resolve()
+        });
+      }
+    }
+  }
+  /********************** requestAnimationFrame ********************************/
+  // 1、requestAnimationFrame 会把每一帧中的所有 DOM 操作集中起来，在一次重绘或回流中就完成，并且重绘或回流的时间间隔紧紧跟随浏览器的刷新频率，一般来说，这个频率为每秒60帧。
+  // 2、在隐藏或不可见的元素中，requestAnimationFrame 将不会进行重绘或回流，这当然就意味着更少的的 cpu，gpu 和内存使用量。
+  volantis.requestAnimationFrame = (fn)=>{
+    if (!window.requestAnimationFrame) {
+      window.requestAnimationFrame = window.requestAnimationFrame || window.mozRequestAnimationFrame || window.webkitRequestAnimationFrame;
+    }
+    window.requestAnimationFrame(fn)
+  }
+  /************************ layoutHelper *****************************************/
+  volantis.layoutHelper = (helper, html, opt)=>{
+    opt = Object.assign({clean:false, pjax:true}, opt)
+    function myhelper(helper, html, clean) {
+      volantis.tempDiv = document.createElement("div");
+      volantis.tempDiv.innerHTML = html;
+      let layoutHelper = document.querySelector("#layoutHelper-"+helper)
+      if (layoutHelper) {
+        if (clean) {
+          layoutHelper.innerHTML = ""
+        }
+        layoutHelper.append(volantis.tempDiv);
+      }
+    }
+    myhelper(helper, html, opt.clean)
+    if (opt.pjax) {
+      volantis.pjax.push(()=>{
+        myhelper(helper, html, opt.clean)
+      },"layoutHelper-"+helper)
+    }
+  }
+  /****************************** 滚动事件处理 ****************************************/
+  volantis.scroll = {
+    engine: new RunItem(),
+    unengine: new RunItem(),
+  };
+  volantis.scroll = {
+    ...volantis.scroll,
+    push: volantis.scroll.engine.push,
+  };
+  // 滚动条距离顶部的距离
+  volantis.scroll.getScrollTop = () =>{
+    let scrollPos;
+    if (window.pageYOffset) {
+      scrollPos = window.pageYOffset;
+    } else if (document.compatMode && document.compatMode != 'BackCompat') {
+      scrollPos = document.documentElement.scrollTop;
+    } else if (document.body) {
+      scrollPos = document.body.scrollTop;
+    }
+    return scrollPos;
+  }
+  // 使用 requestAnimationFrame 处理滚动事件
+  // `volantis.scroll.del` 中存储了一个数值, 该数值检测一定时间间隔内滚动条滚动的位移, 数值的检测频率是浏览器的刷新频率. 数值为正数时, 表示向下滚动. 数值为负数时, 表示向上滚动.
+  volantis.scroll.handleScrollEvents = () => {
+    volantis.scroll.lastScrollTop = volantis.scroll.getScrollTop()
+    function loop() {
+      const scrollTop = volantis.scroll.getScrollTop();
+      if (volantis.scroll.lastScrollTop !== scrollTop) {
+        volantis.scroll.del = scrollTop - volantis.scroll.lastScrollTop;
+        volantis.scroll.lastScrollTop = scrollTop;
+        // if (volantis.scroll.del > 0) {
+        //   console.log("向下滚动");
+        // } else {
+        //   console.log("向上滚动");
+        // }
+        volantis.scroll.engine.start();
+      }else{
+        volantis.scroll.unengine.start();
+      }
+      volantis.requestAnimationFrame(loop)
+    }
+    volantis.requestAnimationFrame(loop)
+  }
+  volantis.scroll.handleScrollEvents()
+  // 触发页面滚动至目标元素位置
+  volantis.scroll.to = (ele, option = {}) =>{
+    // 默认配置
+    opt = {
+      top: ele.getBoundingClientRect().top + document.documentElement.scrollTop,
+      behavior: "smooth"
+    }
+    // 定义配置
+    if ("top" in option) {
+      opt.top = option.top
+    }
+    if ("behavior" in option) {
+      opt.behavior = option.behavior
+    }
+    if ("addTop" in option) {
+      opt.top += option.addTop
+    }
+    if (!("observerDic" in option)) {
+      option.observerDic = 25
+    }
+    // 滚动
+    window.scrollTo(opt);
+    // 监视器
+    // 监视并矫正元素滚动到指定位置 
+    // 目前用于处理 toc 部分 lazyload 引起的 cls 导致的定位失败问题
+    if (option.observer) {
+      volantis.scroll.unengine.push(()=>{
+        let me = ele.getBoundingClientRect().top
+        if(!(me >= -option.observerDic && me <= option.observerDic)){
+          volantis.scroll.to(ele, option)
+        }else{
+          volantis.scroll.unengine.remove("unengineObserver")
+        }
+      },"unengineObserver")
+    }
+  }
+  /******************************************************************************/
+  /******************************************************************************/
+</script>
+  <!-- Custom Files head begin-->
+  
+  <!-- Custom Files head end-->
+<!-- hexo injector head_end start --><link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Zfour/hexo-electric-clock@1.0.6/clock.css"><!-- hexo injector head_end end --></head>
+  <body itemscope itemtype="http://schema.org/WebPage">
+    <header itemscope itemtype="http://schema.org/WPHeader" id="l_header" class="l_header auto shadow floatable blur show" style='opacity: 0' >
+  <div class='container'>
+  <div id='wrapper'>
+    <div class='nav-sub'>
+      <p class="title"></p>
+      <ul class='switcher nav-list-h m-phone' id="pjax-header-nav-list">
+        <li><a id="s-comment" class="fas fa-comments fa-fw" target="_self"  href="/" onclick="return false;" title="comment"></a></li>
+        
+          <li><a id="s-toc" class="s-toc fas fa-list fa-fw" target="_self"  href="/" onclick="return false;" title="toc"></a></li>
+        
+      </ul>
+    </div>
+		<div class="nav-main">
+      
+        
+        <a class="title flat-box" target="_self" href='/'>
+          
+          
+          
+            云墨小站
+          
+        </a>
+      
+
+			<div class='menu navigation'>
+				<ul class='nav-list-h m-pc'>
+          
+          
+          
+            
+            
+              <li>
+                <a class="menuitem flat-box faa-parent animated-hover" 
+                href="/" title="首页"
+                  
+                  
+                  
+                    active-action="action-home"
+                  >
+                  <i class='fal fa-home WISTERIA fa-fw'></i>首页
+                </a>
+                
+              </li>
+            
+          
+          
+            
+            
+              <li>
+                <a class="menuitem flat-box faa-parent animated-hover" 
+                 href="/" onclick="return false;" title="导航"
+                  
+                  
+                  >
+                  <i class='fal fa-cube NEPHRITIS fa-fw'></i>导航
+                </a>
+                
+                  <ul class="list-v">
+                    
+                      
+            
+              <li>
+                <a class="menuitem flat-box faa-parent animated-hover" 
+                href="/archives/" title="归档"
+                  
+                  
+                  
+                    active-action="action-archives"
+                  >
+                  <i class='fal fa-archive PETERRIVE fa-fw'></i>归档
+                </a>
+                
+              </li>
+            
+          
+                    
+                      
+            
+              <li>
+                <a class="menuitem flat-box faa-parent animated-hover" 
+                href="/tags/" title="标签"
+                  
+                  
+                  
+                    active-action="action-tags"
+                  >
+                  <i class='fal fa-tags GREENSEA fa-fw'></i>标签
+                </a>
+                
+              </li>
+            
+          
+                    
+                      
+            
+              <li>
+                <a class="menuitem flat-box faa-parent animated-hover" 
+                href="/categories/" title="分类"
+                  
+                  
+                  
+                    active-action="action-categories"
+                  >
+                  <i class='fal fa-folder-open AMETHYST fa-fw'></i>分类
+                </a>
+                
+              </li>
+            
+          
+                    
+                      
+            
+              <li>
+                <a class="menuitem flat-box faa-parent animated-hover" 
+                target="_blank" rel="noopener" href="https://tjys.js.org" title="笔记"
+                  
+                  
+                  
+                    active-action="action-https:tjysjsorg"
+                  >
+                  <i class='fal fa-books fa-fw ALIZARIN fa-fw'></i>笔记
+                </a>
+                
+              </li>
+            
+          
+                    
+                  </ul>
+                
+              </li>
+            
+          
+          
+            
+            
+              <li>
+                <a class="menuitem flat-box faa-parent animated-hover" 
+                href="/guestbook/" title="留言"
+                  
+                  
+                  
+                    active-action="action-guestbook"
+                  >
+                  <i class='fal fa-comment-alt-smile fa-fw NEPHRITIS fa-fw'></i>留言
+                </a>
+                
+              </li>
+            
+          
+          
+            
+            
+              <li>
+                <a class="menuitem flat-box faa-parent animated-hover" 
+                href="/links/" title="友链"
+                  
+                  
+                  
+                    active-action="action-links"
+                  >
+                  <i class='fal fa-link PETERRIVE fa-fw'></i>友链
+                </a>
+                
+              </li>
+            
+          
+          
+            
+            
+              <li>
+                <a class="menuitem flat-box faa-parent animated-hover" 
+                href="/bb/" title="哔哔"
+                  
+                  
+                  
+                    active-action="action-bb"
+                  >
+                  <i class='fal fa-comment-dots fa-fw PETERRIVE fa-fw'></i>哔哔
+                </a>
+                
+              </li>
+            
+          
+          
+            
+            
+              <li>
+                <a class="menuitem flat-box faa-parent animated-hover" 
+                 href="/" onclick="return false;" title="更多"
+                  
+                  
+                  >
+                  <i class='fal fa-redo fa-spin POMEGRANATE fa-fw'></i>更多
+                </a>
+                
+                  <ul class="list-v">
+                    
+                      
+            
+              <li>
+                <a class="menuitem flat-box faa-parent animated-hover" 
+                href="/about/" title="关于"
+                  
+                  
+                  
+                    active-action="action-about"
+                  >
+                  <i class='fal fa-address-card ORANGE fa-fw'></i>关于
+                </a>
+                
+              </li>
+            
+          
+                    
+                      
+            
+              <li>
+                <a class="menuitem flat-box faa-parent animated-hover" 
+                target="_blank" rel="noopener" href="https://tjysnav.vercel.app/" title="宝盒"
+                  
+                  
+                  
+                    active-action="action-https:tjysnavvercelapp"
+                  >
+                  <i class='fal fa-toolbox PUMPKIN fa-fw'></i>宝盒
+                </a>
+                
+              </li>
+            
+          
+                    
+                      
+            
+              <li>
+                <a class="menuitem flat-box faa-parent animated-hover" 
+                target="_blank" rel="noopener" href="https://music.qikaile.tk/" title="歌单"
+                  
+                  
+                  
+                    active-action="action-https:musicqikailetk"
+                  >
+                  <i class='fal fa-music WISTERIA fa-fw'></i>歌单
+                </a>
+                
+              </li>
+            
+          
+                    
+                      
+            
+              <li>
+                <a class="menuitem flat-box faa-parent animated-hover" 
+                target="_blank" rel="noopener" href="https://travellings.link/" title="开往"
+                  
+                  
+                  
+                    active-action="action-https:travellingslink"
+                  >
+                  <i class='fal fa-subway AMETHYST fa-fw'></i>开往
+                </a>
+                
+              </li>
+            
+          
+                    
+                      
+            
+              <li>
+                <a class="menuitem flat-box faa-parent animated-hover" 
+                target="_blank" rel="noopener" href="http://qkl.gearhostpreview.com/" title="要饭"
+                  
+                  
+                  
+                    active-action="action-http:qklgearhostpreviewcom"
+                  >
+                  <i class='fal fa-donate ORANGE fa-fw'></i>要饭
+                </a>
+                
+              </li>
+            
+          
+                    
+                      
+            
+              <li>
+                <a class="menuitem flat-box faa-parent animated-hover" 
+                href="/atom.xml" title="RSS订阅"
+                  
+                  
+                  
+                    active-action="action-atomxml"
+                  >
+                  <i class='fad fa-rss PETERRIVE fa-fw'></i>RSS订阅
+                </a>
+                
+              </li>
+            
+          
+                    
+                      
+            
+              <li>
+                <a class="menuitem flat-box faa-parent animated-hover" 
+                href="/vadmin/" title="评论管理"
+                  
+                  
+                  
+                    active-action="action-vadmin"
+                  >
+                  <i class='fal fa-comments PETERRIVE fa-fw'></i>评论管理
+                </a>
+                
+              </li>
+            
+          
+                    
+                      
+            
+              <li>
+                <a class="menuitem flat-box header toggle-mode-btn" href="/" onclick="return false;" title="Click me!" >
+                  <i class='fas fa-moon fa-fw'></i>暗黑模式
+                </a>
+              <li>
+            
+          
+                    
+                  </ul>
+                
+              </li>
+            
+          
+          
+				</ul>
+			</div>
+
+      <div class="m_search">
+        <form name="searchform" class="form u-search-form">
+          <i class="icon fas fa-search fa-fw"></i>
+          <input type="text" class="input u-search-input" placeholder="搜索...(◕ܫ◕)" />
+        </form>
+      </div>
+
+			<ul class='switcher nav-list-h m-phone'>
+				
+					<li><a class="s-search fas fa-search fa-fw" target="_self" href="/" onclick="return false;" title="search"></a></li>
+				
+				<li>
+          <a class="s-menu fas fa-bars fa-fw" target="_self" href="/" onclick="return false;" title="menu"></a>
+          <ul class="menu-phone list-v navigation white-box">
+            
+              
+            
+              <li>
+                <a class="menuitem flat-box faa-parent animated-hover" 
+                href="/" title="首页"
+                  
+                  
+                  
+                    active-action="action-home"
+                  >
+                  <i class='fal fa-home WISTERIA fa-fw'></i>首页
+                </a>
+                
+              </li>
+            
+          
+            
+              
+            
+              <li>
+                <a class="menuitem flat-box faa-parent animated-hover" 
+                 href="/" onclick="return false;" title="导航"
+                  
+                  
+                  >
+                  <i class='fal fa-cube NEPHRITIS fa-fw'></i>导航
+                </a>
+                
+                  <ul class="list-v">
+                    
+                      
+            
+              <li>
+                <a class="menuitem flat-box faa-parent animated-hover" 
+                href="/archives/" title="归档"
+                  
+                  
+                  
+                    active-action="action-archives"
+                  >
+                  <i class='fal fa-archive PETERRIVE fa-fw'></i>归档
+                </a>
+                
+              </li>
+            
+          
+                    
+                      
+            
+              <li>
+                <a class="menuitem flat-box faa-parent animated-hover" 
+                href="/tags/" title="标签"
+                  
+                  
+                  
+                    active-action="action-tags"
+                  >
+                  <i class='fal fa-tags GREENSEA fa-fw'></i>标签
+                </a>
+                
+              </li>
+            
+          
+                    
+                      
+            
+              <li>
+                <a class="menuitem flat-box faa-parent animated-hover" 
+                href="/categories/" title="分类"
+                  
+                  
+                  
+                    active-action="action-categories"
+                  >
+                  <i class='fal fa-folder-open AMETHYST fa-fw'></i>分类
+                </a>
+                
+              </li>
+            
+          
+                    
+                      
+            
+              <li>
+                <a class="menuitem flat-box faa-parent animated-hover" 
+                target="_blank" rel="noopener" href="https://tjys.js.org" title="笔记"
+                  
+                  
+                  
+                    active-action="action-https:tjysjsorg"
+                  >
+                  <i class='fal fa-books fa-fw ALIZARIN fa-fw'></i>笔记
+                </a>
+                
+              </li>
+            
+          
+                    
+                  </ul>
+                
+              </li>
+            
+          
+            
+              
+            
+              <li>
+                <a class="menuitem flat-box faa-parent animated-hover" 
+                href="/guestbook/" title="留言"
+                  
+                  
+                  
+                    active-action="action-guestbook"
+                  >
+                  <i class='fal fa-comment-alt-smile fa-fw NEPHRITIS fa-fw'></i>留言
+                </a>
+                
+              </li>
+            
+          
+            
+              
+            
+              <li>
+                <a class="menuitem flat-box faa-parent animated-hover" 
+                href="/links/" title="友链"
+                  
+                  
+                  
+                    active-action="action-links"
+                  >
+                  <i class='fal fa-link PETERRIVE fa-fw'></i>友链
+                </a>
+                
+              </li>
+            
+          
+            
+              
+            
+              <li>
+                <a class="menuitem flat-box faa-parent animated-hover" 
+                href="/bb/" title="哔哔"
+                  
+                  
+                  
+                    active-action="action-bb"
+                  >
+                  <i class='fal fa-comment-dots fa-fw PETERRIVE fa-fw'></i>哔哔
+                </a>
+                
+              </li>
+            
+          
+            
+              
+            
+              <li>
+                <a class="menuitem flat-box faa-parent animated-hover" 
+                 href="/" onclick="return false;" title="更多"
+                  
+                  
+                  >
+                  <i class='fal fa-redo fa-spin POMEGRANATE fa-fw'></i>更多
+                </a>
+                
+                  <ul class="list-v">
+                    
+                      
+            
+              <li>
+                <a class="menuitem flat-box faa-parent animated-hover" 
+                href="/about/" title="关于"
+                  
+                  
+                  
+                    active-action="action-about"
+                  >
+                  <i class='fal fa-address-card ORANGE fa-fw'></i>关于
+                </a>
+                
+              </li>
+            
+          
+                    
+                      
+            
+              <li>
+                <a class="menuitem flat-box faa-parent animated-hover" 
+                target="_blank" rel="noopener" href="https://tjysnav.vercel.app/" title="宝盒"
+                  
+                  
+                  
+                    active-action="action-https:tjysnavvercelapp"
+                  >
+                  <i class='fal fa-toolbox PUMPKIN fa-fw'></i>宝盒
+                </a>
+                
+              </li>
+            
+          
+                    
+                      
+            
+              <li>
+                <a class="menuitem flat-box faa-parent animated-hover" 
+                target="_blank" rel="noopener" href="https://music.qikaile.tk/" title="歌单"
+                  
+                  
+                  
+                    active-action="action-https:musicqikailetk"
+                  >
+                  <i class='fal fa-music WISTERIA fa-fw'></i>歌单
+                </a>
+                
+              </li>
+            
+          
+                    
+                      
+            
+              <li>
+                <a class="menuitem flat-box faa-parent animated-hover" 
+                target="_blank" rel="noopener" href="https://travellings.link/" title="开往"
+                  
+                  
+                  
+                    active-action="action-https:travellingslink"
+                  >
+                  <i class='fal fa-subway AMETHYST fa-fw'></i>开往
+                </a>
+                
+              </li>
+            
+          
+                    
+                      
+            
+              <li>
+                <a class="menuitem flat-box faa-parent animated-hover" 
+                target="_blank" rel="noopener" href="http://qkl.gearhostpreview.com/" title="要饭"
+                  
+                  
+                  
+                    active-action="action-http:qklgearhostpreviewcom"
+                  >
+                  <i class='fal fa-donate ORANGE fa-fw'></i>要饭
+                </a>
+                
+              </li>
+            
+          
+                    
+                      
+            
+              <li>
+                <a class="menuitem flat-box faa-parent animated-hover" 
+                href="/atom.xml" title="RSS订阅"
+                  
+                  
+                  
+                    active-action="action-atomxml"
+                  >
+                  <i class='fad fa-rss PETERRIVE fa-fw'></i>RSS订阅
+                </a>
+                
+              </li>
+            
+          
+                    
+                      
+            
+              <li>
+                <a class="menuitem flat-box faa-parent animated-hover" 
+                href="/vadmin/" title="评论管理"
+                  
+                  
+                  
+                    active-action="action-vadmin"
+                  >
+                  <i class='fal fa-comments PETERRIVE fa-fw'></i>评论管理
+                </a>
+                
+              </li>
+            
+          
+                    
+                      
+            
+              <li>
+                <a class="menuitem flat-box header toggle-mode-btn" href="/" onclick="return false;" title="Click me!" >
+                  <i class='fas fa-moon fa-fw'></i>暗黑模式
+                </a>
+              <li>
+            
+          
+                    
+                  </ul>
+                
+              </li>
+            
+          
+            
+          </ul>
+        </li>
+			</ul>
+
+      <!-- Custom Files header begin -->
+      
+      <!-- Custom Files header end -->
+		</div>
+	</div>
+  </div>
+</header>
+
+    <div id="l_body">
+      <div id="l_cover">
+  
+    
+      <!-- see: /layout/_partial/scripts/_ctrl/coverCtrl.ejs -->
+      <div id="none" class='cover-wrapper post featured' style="display: none;">
+        
+  <div class='cover-bg lazyload placeholder' data-bg="https://cdn.jsdelivr.net/gh/Qikaile/cdn/img/home_top_bg.png"></div>
+
+<div class='cover-body'>
+  <div class='top'>
+    
+      <img no-lazy class='logo' src='https://cdn.jsdelivr.net/gh/Qikaile/cdn@master/img/bloglogo.36pedn0vy2w0.png' alt="This is a picture without description" />
+    
+    
+    
+  </div>
+  <div class='bottom'>
+    <div class='menu navigation'>
+      <div class='list-h'>
+        
+          
+            <a href="/"
+              
+              
+              active-action="action-home">
+              <i class='fad fa-home WISTERIA fa-fw'></i><p>首页</p>
+            </a>
+          
+            <a href="/archives/"
+              
+              
+              active-action="action-archives">
+              <i class='fad fa-archive GREENSEA fa-fw'></i><p>归档</p>
+            </a>
+          
+            <a href="/shuoshuo/"
+              
+              
+              active-action="action-shuoshuo">
+              <i class='fad fa-comment-dots fa-fw NEPHRITIS fa-fw'></i><p>说说</p>
+            </a>
+          
+            <a href="/links/"
+              
+              
+              active-action="action-links">
+              <i class='fad fa-link PETERRIVE fa-fw'></i><p>友链</p>
+            </a>
+          
+            <a target="_blank" rel="noopener" href="https://travellings.link/"
+              
+              
+              active-action="action-https:travellingslink">
+              <i class='fad fa-subway AMETHYST fa-fw'></i><p>开往</p>
+            </a>
+          
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+        <div id="scroll-down" style="display: none;"><i class="fa fa-chevron-down scroll-down-effects"></i></div>
+      </div>
+    
+  
+</div>
+
+      <div id="safearea">
+        <div class="body-wrapper">
+          
+<div id="l_main" class=''>
+  <article itemscope itemtype="http://schema.org/Article" class="article post white-box reveal md shadow floatable article-type-post" id="post" itemscope itemprop="blogPost">
+  <link itemprop="mainEntityOfPage" href="https://qikaile.tk/hexo-emoji.html">
+  <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+    <meta itemprop="name" content="云墨小站">
+  </span>
+  
+
+
+  
+    <div class='headimg-div'>
+      <a class='headimg-a' href="/" onclick="return false;" title="Click me!" >
+        <img itemprop="image" class='headimg' src='https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/015.jpg' alt="This is a picture without description" />
+      </a>
+    </div>
+  
+  <div class="article-meta" id="top">
+    
+    
+    
+      <h1 class="title" itemprop="name headline">
+        Hexo中使用emoji表情
+      </h1>
+      <div class='new-meta-box'>
+        
+          
+            
+<div class='new-meta-item author' itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <a itemprop="url" class='author' href="/" rel="nofollow">
+    <img itemprop="image" src="https://cdn.jsdelivr.net/gh/Qikaile/cdn/img/-1427d877db8c4c5c.jpg" class="lazyload" data-srcset="https://cdn.jsdelivr.net/gh/Qikaile/cdn/img/-1427d877db8c4c5c.jpg" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="This is a picture without description" >
+    <p itemprop="name">墨明</p>
+  </a>
+</div>
+
+          
+        
+          
+            
+  <div class="new-meta-item wordcount">
+    <a class='notlink' href="/" onclick="return false;" title="Click me!" >
+      <i class="fal fa-keyboard PETERRIVE fa-fw" aria-hidden="true"></i>
+      <p>字数：884 字</p>
+    </a>
+  </div>
+  <div class="new-meta-item readtime">
+    <a class='notlink' href="/" onclick="return false;" title="Click me!" >
+      <i class="fal fa-hourglass-half BELIZEHOLE fa-fw" aria-hidden="true"></i>
+      <p>时长：5 分钟</p>
+    </a>
+  </div>
+
+
+          
+        
+          
+            
+  <div class='new-meta-item category'>
+    <i class="fal fa-folder-open EMERALD fa-fw" aria-hidden="true"></i>
+    <a class="category-link" href="/categories/Hexo/">Hexo</a>
+    
+      <span hidden itemprop="about" itemscope itemtype="http://schema.org/Thing">
+        <a href="/categories/Hexo/" itemprop="url"><span itemprop="name">Hexo</span></a>
+      </span>
+    
+  </div>
+
+
+          
+        
+          
+            
+  <div class="new-meta-item browse leancloud">
+    <a class='notlink' href="/" onclick="return false;" title="Click me!" >
+      
+      <div id="lc-pv" data-title="Hexo中使用emoji表情" data-path="/hexo-emoji.html">
+        <i class="fal fa-eye NEPHRITIS fa-fw" aria-hidden="true"></i>
+        <span id='number'><i class="fas fa-circle-notch fa-spin fa-fw" aria-hidden="true"></i></span>
+        次浏览
+      </div>
+    </a>
+  </div>
+
+
+          
+        
+        <!-- Custom Files topMeta begin-->
+        
+        <!-- Custom Files topMeta end-->
+      </div>
+    
+  </div>
+
+
+  <div id="layoutHelper-page-plugins"></div>
+  <div id="post-body" itemprop="articleBody">
+    <h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><div class="story post-story"><p>输入对应的emoji编码就行了<br>例如：输入笑脸对应的 emoji 编码 <code>:smile:</code> 就可以得到 :smile:</p>
+</div><h2 id="emoji编码合集"><a href="#emoji编码合集" class="headerlink" title="emoji编码合集"></a>emoji编码合集</h2><div class="story post-story"><p>People</p>
+<table>
+<thead>
+<tr>
+<th align="left">😐 <code>:neutral_face:</code></th>
+<th align="left">😄 <code>:smile:</code></th>
+<th align="left">😆 <code>:laughing:</code></th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">😊 <code>:blush:</code></td>
+<td align="left">😃 <code>:smiley:</code></td>
+<td align="left">☺️ <code>:relaxed:</code></td>
+</tr>
+<tr>
+<td align="left">😏 <code>:smirk:</code></td>
+<td align="left">😍 <code>:heart_eyes:</code></td>
+<td align="left">😘 <code>:kissing_heart:</code></td>
+</tr>
+<tr>
+<td align="left">😚 <code>:kissing_closed_eyes:</code></td>
+<td align="left">😳 <code>:flushed:</code></td>
+<td align="left">😌 <code>:relieved:</code></td>
+</tr>
+<tr>
+<td align="left">😆 <code>:satisfied:</code></td>
+<td align="left">😁 <code>:grin:</code></td>
+<td align="left">😉 <code>:wink:</code></td>
+</tr>
+<tr>
+<td align="left">😜 <code>:stuck_out_tongue_winking_eye:</code></td>
+<td align="left">😝 <code>:stuck_out_tongue_closed_eyes:</code></td>
+<td align="left">😀 <code>:grinning:</code></td>
+</tr>
+<tr>
+<td align="left">😗 <code>:kissing:</code></td>
+<td align="left">😙 <code>:kissing_smiling_eyes:</code></td>
+<td align="left">😛 <code>:stuck_out_tongue:</code></td>
+</tr>
+<tr>
+<td align="left">😴 <code>:sleeping:</code></td>
+<td align="left">😟 <code>:worried:</code></td>
+<td align="left">😦 <code>:frowning:</code></td>
+</tr>
+<tr>
+<td align="left">😧 <code>:anguished:</code></td>
+<td align="left">😮 <code>:open_mouth:</code></td>
+<td align="left">😬 <code>:grimacing:</code></td>
+</tr>
+<tr>
+<td align="left">😕 <code>:confused:</code></td>
+<td align="left">😯 <code>:hushed:</code></td>
+<td align="left">😑 <code>:expressionless:</code></td>
+</tr>
+<tr>
+<td align="left">😒 <code>:unamused:</code></td>
+<td align="left">😅 <code>:sweat_smile:</code></td>
+<td align="left">😓 <code>:sweat:</code></td>
+</tr>
+<tr>
+<td align="left">😥 <code>:disappointed_relieved:</code></td>
+<td align="left">😩 <code>:weary:</code></td>
+<td align="left">😔 <code>:pensive:</code></td>
+</tr>
+<tr>
+<td align="left">😞 <code>:disappointed:</code></td>
+<td align="left">😖 <code>:confounded:</code></td>
+<td align="left">😨 <code>:fearful:</code></td>
+</tr>
+<tr>
+<td align="left">😰 <code>:cold_sweat:</code></td>
+<td align="left">😣 <code>:persevere:</code></td>
+<td align="left">😢 <code>:cry:</code></td>
+</tr>
+<tr>
+<td align="left">😭 <code>:sob:</code></td>
+<td align="left">😂 <code>:joy:</code></td>
+<td align="left">😲 <code>:astonished:</code></td>
+</tr>
+<tr>
+<td align="left">😱 <code>:scream:</code></td>
+<td align="left">💭 <code>:thought_balloon:</code></td>
+<td align="left">😫 <code>:tired_face:</code></td>
+</tr>
+<tr>
+<td align="left">😠 <code>:angry:</code></td>
+<td align="left">😡 <code>:rage:</code></td>
+<td align="left">😤 <code>:triumph:</code></td>
+</tr>
+<tr>
+<td align="left">😪 <code>:sleepy:</code></td>
+<td align="left">😋 <code>:yum:</code></td>
+<td align="left">😷 <code>:mask:</code></td>
+</tr>
+<tr>
+<td align="left">😎 <code>:sunglasses:</code></td>
+<td align="left">😵 <code>:dizzy_face:</code></td>
+<td align="left">👿 <code>:imp:</code></td>
+</tr>
+<tr>
+<td align="left">😈 <code>:smiling_imp:</code></td>
+<td align="left">💬 <code>:speech_balloon:</code></td>
+<td align="left">😶 <code>:no_mouth:</code></td>
+</tr>
+<tr>
+<td align="left">😇 <code>:innocent:</code></td>
+<td align="left">👽 <code>:alien:</code></td>
+<td align="left">💛 <code>:yellow_heart:</code></td>
+</tr>
+<tr>
+<td align="left">💙 <code>:blue_heart:</code></td>
+<td align="left">💜 <code>:purple_heart:</code></td>
+<td align="left">❤️ <code>:heart:</code></td>
+</tr>
+<tr>
+<td align="left">💚 <code>:green_heart:</code></td>
+<td align="left">💔 <code>:broken_heart:</code></td>
+<td align="left">💓 <code>:heartbeat:</code></td>
+</tr>
+<tr>
+<td align="left">💗 <code>:heartpulse:</code></td>
+<td align="left">💕 <code>:two_hearts:</code></td>
+<td align="left">💞 <code>:revolving_hearts:</code></td>
+</tr>
+<tr>
+<td align="left">💘 <code>:cupid:</code></td>
+<td align="left">💖 <code>:sparkling_heart:</code></td>
+<td align="left">✨ <code>:sparkles:</code></td>
+</tr>
+<tr>
+<td align="left">⭐️ <code>:star:</code></td>
+<td align="left">🌟 <code>:star2:</code></td>
+<td align="left">💫 <code>:dizzy:</code></td>
+</tr>
+<tr>
+<td align="left">💥 <code>:boom:</code></td>
+<td align="left">💥 <code>:collision:</code></td>
+<td align="left">💢 <code>:anger:</code></td>
+</tr>
+<tr>
+<td align="left">❗️ <code>:exclamation:</code></td>
+<td align="left">❓ <code>:question:</code></td>
+<td align="left">❕ <code>:grey_exclamation:</code></td>
+</tr>
+<tr>
+<td align="left">❔ <code>:grey_question:</code></td>
+<td align="left">💤 <code>:zzz:</code></td>
+<td align="left">💨 <code>:dash:</code></td>
+</tr>
+<tr>
+<td align="left">💦 <code>:sweat_drops:</code></td>
+<td align="left">🎶 <code>:notes:</code></td>
+<td align="left">🎵 <code>:musical_note:</code></td>
+</tr>
+<tr>
+<td align="left">🔥 <code>:fire:</code></td>
+<td align="left">💩 <code>:hankey:</code></td>
+<td align="left">💩 <code>:poop:</code></td>
+</tr>
+<tr>
+<td align="left">💩 <code>:shit:</code></td>
+<td align="left">👍 <code>:+1:</code></td>
+<td align="left">👍 <code>:thumbsup:</code></td>
+</tr>
+<tr>
+<td align="left">👎 <code>:-1:</code></td>
+<td align="left">👎 <code>:thumbsdown:</code></td>
+<td align="left">👌 <code>:ok_hand:</code></td>
+</tr>
+<tr>
+<td align="left">👊 <code>:punch:</code></td>
+<td align="left">👊 <code>:facepunch:</code></td>
+<td align="left">✊ <code>:fist:</code></td>
+</tr>
+<tr>
+<td align="left">✌️ <code>:v:</code></td>
+<td align="left">👋 <code>:wave:</code></td>
+<td align="left">✋ <code>:hand:</code></td>
+</tr>
+<tr>
+<td align="left">✋ <code>:raised_hand:</code></td>
+<td align="left">👐 <code>:open_hands:</code></td>
+<td align="left">☝️ <code>:point_up:</code></td>
+</tr>
+<tr>
+<td align="left">👇 <code>:point_down:</code></td>
+<td align="left">👈 <code>:point_left:</code></td>
+<td align="left">👉 <code>:point_right:</code></td>
+</tr>
+<tr>
+<td align="left">🙌 <code>:raised_hands:</code></td>
+<td align="left">🙏 <code>:pray:</code></td>
+<td align="left">👆 <code>:point_up_2:</code></td>
+</tr>
+<tr>
+<td align="left">👏 <code>:clap:</code></td>
+<td align="left">💪 <code>:muscle:</code></td>
+<td align="left">🤘 <code>:metal:</code></td>
+</tr>
+<tr>
+<td align="left">🖕 <code>:fu:</code></td>
+<td align="left">🚶 <code>:walking:</code></td>
+<td align="left">🏃 <code>:runner:</code></td>
+</tr>
+<tr>
+<td align="left">🏃 <code>:running:</code></td>
+<td align="left">👫 <code>:couple:</code></td>
+<td align="left">👪 <code>:family:</code></td>
+</tr>
+<tr>
+<td align="left">👬 <code>:two_men_holding_hands:</code></td>
+<td align="left">👭 <code>:two_women_holding_hands:</code></td>
+<td align="left">💃 <code>:dancer:</code></td>
+</tr>
+<tr>
+<td align="left">👯 <code>:dancers:</code></td>
+<td align="left">🙆 <code>:ok_woman:</code></td>
+<td align="left">🙅 <code>:no_good:</code></td>
+</tr>
+<tr>
+<td align="left">💁 <code>:information_desk_person:</code></td>
+<td align="left">🙋 <code>:raising_hand:</code></td>
+<td align="left">👰 <code>:bride_with_veil:</code></td>
+</tr>
+<tr>
+<td align="left">🙎 <code>:person_with_pouting_face:</code></td>
+<td align="left">🙍 <code>:person_frowning:</code></td>
+<td align="left">🙇 <code>:bow:</code></td>
+</tr>
+<tr>
+<td align="left">:couplekiss: <code>:couplekiss:</code></td>
+<td align="left">💑 <code>:couple_with_heart:</code></td>
+<td align="left">💆 <code>:massage:</code></td>
+</tr>
+<tr>
+<td align="left">💇 <code>:haircut:</code></td>
+<td align="left">💅 <code>:nail_care:</code></td>
+<td align="left">👦 <code>:boy:</code></td>
+</tr>
+<tr>
+<td align="left">👧 <code>:girl:</code></td>
+<td align="left">👩 <code>:woman:</code></td>
+<td align="left">👨 <code>:man:</code></td>
+</tr>
+<tr>
+<td align="left">👶 <code>:baby:</code></td>
+<td align="left">👵 <code>:older_woman:</code></td>
+<td align="left">👴 <code>:older_man:</code></td>
+</tr>
+<tr>
+<td align="left">👱 <code>:person_with_blond_hair:</code></td>
+<td align="left">👲 <code>:man_with_gua_pi_mao:</code></td>
+<td align="left">👳 <code>:man_with_turban:</code></td>
+</tr>
+<tr>
+<td align="left">👷 <code>:construction_worker:</code></td>
+<td align="left">👮 <code>:cop:</code></td>
+<td align="left">👼 <code>:angel:</code></td>
+</tr>
+<tr>
+<td align="left">👸 <code>:princess:</code></td>
+<td align="left">😺 <code>:smiley_cat:</code></td>
+<td align="left">😸 <code>:smile_cat:</code></td>
+</tr>
+<tr>
+<td align="left">😻 <code>:heart_eyes_cat:</code></td>
+<td align="left">😽 <code>:kissing_cat:</code></td>
+<td align="left">😼 <code>:smirk_cat:</code></td>
+</tr>
+<tr>
+<td align="left">🙀 <code>:scream_cat:</code></td>
+<td align="left">😿 <code>:crying_cat_face:</code></td>
+<td align="left">😹 <code>:joy_cat:</code></td>
+</tr>
+<tr>
+<td align="left">😾 <code>:pouting_cat:</code></td>
+<td align="left">👹 <code>:japanese_ogre:</code></td>
+<td align="left">👺 <code>:japanese_goblin:</code></td>
+</tr>
+<tr>
+<td align="left">🙈 <code>:see_no_evil:</code></td>
+<td align="left">🙉 <code>:hear_no_evil:</code></td>
+<td align="left">🙊 <code>:speak_no_evil:</code></td>
+</tr>
+<tr>
+<td align="left">💂 <code>:guardsman:</code></td>
+<td align="left">💀 <code>:skull:</code></td>
+<td align="left">🐾 <code>:feet:</code></td>
+</tr>
+<tr>
+<td align="left">👄 <code>:lips:</code></td>
+<td align="left">💋 <code>:kiss:</code></td>
+<td align="left">💧 <code>:droplet:</code></td>
+</tr>
+<tr>
+<td align="left">👂 <code>:ear:</code></td>
+<td align="left">👀 <code>:eyes:</code></td>
+<td align="left">👃 <code>:nose:</code></td>
+</tr>
+<tr>
+<td align="left">👅 <code>:tongue:</code></td>
+<td align="left">💌 <code>:love_letter:</code></td>
+<td align="left">👤 <code>:bust_in_silhouette:</code></td>
+</tr>
+<tr>
+<td align="left">👥 <code>:busts_in_silhouette:</code></td>
+<td align="left"></td>
+<td align="left"></td>
+</tr>
+</tbody></table>
+<p>Nature<br>| ☀️ <code>:sunny:</code>                            | ☔️ <code>:umbrella:</code>               | ☁️ <code>:cloud:</code>                           |<br>|:——————————————|:——————————–|:—————————————–|<br>| ❄️ <code>:snowflake:</code>                        | ⛄️ <code>:snowman:</code>                | ⚡️ <code>:zap:</code>                             |<br>| 🌀 <code>:cyclone:</code>                          | 🌁 <code>:foggy:</code>                  | 🌊 <code>:ocean:</code>                           |<br>| 🐱 <code>:cat:</code>                              | 🐶 <code>:dog:</code>                    | 🐭 <code>:mouse:</code>                           |<br>| 🐹 <code>:hamster:</code>                          | 🐰 <code>:rabbit:</code>                 | 🐺 <code>:wolf:</code>                            |<br>| 🐸 <code>:frog:</code>                             | 🐯 <code>:tiger:</code>                  | 🐨 <code>:koala:</code>                           |<br>| 🐻 <code>:bear:</code>                             | 🐷 <code>:pig:</code>                    | 🐽 <code>:pig_nose:</code>                       |<br>| 🐮 <code>:cow:</code>                              | 🐗 <code>:boar:</code>                   | 🐵 <code>:monkey_face:</code>                    |<br>| 🐒 <code>:monkey:</code>                           | 🐴 <code>:horse:</code>                  | 🐎 <code>:racehorse:</code>                       |<br>| 🐫 <code>:camel:</code>                            | 🐑 <code>:sheep:</code>                  | 🐘 <code>:elephant:</code>                        |<br>| 🐼 <code>:panda_face:</code>                      | 🐍 <code>:snake:</code>                  | 🐦 <code>:bird:</code>                            |<br>| 🐤 <code>:baby_chick:</code>                      | 🐥 <code>:hatched_chick:</code>         | 🐣 <code>:hatching_chick:</code>                 |<br>| 🐔 <code>:chicken:</code>                          | 🐧 <code>:penguin:</code>                | 🐢 <code>:turtle:</code>                          |<br>| 🐛 <code>:bug:</code>                              | 🐝 <code>:honeybee:</code>               | 🐜 <code>:ant:</code>                             |<br>| 🐞 <code>:beetle:</code>                           | 🐌 <code>:snail:</code>                  | 🐙 <code>:octopus:</code>                         |<br>| 🐠 <code>:tropical_fish:</code>                   | 🐟 <code>:fish:</code>                   | 🐳 <code>:whale:</code>                           |<br>| 🐋 <code>:whale2:</code>                           | 🐬 <code>:dolphin:</code>                | 🐄 <code>:cow2:</code>                            |<br>| 🐏 <code>:ram:</code>                              | 🐀 <code>:rat:</code>                    | 🐃 <code>:water_buffalo:</code>                  |<br>| 🐅 <code>:tiger2:</code>                           | 🐇 <code>:rabbit2:</code>                | 🐉 <code>:dragon:</code>                          |<br>| 🐐 <code>:goat:</code>                             | 🐓 <code>:rooster:</code>                | 🐕 <code>:dog2:</code>                            |<br>| 🐖 <code>:pig2:</code>                             | 🐁 <code>:mouse2:</code>                 | 🐂 <code>:ox:</code>                              |<br>| 🐲 <code>:dragon_face:</code>                     | 🐡 <code>:blowfish:</code>               | 🐊 <code>:crocodile:</code>                       |<br>| 🐪 <code>:dromedary_camel:</code>                 | 🐆 <code>:leopard:</code>                | 🐈 <code>:cat2:</code>                            |<br>| 🐩 <code>:poodle:</code>                           | 🐾 <code>:paw_prints:</code>            | 💐 <code>:bouquet:</code>                         |<br>| 🌸 <code>:cherry_blossom:</code>                  | 🌷 <code>:tulip:</code>                  | 🍀 <code>:four_leaf_clover:</code>              |<br>| 🌹 <code>:rose:</code>                             | 🌻 <code>:sunflower:</code>              | 🌺 <code>:hibiscus:</code>                        |<br>| 🍁 <code>:maple_leaf:</code>                      | 🍃 <code>:leaves:</code>                 | 🍂 <code>:fallen_leaf:</code>                    |<br>| 🌿 <code>:herb:</code>                             | 🍄 <code>:mushroom:</code>               | 🌵 <code>:cactus:</code>                          |<br>| 🌴 <code>:palm_tree:</code>                       | 🌲 <code>:evergreen_tree:</code>        | 🌳 <code>:deciduous_tree:</code>                 |<br>| 🌰 <code>:chestnut:</code>                         | 🌱 <code>:seedling:</code>               | 🌼 <code>:blossom:</code>                         |<br>| 🌾 <code>:ear_of_rice:</code>                    | 🐚 <code>:shell:</code>                  | 🌐 <code>:globe_with_meridians:</code>          |<br>| 🌞 <code>:sun_with_face:</code>                  | 🌝 <code>:full_moon_with_face:</code> | 🌚 <code>:new_moon_with_face:</code>           |<br>| 🌑 <code>:new_moon:</code>                        | 🌒 <code>:waxing_crescent_moon:</code> | 🌓 <code>:first_quarter_moon:</code>            |<br>| 🌔 <code>:waxing_gibbous_moon:</code>            | 🌕 <code>:full_moon:</code>             | 🌖 <code>:waning_gibbous_moon:</code>           |<br>| 🌗 <code>:last_quarter_moon:</code>              | 🌘 <code>:waning_crescent_moon:</code> | 🌜 <code>:last_quarter_moon_with_face:</code> |<br>| 🌛 <code>:first_quarter_moon_with_face:</code> | 🌔 <code>:moon:</code>                   | 🌍 <code>:earth_africa:</code>                   |<br>| 🌎 <code>:earth_americas:</code>                  | 🌏 <code>:earth_asia:</code>            | 🌋 <code>:volcano:</code>                         |<br>| 🌌 <code>:milky_way:</code>                       | ⛅️ <code>:partly_sunny:</code>          |                                         |</p>
+<p>Objects<br>| 🎍 <code>:bamboo:</code>                            | 💝 <code>:gift_heart:</code>                   | 🎎 <code>:dolls:</code>                   |<br>|:——————————————-|:—————————————|:———————————|<br>| 🎒 <code>:school_satchel:</code>                   | 🎓 <code>:mortar_board:</code>                 | 🎏 <code>:flags:</code>                   |<br>| 🎆 <code>:fireworks:</code>                         | 🎇 <code>:sparkler:</code>                      | 🎐 <code>:wind_chime:</code>             |<br>| 🎑 <code>:rice_scene:</code>                       | 🎃 <code>:jack_o_lantern:</code>              | 👻 <code>:ghost:</code>                   |<br>| 🎅 <code>:santa:</code>                             | 🎄 <code>:christmas_tree:</code>               | 🎁 <code>:gift:</code>                    |<br>| 🔔 <code>:bell:</code>                              | 🔕 <code>:no_bell:</code>                      | 🎋 <code>:tanabata_tree:</code>          |<br>| 🎉 <code>:tada:</code>                              | 🎊 <code>:confetti_ball:</code>                | 🎈 <code>:balloon:</code>                 |<br>| 🔮 <code>:crystal_ball:</code>                     | 💿 <code>:cd:</code>                            | 📀 <code>:dvd:</code>                     |<br>| 💾 <code>:floppy_disk:</code>                      | 📷 <code>:camera:</code>                        | 📹 <code>:video_camera:</code>           |<br>| 🎥 <code>:movie_camera:</code>                     | 💻 <code>:computer:</code>                      | 📺 <code>:tv:</code>                      |<br>| 📱 <code>:iphone:</code>                            | ☎️ <code>:phone:</code>                         | ☎️ <code>:telephone:</code>               |<br>| 📞 <code>:telephone_receiver:</code>               | 📟 <code>:pager:</code>                         | 📠 <code>:fax:</code>                     |<br>| 💽 <code>:minidisc:</code>                          | 📼 <code>:vhs:</code>                           | 🔉 <code>:sound:</code>                   |<br>| 🔈 <code>:speaker:</code>                           | 🔇 <code>:mute:</code>                          | 📢 <code>:loudspeaker:</code>             |<br>| 📣 <code>:mega:</code>                              | ⌛️ <code>:hourglass:</code>                     | ⏳ <code>:hourglass_flowing_sand:</code> |<br>| ⏰ <code>:alarm_clock:</code>                       | ⌚️ <code>:watch:</code>                         | 📻 <code>:radio:</code>                   |<br>| 📡 <code>:satellite:</code>                         | ➿ <code>:loop:</code>                           | 🔍 <code>:mag:</code>                     |<br>| 🔎 <code>:mag_right:</code>                        | 🔓 <code>:unlock:</code>                        | 🔒 <code>:lock:</code>                    |<br>| 🔏 <code>:lock_with_ink_pen:</code>              | 🔐 <code>:closed_lock_with_key:</code>       | 🔑 <code>:key:</code>                     |<br>| 💡 <code>:bulb:</code>                              | 🔦 <code>:flashlight:</code>                    | 🔆 <code>:high_brightness:</code>        |<br>| 🔅 <code>:low_brightness:</code>                   | 🔌 <code>:electric_plug:</code>                | 🔋 <code>:battery:</code>                 |<br>| 📲 <code>:calling:</code>                           | ✉️ <code>:email:</code>                         | 📫 <code>:mailbox:</code>                 |<br>| 📮 <code>:postbox:</code>                           | 🛀 <code>:bath:</code>                          | 🛁 <code>:bathtub:</code>                 |<br>| 🚿 <code>:shower:</code>                            | 🚽 <code>:toilet:</code>                        | 🔧 <code>:wrench:</code>                  |<br>| 🔩 <code>:nut_and_bolt:</code>                    | 🔨 <code>:hammer:</code>                        | 💺 <code>:seat:</code>                    |<br>| 💰 <code>:moneybag:</code>                          | 💴 <code>:yen:</code>                           | 💵 <code>:dollar:</code>                  |<br>| 💷 <code>:pound:</code>                             | 💶 <code>:euro:</code>                          | 💳 <code>:credit_card:</code>            |<br>| 💸 <code>:money_with_wings:</code>                | 📧 <code>:e-mail:</code>                       | 📥 <code>:inbox_tray:</code>             |<br>| 📤 <code>:outbox_tray:</code>                      | ✉️ <code>:envelope:</code>                      | 📨 <code>:incoming_envelope:</code>      |<br>| 📯 <code>:postal_horn:</code>                      | 📪 <code>:mailbox_closed:</code>               | 📬 <code>:mailbox_with_mail:</code>     |<br>| 📭 <code>:mailbox_with_no_mail:</code>           | 🚪 <code>:door:</code>                          | 🚬 <code>:smoking:</code>                 |<br>| 💣 <code>:bomb:</code>                              | 🔫 <code>:gun:</code>                           | 🔪 <code>:hocho:</code>                   |<br>| 💊 <code>:pill:</code>                              | 💉 <code>:syringe:</code>                       | 📄 <code>:page_facing_up:</code>        |<br>| 📃 <code>:page_with_curl:</code>                  | 📑 <code>:bookmark_tabs:</code>                | 📊 <code>:bar_chart:</code>              |<br>| 📈 <code>:chart_with_upwards_trend:</code>       | 📉 <code>:chart_with_downwards_trend:</code> | 📜 <code>:scroll:</code>                  |<br>| 📋 <code>:clipboard:</code>                         | 📆 <code>:calendar:</code>                      | 📅 <code>:date:</code>                    |<br>| 📇 <code>:card_index:</code>                       | 📁 <code>:file_folder:</code>                  | 📂 <code>:open_file_folder:</code>      |<br>| ✂️ <code>:scissors:</code>                          | 📌 <code>:pushpin:</code>                       | 📎 <code>:paperclip:</code>               |<br>| ✒️ <code>:black_nib:</code>                        | ✏️ <code>:pencil2:</code>                       | 📏 <code>:straight_ruler:</code>         |<br>| 📐 <code>:triangular_ruler:</code>                 | 📕 <code>:closed_book:</code>                  | 📗 <code>:green_book:</code>             |<br>| 📘 <code>:blue_book:</code>                        | 📙 <code>:orange_book:</code>                  | 📓 <code>:notebook:</code>                |<br>| 📔 <code>:notebook_with_decorative_cover:</code> | 📒 <code>:ledger:</code>                        | 📚 <code>:books:</code>                   |<br>| 🔖 <code>:bookmark:</code>                          | 📛 <code>:name_badge:</code>                   | 🔬 <code>:microscope:</code>              |<br>| 🔭 <code>:telescope:</code>                         | 📰 <code>:newspaper:</code>                     | 🏈 <code>:football:</code>                |<br>| 🏀 <code>:basketball:</code>                        | ⚽️ <code>:soccer:</code>                        | ⚾️ <code>:baseball:</code>                |<br>| 🎾 <code>:tennis:</code>                            | 🎱 <code>:8ball:</code>                         | 🏉 <code>:rugby_football:</code>         |<br>| 🎳 <code>:bowling:</code>                           | ⛳️ <code>:golf:</code>                          | 🚵 <code>:mountain_bicyclist:</code>     |<br>| 🚴 <code>:bicyclist:</code>                         | 🏇 <code>:horse_racing:</code>                 | 🏂 <code>:snowboarder:</code>             |<br>| 🏊 <code>:swimmer:</code>                           | 🏄 <code>:surfer:</code>                        | 🎿 <code>:ski:</code>                     |<br>| ♠️ <code>:spades:</code>                            | ♥️ <code>:hearts:</code>                        | ♣️ <code>:clubs:</code>                   |<br>| ♦️ <code>:diamonds:</code>                          | 💎 <code>:gem:</code>                           | 💍 <code>:ring:</code>                    |<br>| 🏆 <code>:trophy:</code>                            | 🎼 <code>:musical_score:</code>                | 🎹 <code>:musical_keyboard:</code>       |<br>| 🎻 <code>:violin:</code>                            | 👾 <code>:space_invader:</code>                | 🎮 <code>:video_game:</code>             |<br>| 🃏 <code>:black_joker:</code>                      | 🎴 <code>:flower_playing_cards:</code>        | 🎲 <code>:game_die:</code>               |<br>| 🎯 <code>:dart:</code>                              | 🀄️ <code>:mahjong:</code>                      | 🎬 <code>:clapper:</code>                 |<br>| 📝 <code>:memo:</code>                              | 📝 <code>:pencil:</code>                        | 📖 <code>:book:</code>                    |<br>| 🎨 <code>:art:</code>                               | 🎤 <code>:microphone:</code>                    | 🎧 <code>:headphones:</code>              |<br>| 🎺 <code>:trumpet:</code>                           | 🎷 <code>:saxophone:</code>                     | 🎸 <code>:guitar:</code>                  |<br>| 👞 <code>:shoe:</code>                              | 👡 <code>:sandal:</code>                        | 👠 <code>:high_heel:</code>              |<br>| 💄 <code>:lipstick:</code>                          | 👢 <code>:boot:</code>                          | 👕 <code>:shirt:</code>                   |<br>| 👕 <code>:tshirt:</code>                            | 👔 <code>:necktie:</code>                       | 👚 <code>:womans_clothes:</code>         |<br>| 👗 <code>:dress:</code>                             | 🎽 <code>:running_shirt_with_sash:</code>    | 👖 <code>:jeans:</code>                   |<br>| 👘 <code>:kimono:</code>                            | 👙 <code>:bikini:</code>                        | 🎀 <code>:ribbon:</code>                  |<br>| 🎩 <code>:tophat:</code>                            | 👑 <code>:crown:</code>                         | 👒 <code>:womans_hat:</code>             |<br>| 👞 <code>:mans_shoe:</code>                        | 🌂 <code>:closed_umbrella:</code>              | 💼 <code>:briefcase:</code>               |<br>| 👜 <code>:handbag:</code>                           | 👝 <code>:pouch:</code>                         | 👛 <code>:purse:</code>                   |<br>| 👓 <code>:eyeglasses:</code>                        | 🎣 <code>:fishing_pole_and_fish:</code>      | ☕️ <code>:coffee:</code>                  |<br>| 🍵 <code>:tea:</code>                               | 🍶 <code>:sake:</code>                          | 🍼 <code>:baby_bottle:</code>            |<br>| 🍺 <code>:beer:</code>                              | 🍻 <code>:beers:</code>                         | 🍸 <code>:cocktail:</code>                |<br>| 🍹 <code>:tropical_drink:</code>                   | 🍷 <code>:wine_glass:</code>                   | 🍴 <code>:fork_and_knife:</code>        |<br>| 🍕 <code>:pizza:</code>                             | 🍔 <code>:hamburger:</code>                     | 🍟 <code>:fries:</code>                   |<br>| 🍗 <code>:poultry_leg:</code>                      | 🍖 <code>:meat_on_bone:</code>                | 🍝 <code>:spaghetti:</code>               |<br>| 🍛 <code>:curry:</code>                             | 🍤 <code>:fried_shrimp:</code>                 | 🍱 <code>:bento:</code>                   |<br>| 🍣 <code>:sushi:</code>                             | 🍥 <code>:fish_cake:</code>                    | 🍙 <code>:rice_ball:</code>              |<br>| 🍘 <code>:rice_cracker:</code>                     | 🍚 <code>:rice:</code>                          | 🍜 <code>:ramen:</code>                   |<br>| 🍲 <code>:stew:</code>                              | 🍢 <code>:oden:</code>                          | 🍡 <code>:dango:</code>                   |<br>| 🥚 <code>:egg:</code>                               | 🍞 <code>:bread:</code>                         | 🍩 <code>:doughnut:</code>                |<br>| 🍮 <code>:custard:</code>                           | 🍦 <code>:icecream:</code>                      | 🍨 <code>:ice_cream:</code>              |<br>| 🍧 <code>:shaved_ice:</code>                       | 🎂 <code>:birthday:</code>                      | 🍰 <code>:cake:</code>                    |<br>| 🍪 <code>:cookie:</code>                            | 🍫 <code>:chocolate_bar:</code>                | 🍬 <code>:candy:</code>                   |<br>| 🍭 <code>:lollipop:</code>                          | 🍯 <code>:honey_pot:</code>                    | 🍎 <code>:apple:</code>                   |<br>| 🍏 <code>:green_apple:</code>                      | 🍊 <code>:tangerine:</code>                     | 🍋 <code>:lemon:</code>                   |<br>| 🍒 <code>:cherries:</code>                          | 🍇 <code>:grapes:</code>                        | 🍉 <code>:watermelon:</code>              |<br>| 🍓 <code>:strawberry:</code>                        | 🍑 <code>:peach:</code>                         | 🍈 <code>:melon:</code>                   |<br>| 🍌 <code>:banana:</code>                            | 🍐 <code>:pear:</code>                          | 🍍 <code>:pineapple:</code>               |<br>| 🍠 <code>:sweet_potato:</code>                     | 🍆 <code>:eggplant:</code>                      | 🍅 <code>:tomato:</code>                  |<br>| 🌽 <code>:corn:</code>                              |                                       |                                 |</p>
+<p>Places<br>| 🏠 <code>:house:</code>                | 🏡 <code>:house_with_garden:</code>        | 🏫 <code>:school:</code>                   |<br>|:—————————-|:—————————-|:———————————-|<br>| 🏢 <code>:office:</code>               | 🏣 <code>:post_office:</code>               | 🏥 <code>:hospital:</code>                 |<br>| 🏦 <code>:bank:</code>                 | 🏪 <code>:convenience_store:</code>         | 🏩 <code>:love_hotel:</code>              |<br>| 🏨 <code>:hotel:</code>                | 💒 <code>:wedding:</code>                    | ⛪️ <code>:church:</code>                   |<br>| 🏬 <code>:department_store:</code>    | 🏤 <code>:european_post_office:</code>     | 🌇 <code>:city_sunrise:</code>            |<br>| 🌆 <code>:city_sunset:</code>         | 🏯 <code>:japanese_castle:</code>           | 🏰 <code>:european_castle:</code>         |<br>| ⛺️ <code>:tent:</code>                 | 🏭 <code>:factory:</code>                    | 🗼 <code>:tokyo_tower:</code>             |<br>| 🗾 <code>:japan:</code>                | 🗻 <code>:mount_fuji:</code>                | 🌄 <code>:sunrise_over_mountains:</code> |<br>| 🌅 <code>:sunrise:</code>              | 🌠 <code>:stars:</code>                      | 🗽 <code>:statue_of_liberty:</code>      |<br>| 🌉 <code>:bridge_at_night:</code>    | 🎠 <code>:carousel_horse:</code>            | 🌈 <code>:rainbow:</code>                  |<br>| 🎡 <code>:ferris_wheel:</code>        | ⛲️ <code>:fountain:</code>                   | 🎢 <code>:roller_coaster:</code>          |<br>| 🚢 <code>:ship:</code>                 | 🚤 <code>:speedboat:</code>                  | ⛵️ <code>:boat:</code>                     |<br>| ⛵️ <code>:sailboat:</code>             | 🚣 <code>:rowboat:</code>                    | ⚓️ <code>:anchor:</code>                   |<br>| 🚀 <code>:rocket:</code>               | ✈️ <code>:airplane:</code>                   | 🚁 <code>:helicopter:</code>               |<br>| 🚂 <code>:steam_locomotive:</code>    | 🚊 <code>:tram:</code>                       | 🚞 <code>:mountain_railway:</code>        |<br>| 🚲 <code>:bike:</code>                 | 🚡 <code>:aerial_tramway:</code>            | 🚟 <code>:suspension_railway:</code>      |<br>| 🚠 <code>:mountain_cableway:</code>   | 🚜 <code>:tractor:</code>                    | 🚙 <code>:blue_car:</code>                |<br>| 🚘 <code>:oncoming_automobile:</code> | 🚗 <code>:car:</code>                        | 🚗 <code>:red_car:</code>                 |<br>| 🚕 <code>:taxi:</code>                 | 🚖 <code>:oncoming_taxi:</code>             | 🚛 <code>:articulated_lorry:</code>       |<br>| 🚌 <code>:bus:</code>                  | 🚍 <code>:oncoming_bus:</code>              | 🚨 <code>:rotating_light:</code>          |<br>| 🚓 <code>:police_car:</code>          | 🚔 <code>:oncoming_police_car:</code>      | 🚒 <code>:fire_engine:</code>             |<br>| 🚑 <code>:ambulance:</code>            | 🚐 <code>:minibus:</code>                    | 🚚 <code>:truck:</code>                    |<br>| 🚋 <code>:train:</code>                | 🚉 <code>:station:</code>                    | 🚆 <code>:train2:</code>                   |<br>| 🚅 <code>:bullettrain_front:</code>   | 🚄 <code>:bullettrain_side:</code>          | 🚈 <code>:light_rail:</code>              |<br>| 🚝 <code>:monorail:</code>             | 🚃 <code>:railway_car:</code>               | 🚎 <code>:trolleybus:</code>               |<br>| 🎫 <code>:ticket:</code>               | ⛽️ <code>:fuelpump:</code>                   | 🚦 <code>:vertical_traffic_light:</code> |<br>| 🚥 <code>:traffic_light:</code>       | ⚠️ <code>:warning:</code>                    | 🚧 <code>:construction:</code>             |<br>| 🔰 <code>:beginner:</code>             | 🏧 <code>:atm:</code>                        | 🎰 <code>:slot_machine:</code>            |<br>| 🚏 <code>:busstop:</code>              | 💈 <code>:barber:</code>                     | ♨️ <code>:hotsprings:</code>               |<br>| 🏁 <code>:checkered_flag:</code>      | 🎌 <code>:crossed_flags:</code>             | 🏮 <code>:izakaya_lantern:</code>         |<br>| 🗿 <code>:moyai:</code>                | 🎪 <code>:circus_tent:</code>               | 🎭 <code>:performing_arts:</code>         |<br>| 📍 <code>:round_pushpin:</code>       | 🚩 <code>:triangular_flag_on_post:</code> |                                  |</p>
+<p>Symbols<br>| 1️⃣ <code>:one:</code>                                 | 2️⃣ <code>:two:</code>                          | 3️⃣ <code>:three:</code>                       |<br>|:———————————————-|:—————————————|:————————————–|<br>| 4️⃣ <code>:four:</code>                                | 5️⃣ <code>:five:</code>                         | 6️⃣ <code>:six:</code>                         |<br>| 7️⃣ <code>:seven:</code>                               | 8️⃣ <code>:eight:</code>                        | 9️⃣ <code>:nine:</code>                        |<br>| 🔟 <code>:keycap_ten:</code>                          | 🔢 <code>:1234:</code>                          | 0️⃣ <code>:zero:</code>                        |<br>| #️⃣ <code>:hash:</code>                               | 🔣 <code>:symbols:</code>                       | ◀️ <code>:arrow_backward:</code>              |<br>| ⬇️ <code>:arrow_down:</code>                          | ▶️ <code>:arrow_forward:</code>                | ⬅️ <code>:arrow_left:</code>                  |<br>| 🔠 <code>:capital_abcd:</code>                        | 🔡 <code>:abcd:</code>                          | 🔤 <code>:abc:</code>                          |<br>| ↙️ <code>:arrow_lower_left:</code>                   | ↘️ <code>:arrow_lower_right:</code>           | ➡️ <code>:arrow_right:</code>                 |<br>| ⬆️ <code>:arrow_up:</code>                            | ↖️ <code>:arrow_upper_left:</code>            | ↗️ <code>:arrow_upper_right:</code>          |<br>| ⏬ <code>:arrow_double_down:</code>                   | ⏫ <code>:arrow_double_up:</code>              | 🔽 <code>:arrow_down_small:</code>           |<br>| ⤵️ <code>:arrow_heading_down:</code>                 | ⤴️ <code>:arrow_heading_up:</code>            | ↩️ <code>:leftwards_arrow_with_hook:</code> |<br>| ↪️ <code>:arrow_right_hook:</code>                   | ↔️ <code>:left_right_arrow:</code>            | ↕️ <code>:arrow_up_down:</code>              |<br>| 🔼 <code>:arrow_up_small:</code>                     | 🔃 <code>:arrows_clockwise:</code>             | 🔄 <code>:arrows_counterclockwise:</code>     |<br>| ⏪ <code>:rewind:</code>                                | ⏩ <code>:fast_forward:</code>                  | ℹ️ <code>:information_source:</code>          |<br>| 🆗 <code>:ok:</code>                                   | 🔀 <code>:twisted_rightwards_arrows:</code>   | 🔁 <code>:repeat:</code>                       |<br>| 🔂 <code>:repeat_one:</code>                          | 🆕 <code>:new:</code>                           | 🔝 <code>:top:</code>                          |<br>| 🆙 <code>:up:</code>                                   | 🆒 <code>:cool:</code>                          | 🆓 <code>:free:</code>                         |<br>| 🆖 <code>:ng:</code>                                   | 🎦 <code>:cinema:</code>                        | 🈁 <code>:koko:</code>                         |<br>| 📶 <code>:signal_strength:</code>                     |                                       |                                      |<br>| 🈂️ <code>:sa:</code>                                  | 🚻 <code>:restroom:</code>                      | 🚹 <code>:mens:</code>                         |<br>| 🚺 <code>:womens:</code>                               | 🚼 <code>:baby_symbol:</code>                  | 🚭 <code>:no_smoking:</code>                  |<br>| 🅿️ <code>:parking:</code>                             | ♿️ <code>:wheelchair:</code>                    | 🚇 <code>:metro:</code>                        |<br>| 🛄 <code>:baggage_claim:</code>                       | 🉑 <code>:accept:</code>                        | 🚾 <code>:wc:</code>                           |<br>| 🚰 <code>:potable_water:</code>                       | 🚮 <code>:put_litter_in_its_place:</code>   | ㊙️ <code>:secret:</code>                       |<br>| ㊗️ <code>:congratulations:</code>                      | Ⓜ️ <code>:m:</code>                             | 🛂 <code>:passport_control:</code>            |<br>| 🛅 <code>:left_luggage:</code>                        | 🛃 <code>:customs:</code>                       | 🉐 <code>:ideograph_advantage:</code>         |<br>| 🆑 <code>:cl:</code>                                   | 🆘 <code>:sos:</code>                           | 🆔 <code>:id:</code>                           |<br>| 🚫 <code>:no_entry_sign:</code>                      | 🔞 <code>:underage:</code>                      | 📵 <code>:no_mobile_phones:</code>           |<br>| 🚯 <code>:do_not_litter:</code>                      | 🚱 <code>:non-potable_water:</code>           | 🚳 <code>:no_bicycles:</code>                 |<br>| 🚷 <code>:no_pedestrians:</code>                      | 🚸 <code>:children_crossing:</code>            | ⛔️ <code>:no_entry:</code>                    |<br>| ✳️ <code>:eight_spoked_asterisk:</code>              | ✴️ <code>:eight_pointed_black_star:</code>   | 💟 <code>:heart_decoration:</code>            |<br>| 🆚 <code>:vs:</code>                                   | 📳 <code>:vibration_mode:</code>               | 📴 <code>:mobile_phone_off:</code>           |<br>| 💹 <code>:chart:</code>                                | 💱 <code>:currency_exchange:</code>            | ♈️ <code>:aries:</code>                        |<br>| ♉️ <code>:taurus:</code>                               | ♊️ <code>:gemini:</code>                        | ♋️ <code>:cancer:</code>                       |<br>| ♌️ <code>:leo:</code>                                  | ♍️ <code>:virgo:</code>                         | ♎️ <code>:libra:</code>                        |<br>| ♏️ <code>:scorpius:</code>                             | ♐️ <code>:sagittarius:</code>                   | ♑️ <code>:capricorn:</code>                    |<br>| ♒️ <code>:aquarius:</code>                             | ♓️ <code>:pisces:</code>                        | ⛎ <code>:ophiuchus:</code>                     |<br>| 🔯 <code>:six_pointed_star:</code>                   | ❎ <code>:negative_squared_cross_mark:</code> | 🅰️ <code>:a:</code>                           |<br>| 🅱️ <code>:b:</code>                                   | 🆎 <code>:ab:</code>                            | 🅾️ <code>:o2:</code>                          |<br>| 💠 <code>:diamond_shape_with_a_dot_inside:</code> | ♻️ <code>:recycle:</code>                       | 🔚 <code>:end:</code>                          |<br>| 🔛 <code>:on:</code>                                   | 🔜 <code>:soon:</code>                          | 🕐 <code>:clock1:</code>                       |<br>| 🕜 <code>:clock130:</code>                             | 🕙 <code>:clock10:</code>                       | 🕥 <code>:clock1030:</code>                    |<br>| 🕚 <code>:clock11:</code>                              | 🕦 <code>:clock1130:</code>                     | 🕛 <code>:clock12:</code>                      |<br>| 🕧 <code>:clock1230:</code>                            | 🕑 <code>:clock2:</code>                        | 🕝 <code>:clock230:</code>                     |<br>| 🕒 <code>:clock3:</code>                               | 🕞 <code>:clock330:</code>                      | 🕓 <code>:clock4:</code>                       |<br>| 🕟 <code>:clock430:</code>                             | 🕔 <code>:clock5:</code>                        | 🕠 <code>:clock530:</code>                     |<br>| 🕕 <code>:clock6:</code>                               | 🕡 <code>:clock630:</code>                      | 🕖 <code>:clock7:</code>                       |<br>| 🕢 <code>:clock730:</code>                             | 🕗 <code>:clock8:</code>                        | 🕣 <code>:clock830:</code>                     |<br>| 🕘 <code>:clock9:</code>                               | 🕤 <code>:clock930:</code>                      | 💲 <code>:heavy_dollar_sign:</code>          |<br>| ©️ <code>:copyright:</code>                            | ®️ <code>:registered:</code>                    | ™️ <code>:tm:</code>                           |<br>| ❌ <code>:x:</code>                                     | ❗️ <code>:heavy_exclamation_mark:</code>      | ‼️ <code>:bangbang:</code>                     |<br>| ⁉️ <code>:interrobang:</code>                          | ⭕️ <code>:o:</code>                             | ✖️ <code>:heavy_multiplication_x:</code>     |<br>| ➕ <code>:heavy_plus_sign:</code>                     | ➖ <code>:heavy_minus_sign:</code>             | ➗ <code>:heavy_division_sign:</code>         |<br>| 💮 <code>:white_flower:</code>                        | 💯 <code>:100:</code>                           | ✔️ <code>:heavy_check_mark:</code>           |<br>| ☑️ <code>:ballot_box_with_check:</code>             | 🔘 <code>:radio_button:</code>                 | 🔗 <code>:link:</code>                         |<br>| ➰ <code>:curly_loop:</code>                           | 〰️ <code>:wavy_dash:</code>                    | 〽️ <code>:part_alternation_mark:</code>      |<br>| 🔱 <code>:trident:</code>                              | 🔻 <code>:small_red_triangle_down:</code>    | 🔺 <code>:small_red_triangle:</code>   |<br>| ✅ <code>:white_check_mark:</code>                    | 🔲 <code>:black_square_button:</code>         | 🔳 <code>:white_square_button:</code>        |<br>| ⚫️ <code>:black_circle:</code>                        | ⚪️ <code>:white_circle:</code>                 | 🔴 <code>:red_circle:</code>                  |<br>| 🔵 <code>:large_blue_circle:</code>                  | 🔷 <code>:large_blue_diamond:</code>          | 🔶 <code>:large_orange_diamond:</code>       |<br>| 🔹 <code>:small_blue_diamond:</code>                 | 🔸 <code>:small_orange_diamond:</code>        |</p>
+
+</div>
+  </div>
+  
+  
+    
+    <div class='footer'>
+      
+      
+      
+        <div class='copyright'>
+          <blockquote>
+            
+              
+                <p>📚 博客内容遵循署名-非商业性使用-相同方式共享 4.0 国际 (CC BY-NC-SA 4.0) 协议</p>
+
+              
+            
+              
+                <p>🔗 本文永久链接是：<a href=https://qikaile.tk/hexo-emoji.html>https://qikaile.tk/hexo-emoji.html</a></p>
+              
+            
+          </blockquote>
+        </div>
+      
+      
+    </div>
+  
+  
+    
+
+
+  <div class='article-meta' id="bottom">
+    <div class='new-meta-box'>
+      
+        
+          <div class="new-meta-item date" itemprop="dateModified" datetime="2021-01-20T19:39:57+08:00">
+  <a class='notlink' href="/" onclick="return false;" title="Click me!" >
+    <i class="fal fa-edit GREENSEA fa-fw" aria-hidden="true"></i>
+    <p>更新于：2021年1月20日</p>
+  </a>
+</div>
+
+        
+      
+        
+          
+  
+  <div class="new-meta-item meta-tags"><a class="tag" href="/tags/Hexo/" rel="nofollow"><i class="fal fa-hashtag CARROT fa-fw" aria-hidden="true"></i><p>Hexo</p></a></div> <div class="new-meta-item meta-tags"><a class="tag" href="/tags/Emoji/" rel="nofollow"><i class="fal fa-hashtag CARROT fa-fw" aria-hidden="true"></i><p>Emoji</p></a></div>
+  <span hidden itemprop="keywords">Hexo Emoji</span>
+
+
+        
+      
+        
+          
+  <div class="new-meta-item share -mob-share-list">
+  <div class="-mob-share-list share-body">
+    
+      
+        <a class="-mob-share-qq" title="" rel="external nofollow noopener noreferrer noopener"
+          
+          target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=https://qikaile.tk/hexo-emoji.html&title=Hexo中使用emoji表情 - 云墨小站&summary="
+          
+          >
+          
+            <img src="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/qq.png" class="lazyload" data-srcset="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/qq.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="This is a picture without description" >
+          
+        </a>
+      
+    
+      
+        <a class="-mob-share-qzone" title="" rel="external nofollow noopener noreferrer noopener"
+          
+          target="_blank" href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=https://qikaile.tk/hexo-emoji.html&title=Hexo中使用emoji表情 - 云墨小站&summary="
+          
+          >
+          
+            <img src="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/qzone.png" class="lazyload" data-srcset="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/qzone.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="This is a picture without description" >
+          
+        </a>
+      
+    
+      
+        <a class="-mob-share-weibo" title="" rel="external nofollow noopener noreferrer noopener"
+          
+          target="_blank" href="http://service.weibo.com/share/share.php?url=https://qikaile.tk/hexo-emoji.html&title=Hexo中使用emoji表情 - 云墨小站&summary="
+          
+          >
+          
+            <img src="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/weibo.png" class="lazyload" data-srcset="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/weibo.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="This is a picture without description" >
+          
+        </a>
+      
+    
+      
+    
+      
+    
+  </div>
+</div>
+
+
+
+        
+      
+    </div>
+    <!-- Custom Files bottomMeta begin -->
+    
+    <!-- Custom Files bottomMeta end -->
+  </div>
+
+
+  
+  
+
+  
+    <div class="prev-next">
+      
+        <a class='prev' href='/vercel-cdn-website.html'>
+          <p class='title'><i class="fas fa-chevron-left" aria-hidden="true"></i>Vercel反向代理做CDN，免费给网站加速隐藏源站，可绑定域名</p>
+          <p class='content'>Vercel免费用户拥有每月100G的流量，一般来说是够用的，这个100G的话，虽然网页上号称无限，实际上合理使用政策里写的是100G，构建时间是100小时，一般我们可以用它托管静态网站，它还支...</p>
+        </a>
+      
+      
+        <a class='next' href='/Office365-Post-Office-opens-SPF-DKIM-DMARC.html'>
+          <p class='title'>Office365邮局开启SPF、DKIM与DMARC<i class="fas fa-chevron-right" aria-hidden="true"></i></p>
+          <p class='content'>SPFSPF的开启比较简单，在添加域名时，微软已要求添加数个域名记录，其中一个就是SPF记录。SPF记录是一个TXT记录，在域名解析处添加如下记录即可如果你接入域名时已按照微软的流程来添加记录，...</p>
+        </a>
+      
+    </div>
+  
+  <!-- Custom Files postEnd begin-->
+  
+  <!-- Custom Files postEnd end-->
+</article>
+
+
+  
+
+  
+  <article class="post white-box reveal shadow floatable" id="comments">
+    <span hidden>
+      <meta itemprop="discussionUrl" content="/hexo-emoji.html#comments">
+    </span>
+    <p ct><i class='fal fa-comments POMEGRANATE'></i> 评论</p>
+    
+    
+    <div id="layoutHelper-comments"></div>
+
+  </article>
+  
+
+
+
+
+
+</div>
+<aside id='l_side' itemscope itemtype="http://schema.org/WPSideBar">
+  
+  
+    
+    
+
+<section class="widget blogger shadow floatable desktop pjax">
+  <div class='content'>
+    
+      
+        <a class='avatar flat-box circle' href='/about/'>
+          <img no-lazy src='https://cdn.jsdelivr.net/gh/Qikaile/cdn/img/circle-cropped.png'height="120" width="120"  alt="This is a picture without description" />
+        </a>
+      
+    
+    
+      <div class='text'>
+        
+          <h2><span class="p  red">云</span> <span class="p  yellow">生</span> <span class="p  green">の</span> <span class="p  blue">博</span> <span class="p  cyan">客</span></h2>
+        
+        
+          <p>心静思远，志行千里。</p>
+
+        
+        
+      </div>
+    
+    
+      <div class="social-wrapper">
+        
+          
+            <a href="/atom.xml"
+              class="social fas fa-rss flat-btn"
+              target="_blank"
+              rel="external nofollow noopener noreferrer">
+              
+            </a>
+          
+        
+          
+            <a href="mailto:admin@qikaile.tk"
+              class="social fas fa-envelope flat-btn"
+              target="_blank"
+              rel="external nofollow noopener noreferrer">
+              
+            </a>
+          
+        
+          
+            <a href="https://github.com/qikaile/"
+              class="social fab fa-github flat-btn"
+              target="_blank"
+              rel="external nofollow noopener noreferrer">
+              
+            </a>
+          
+        
+          
+            <a href="https://music.qikaile.tk/"
+              class="social fas fa-headphones-alt flat-btn"
+              target="_blank"
+              rel="external nofollow noopener noreferrer">
+              
+            </a>
+          
+        
+          
+            <a href="http://wpa.qq.com/msgrd?v=3&amp;amp;uin=【2649019047】&amp;amp;site=qq&amp;amp;menu=yes"
+              class="social fab fa-qq flat-btn"
+              target="_blank"
+              rel="external nofollow noopener noreferrer">
+              
+            </a>
+          
+        
+      </div>
+    
+  </div>
+</section>
+
+  
+
+  
+    
+    
+
+<section class="widget text shadow floatable desktop pjax">
+  
+  <header>
+    
+      <i class="fad fa-bullhorn AMETHYST fa-fw" aria-hidden="true"></i><span class='name'>公告信息</span>
+    
+  </header>
+
+
+  <div class='content'>
+    <div id="clock"></div>
+    <div id="clock"></div>
+    
+      <p>唤醒原系统菜单: <kbd>Ctrl</kbd>+<kbd>右键</kbd></p>
+
+    
+  </div>
+</section>
+
+  
+
+  
+    
+    
+
+<section class="widget grid shadow floatable desktop pjax">
+  
+  <header>
+    
+      <i class="fal fa-map-signs PETERRIVE fa-fw" aria-hidden="true"></i><span class='name'>站内导航</span>
+    
+  </header>
+
+
+  <div class='content'>
+    <div class="grid navigation">
+      
+        <a class="flat-box" target="_blank" href="https://tjys.js.org"
+          
+            rel="nofollow noopener"
+          
+          
+          active-action="action-https:tjysjsorg">
+          
+            <i class="fad fa-books TURQUOISE fa-fw" aria-hidden="true"></i>
+          
+          文档笔记
+        </a>
+      
+        <a class="flat-box" href="/guestbook/"
+          
+          
+          active-action="action-guestbook">
+          
+            <i class="fad fa-comment-alt-smile PETERRIVE fa-fw" aria-hidden="true"></i>
+          
+          留言板
+        </a>
+      
+        <a class="flat-box" href="/about/"
+          
+          
+          active-action="action-about">
+          
+            <i class="fal fa-drafting-compass NEPHRITIS fa-fw" aria-hidden="true"></i>
+          
+          关于
+        </a>
+      
+        <a class="flat-box" href="/shuoshuo/"
+          
+          
+          active-action="action-shuoshuo">
+          
+            <i class="fad fa-comment-dots WISTERIA fa-fw" aria-hidden="true"></i>
+          
+          闲言碎语
+        </a>
+      
+        <a class="flat-box" href="/links/"
+          
+          
+          active-action="action-links">
+          
+            <i class="fad fa-users EMERALD fa-fw" aria-hidden="true"></i>
+          
+          友链
+        </a>
+      
+        <a class="flat-box" target="_blank" href="https://travellings.link/"
+          
+            rel="nofollow noopener"
+          
+          
+          active-action="action-https:travellingslink">
+          
+            <i class="fa-fw fad fa-subway AMETHYST fa-fw" aria-hidden="true"></i>
+          
+          开往
+        </a>
+      
+    </div>
+  </div>
+</section>
+
+  
+
+  
+    
+    
+
+<section class="widget shadow floatable desktop pjax">
+  
+  <header>
+    
+      <i class="fal fa-award NEPHRITIS fa-fw" aria-hidden="true"></i><span class='name'>站点信息</span>
+    
+  </header>
+
+
+  <div class='content'>
+    <div class="webinfo">
+      
+        <div class="webinfo-item">
+          <div>文章数目：</div>
+          <div>28 篇</div>
+        </div>
+      
+
+      
+        <div class="webinfo-item">
+          <div>已运行时间：</div>
+          <div id="webinfo-runtime-count" publish_date="03/24/2020 21:34:09"></div>
+        </div>
+        <script>
+          var BirthDay = new Date(new Date('2020/11/16'));
+          var today = new Date();
+          var timeold = (today.getTime() - BirthDay.getTime());
+          var daysold = Math.floor(timeold / (24 * 60 * 60 * 1000));
+          document.getElementById('webinfo-runtime-count').innerHTML = daysold + ' 天';
+        </script>
+      
+
+
+      
+        <div class="webinfo-item">
+          <div>本站总字数：</div>
+          <div>111.8k 字</div>
+        </div>
+      
+
+      
+
+      
+
+      
+        <div class="webinfo-item">
+          <div>最后活动时间：</div>
+          
+            <div id="last-update" style="display: none;">Mon Jan 10 2022 11:30:01 GMT+0800 (GMT+08:00)</div>
+            <div id="last-update-show">2022-01-10 日</div>
+          
+        </div>
+        
+        <script>
+          function timeago(dateTimeStamp) {
+              var minute = 1000 * 60; //把分，时，天，周，半个月，一个月用毫秒表示
+              var hour = minute * 60;
+              var day = hour * 24;
+              var week = day * 7;
+              var month = day * 30;
+              var now = new Date().getTime(); //获取当前时间毫秒
+              var diffValue = now - dateTimeStamp; //时间差
+              if (diffValue < 0) {
+                  return;
+              }
+              var minC = diffValue / minute; //计算时间差的分，时，天，周，月
+              var hourC = diffValue / hour;
+              var dayC = diffValue / day;
+              var weekC = diffValue / week;
+              var monthC = diffValue / month;
+              if (monthC >= 1 && monthC <= 3) {
+                  result = " " + parseInt(monthC) + " 月前"
+              } else if (weekC >= 1 && weekC <= 3) {
+                  result = " " + parseInt(weekC) + " 周前"
+              } else if (dayC >= 1 && dayC <= 6) {
+                  result = " " + parseInt(dayC) + " 天前"
+              } else if (hourC >= 1 && hourC <= 23) {
+                  result = " " + parseInt(hourC) + " 小时前"
+              } else if (minC >= 1 && minC <= 59) {
+                  result = " " + parseInt(minC) + " 分钟前"
+              } else if (diffValue >= 0 && diffValue <= minute) {
+                  result = "刚刚"
+              } else {
+                  var datetime = new Date();
+                  datetime.setTime(dateTimeStamp);
+                  var Nyear = datetime.getFullYear();
+                  var Nmonth = datetime.getMonth() + 1 < 10 ? "0" + (datetime.getMonth() + 1) : datetime.getMonth() + 1;
+                  var Ndate = datetime.getDate() < 10 ? "0" + datetime.getDate() : datetime.getDate();
+                  var Nhour = datetime.getHours() < 10 ? "0" + datetime.getHours() : datetime.getHours();
+                  var Nminute = datetime.getMinutes() < 10 ? "0" + datetime.getMinutes() : datetime.getMinutes();
+                  var Nsecond = datetime.getSeconds() < 10 ? "0" + datetime.getSeconds() : datetime.getSeconds();
+                  result = Nyear + "-" + Nmonth + "-" + Ndate
+              }
+              return result;
+          }
+          var lastUpDate = document.getElementById('last-update').innerHTML;
+          try {
+            document.getElementById('last-update-show').innerHTML = timeago(new Date(lastUpDate));
+          } catch (error) {
+            document.getElementById('last-update-show').innerHTML = '2022-01-10 日';
+          }
+        </script>
+        
+      
+    </div>
+  </div>
+</section>
+
+  
+
+  
+    
+    
+
+
+
+  <section class="widget toc-wrapper shadow floatable desktop pjax" id="toc-div" >
+    
+  <header>
+    
+      <i class="fas fa-list PETERRIVE fa-fw" aria-hidden="true"></i><span class='name'>本文目录</span>
+    
+  </header>
+
+
+    <div class='content'>
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95"><span class="toc-text">使用方法</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#emoji%E7%BC%96%E7%A0%81%E5%90%88%E9%9B%86"><span class="toc-text">emoji编码合集</span></a></li></ol>
+    </div>
+  </section>
+
+  
+
+
+<!-- 没有 pjax 占位会报错 万恶的 pjax -->
+
+  <div class="pjax">
+    <!-- pjax占位 -->
+  </div>
+
+  <div class="pjax">
+    <!-- pjax占位 -->
+  </div>
+
+  <div class="pjax">
+    <!-- pjax占位 -->
+  </div>
+
+  <div class="pjax">
+    <!-- pjax占位 -->
+  </div>
+
+  <div class="pjax">
+    <!-- pjax占位 -->
+  </div>
+
+  <div class="pjax">
+    <!-- pjax占位 -->
+  </div>
+
+  <div class="pjax">
+    <!-- pjax占位 -->
+  </div>
+
+
+  <!-- Custom Files side begin -->
+  
+  <!-- Custom Files side end -->
+</aside>
+
+
+
+          <!--此文件用来存放一些不方便取值的变量-->
+<!--思路大概是将值藏到重加载的区域内-->
+
+<pjax>
+<script>
+  window.pdata={}
+  pdata.ispage=true;
+  pdata.postTitle="Hexo中使用emoji表情";
+  pdata.commentPath="";
+  pdata.commentPlaceholder="";
+  pdata.commentConfig={};
+  //  see: /layout/_partial/scripts/_ctrl/coverCtrl.ejs
+  
+    // header
+    var l_header=document.getElementById("l_header");
+    
+    l_header.classList.add("show");
+    
+    
+      // cover
+      var cover_wrapper=document.querySelector('#l_cover .cover-wrapper');
+      var scroll_down=document.getElementById('scroll-down');
+      cover_wrapper.id="none";
+      cover_wrapper.style.display="none";
+      scroll_down.style.display="none";
+    
+  
+</script>
+</pjax>
+        </div>
+        
+  
+  <footer class="footer clearfix"  itemscope itemtype="http://schema.org/WPFooter">
+    <br><br>
+    
+      
+        <div class="aplayer-container">
+          
+
+  
+    <meting-js
+      theme='#1BCDFC'
+      autoplay='false'
+      volume='0.7'
+      loop='all'
+      order='list'
+      fixed='false'
+      list-max-height='320px'
+      server='netease'
+      type='playlist'
+      id='4953591522'
+      list-folded='true'>
+    </meting-js>
+  
+
+
+        </div>
+      
+    
+      
+        
+          <div><br></div>
+        
+      
+    
+      
+        
+          <div><div class="BbeiAn-info"><a href="https://icp.gov.moe/" target="_blank" rel="nofollow noopener noreferrer"><img src="https://cdn.jsdelivr.net/gh/Qikaile/cdn/img/logo_看图王.png" class="lazyload" data-srcset="https://cdn.jsdelivr.net/gh/Qikaile/cdn/img/logo_看图王.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  width="15px" height="15px" alt="This is a picture without description" /></a><a rel="noopener" href="https://icp.gov.moe/?keyword=20200516" target="_blank">萌ICP备-20200516号</a></div></div>
+        
+      
+    
+      
+        <div class='copyright'>
+        <p>Copyright © 2020-2022 <a href="/">云生博客</a></p>
+
+        </div>
+      
+    
+      
+        
+          <div><br></div>
+        
+      
+    
+      
+        <span id="runtime_span"></span>
+        <script type="text/javascript">function show_runtime(){window.setTimeout("show_runtime()",1000);X=new
+        Date("5/16/2020 00:00:00");
+        Y=new Date();T=(Y.getTime()-X.getTime());M=24*60*60*1000;
+        a=T/M; dnum=Math.floor(a); b=(a-dnum)*24; hnum=Math.floor(b);c=(b-hnum)*60; mnum=Math.floor((b-hnum)*60); snum=Math.floor((c-mnum)*60);
+        runtime_span.innerText ="⚡"+"本站在风雨飘摇中度过了 " + dnum + " 天 " + hnum + " 小时 " + mnum + " 分 " + snum + " 秒" + "⚡"};show_runtime();</script>
+      
+    
+    <!-- Custom Files footer begin-->
+    
+    <!-- Custom Files footer end-->
+  </footer>
+
+
+        <a id="s-top" class="fas fa-arrow-up fa-fw" href="/" onclick="return false;" title="top"></a>
+      </div>
+    </div>
+    <div>
+      <script>
+  /******************** volantis.dom ********************************/
+  // 页面选择器 将dom对象缓存起来 see: /source/js/app.js etc.
+  volantis.dom.bodyAnchor = volantis.dom.$(document.getElementById("safearea")); // 页面主体
+  volantis.dom.topBtn = volantis.dom.$(document.getElementById('s-top')); // 向上
+  volantis.dom.wrapper = volantis.dom.$(document.getElementById('wrapper')); // 整个导航栏
+  volantis.dom.coverAnchor = volantis.dom.$(document.querySelector('#l_cover .cover-wrapper')); // 1个
+  volantis.dom.switcher = volantis.dom.$(document.querySelector('#l_header .switcher .s-search')); // 搜索按钮   移动端 1个
+  volantis.dom.header = volantis.dom.$(document.getElementById('l_header')); // 移动端导航栏
+  volantis.dom.search = volantis.dom.$(document.querySelector('#l_header .m_search')); // 搜索框 桌面端 移动端 1个
+  volantis.dom.mPhoneList = volantis.dom.$(document.querySelectorAll('#l_header .m-phone .list-v')); //  手机端 子菜单 多个
+</script>
+
+<script>
+  
+  volantis.css("https://cdn.jsdelivr.net/gh/inkss/fontawesome@5.15.3/css/all.min.css");
+  
+  
+  volantis.css("https://cdn.jsdelivr.net/gh/l-lin/font-awesome-animation/dist/font-awesome-animation.min.css");
+  
+  
+  volantis.css("https://unpkg.zhimg.com/node-waves@0.7.6/dist/waves.min.css");
+  
+</script>
+
+<!-- required -->
+
+  
+<script src="https://unpkg.zhimg.com/jquery@3.5/dist/jquery.min.js"></script>
+
+
+
+<!-- internal -->
+
+
+  <script>
+  volantis.message = (title, message, option = {}, done = null) => {
+    if (typeof iziToast === "undefined") {
+      volantis.css('/css/message.css?time=1641785418108')
+      volantis.js('/js/message.js?time=1641785418108', () => {
+        tozashMessage(title, message, option, done);
+      });
+    } else {
+      tozashMessage(title, message, option, done);
+    }
+
+    function tozashMessage(title, message, option, done) {
+      const {
+        icon,
+        time,
+        position,
+        transitionIn,
+        transitionOut,
+        messageColor,
+        titleColor,
+        backgroundColor,
+        zindex,
+        displayMode
+      } = option;
+      iziToast.show({
+        layout: '2',
+        icon: 'Fontawesome',
+        closeOnEscape: 'true',
+        displayMode: displayMode || 'replace',
+        transitionIn: transitionIn || 'bounceInLeft',
+        transitionOut: transitionOut || 'fadeOutRight',
+        messageColor: messageColor || 'var(--color-text)',
+        titleColor: titleColor || 'var(--color-text)',
+        backgroundColor: backgroundColor || 'var(--color-card)',
+        zindex: zindex || '2147483647',
+        icon: icon || 'fas fa-info-circle light-blue',
+        timeout: time || '5000',
+        position: position || 'topRight',
+        title: title,
+        message: message,
+        onClosed: () => {
+          if(done) done();
+        },
+      });
+    }
+  };
+
+  volantis.question = (title, message, option = {}, success = null, cancel = null, done = null) => {
+    if (typeof iziToast === "undefined") {
+      volantis.css('/css/message.css?time=1641785418108')
+      volantis.js('/js/message.js?time=1641785418108', () => {
+        tozashQuestion(title, message, option, success, cancel, done);
+      });
+    } else {
+      tozashQuestion(title, message, option, success, cancel, done);
+    }
+
+    function tozashQuestion(title, message, option, success, cancel, done) {
+      const {
+        icon,
+        time,
+        position,
+        transitionIn,
+        transitionOut,
+        messageColor,
+        titleColor,
+        backgroundColor,
+        zindex
+      } = option;
+      iziToast.question({ 
+        id: 'question',
+        icon: 'Fontawesome',
+        close: false,
+        overlay: true,
+        displayMode: 'once',
+        position: 'center',
+        messageColor: messageColor || 'var(--color-text)',
+        titleColor: titleColor || 'var(--color-text)',
+        backgroundColor: backgroundColor || 'var(--color-card)',
+        zindex: zindex || '2147483647',
+        icon: icon || 'fas fa-question-circle light-blue',
+        timeout: time || '20000',
+        title: title,
+        message: message,
+        buttons: [
+          ['<button><b>是</b></button>', (instance, toast) => {
+            instance.hide({ transitionOut: transitionOut || 'fadeOut' }, toast, 'button');
+            if(success) success(instance, toast)
+          }],
+          ['<button><b>否</b></button>', (instance, toast) => {
+            instance.hide({ transitionOut: transitionOut || 'fadeOut' }, toast, 'button');
+            if(cancel) cancel(instance, toast)
+          }]
+        ],
+        onClosed: (instance, toast, closedBy) => {
+          if(done) done(instance, toast, closedBy);
+        }
+      });
+    }
+  }
+
+  volantis.hideMessage = (done = null) => {
+    const toast = document.querySelector('.iziToast');
+    if (!toast) {
+      if(done) done()
+      return;
+    }
+    
+    if (typeof iziToast === "undefined") {
+      volantis.css('/css/message.css?time=1641785418108')
+      volantis.js('/js/message.js?time=1641785418108', () => {
+        hideMessage(done);
+      });
+    } else {
+      hideMessage(done);
+    }
+
+    function hideMessage(done) {
+      iziToast.hide({}, toast);
+      if(done) done();
+    }
+  }
+
+  volantis.messageCopyright = {
+    enable: 'true' === 'true' ? true : false,
+    title: '复制成功',
+    message: '请遵守 CC BY-NC-SA 4.0 协议。',
+    icon: 'far fa-copyright light-blue'
+  }
+
+  volantis.messageRightMenu = {
+    enable: 'true' === 'true' ? true : false,
+  }
+
+  if(volantis.messageCopyright.enable) {
+    document.body.oncopy = function(){
+      volantis.message(volantis.messageCopyright.title, volantis.messageCopyright.message, {
+        icon: volantis.messageCopyright.icon
+      });
+    }; 
+  }
+</script>
+
+
+
+
+  
+  
+  
+  <div id="rightmenu-wrapper">
+    <ul class="list-v rightmenu" id="rightmenu-content">
+      <li class='navigation menuNavigation-Content'>
+        <a class='nav icon-only fix-cursor-default' onclick='history.back()'><i class='fal PETERRIVE fa-arrow-left fa-fw'></i></a>
+        <a class='nav icon-only fix-cursor-default' onclick='history.forward()'><i class='fal PETERRIVE fa-arrow-right fa-fw'></i></a>
+        <a class='nav icon-only fix-cursor-default' onclick='window.location.reload()'><i class='fal PETERRIVE fa-redo fa-fw'></i></a>
+        <a class='nav icon-only fix-cursor-default' href='/'><i class='fal PETERRIVE fa-home fa-fw'></i></a>
+      </li>
+      <li class='option menuOption-Content'>
+        <span class='vlts-menu opt fix-cursor-default menu-Option' data-fn-type='copyText'>
+          
+          <i class='fal PETERRIVE fa-copy fa-fw'></i> 复制文本
+        </span>
+        <span class='vlts-menu opt fix-cursor-default menu-Option' data-fn-type='copyPaste'>
+          
+          <i class='fal PETERRIVE fa-paste fa-fw mR12'></i> 粘贴文本
+        </span>
+        <span class='vlts-menu opt fix-cursor-default menu-Option' data-fn-type='copySelect'>
+          
+          <i class='fal PETERRIVE fa-object-ungroup fa-fw mR12'></i> 全选文本
+        </span>
+        <span class='vlts-menu opt fix-cursor-default menu-Option' data-fn-type='copyCut'>
+          
+          <i class='fal PETERRIVE fa-cut fa-fw mR12'></i> 剪切文本
+        </span>
+        <span class='vlts-menu opt fix-cursor-default menu-Option' data-fn-type='openTab'>
+          
+          <i class='fal PETERRIVE fa-external-link-square-alt fa-fw mR12'></i> 在新标签页打开
+        </span>
+        <span class='vlts-menu opt fix-cursor-default menu-Option' data-fn-type='copySrc'>
+          
+          <i class='fal PETERRIVE fa-image fa-fw mR12'></i> 复制图片地址
+        </span>
+        <span class='vlts-menu opt fix-cursor-default menu-Option' data-fn-type='copyImg'>
+          
+          <i class='fal PETERRIVE fa-images fa-fw mR12'></i> 复制图片文件
+        </span>
+      </li>
+      
+        
+      
+        
+          <hr class="menuLoad-Content">
+        
+      
+        
+          
+    <li class="menuLoad-Content">
+      <a class='vlts-menu fix-cursor-default' href=/shuoshuo/
+        
+        
+        
+        
+          id="shuoshuo"
+        
+      >
+        <i class='fad fa-comment-dots GREENSEA fa-fw'></i> 闲言碎语
+      </a>
+    </li>
+  
+        
+      
+        
+          
+    <li class="menuLoad-Content">
+      <a class='vlts-menu fix-cursor-default' href=/guestbook/
+        
+        
+        
+        
+          id="guestbook"
+        
+      >
+        <i class='fad fa-comment-alt-smile PETERRIVE fa-fw'></i> 站内留言
+      </a>
+    </li>
+  
+        
+      
+        
+          
+    <li class="menuLoad-Content">
+      <a class='vlts-menu fix-cursor-default' href=/links/
+        
+        
+        
+        
+          id="links"
+        
+      >
+        <i class='fad fa-link ALIZARIN fa-fw'></i> 友情链接
+      </a>
+    </li>
+  
+        
+      
+        
+          <hr class="menuLoad-Content">
+        
+      
+        
+          <li class='option menuOption-Content'>
+            <span class='vlts-menu opt fix-cursor-default' id='printHtml'>
+              <i class='fad fa-print NEPHRITIS fa-fw '></i> 打印页面
+            </span>
+          </li>  
+        
+      
+        
+          <li class='option menuOption-Content'>
+            <span class='vlts-menu opt fix-cursor-default' id='readingModel'>
+              <i class='fad fa-book-open NEPHRITIS fa-fw '></i> 阅读模式
+            </span>
+          </li>  
+        
+      
+        
+          <li class='option menuOption-Content'>
+            <span class='vlts-menu opt fix-cursor-default toggle-mode-btn' id='menuDarkBtn'>
+              <i class='fal fa-eclipse-alt WISTERIA fa-fw '></i> 暗黑模式
+            </span>
+          </li>
+        
+      
+        
+          <div id="menuMusic">
+            <li class='music name menuOption-Content'>
+              <p class='nav music-title fix-cursor-default'></p>
+            </li>
+            <li class='music ctrl'>
+              <a class='nav icon-only backward fix-cursor-default' onclick='volantis.rightMenu.aplayerBackward()'><i class='fal PETERRIVE fa-step-backward fa-fw '></i></a>
+              <a class='nav icon-only toggle fix-cursor-default' onclick='volantis.rightMenu.aplayerToggle()'><i class='fal PETERRIVE fa-play fa-fw '></i></a>
+              <a class='nav icon-only forward fix-cursor-default' onclick='volantis.rightMenu.aplayerForward()'><i class='fal PETERRIVE fa-step-forward fa-fw '></i></a>
+            </li>
+            <li class='music volume'>
+              <div class='nav volume'>
+                <div class="aplayer-volume-bar-wrap">
+                  <div class="aplayer-volume-bar fix-cursor-pointer">
+                    <div class="aplayer-volume"></div>
+                    <i class='left fal PETERRIVE fa-volume-off fa-fw'></i>
+                    <i class='right fal PETERRIVE fa-volume-up fa-fw'></i>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </div>
+        
+      
+    </ul>
+  </div>
+  <script>
+    volantis.rightMenu = {};
+    volantis.rightMenu.faicon = 'fal PETERRIVE' || 'fa';
+    
+      volantis.rightMenu.music = true;
+      volantis.rightMenu.aplayerBackward = () => {
+        event.stopPropagation();
+        if (MainAPlayer.aplayerBackward) {
+          MainAPlayer.aplayerBackward();
+        }
+      }
+      volantis.rightMenu.aplayerToggle = () => {
+        event.stopPropagation();
+        if (MainAPlayer.aplayerToggle) {
+          MainAPlayer.aplayerToggle();
+        }
+      }
+      volantis.rightMenu.aplayerForward = () => {
+        event.stopPropagation();
+        if (MainAPlayer.aplayerForward) {
+          MainAPlayer.aplayerForward();
+        }
+      }
+    
+    
+      volantis.rightMenu.defaultStyles = true;
+    
+    
+    
+    
+    
+    volantis.js('/js/rightMenu.js?time=1641785418108')
+  </script>
+
+
+
+<!-- rightmenu要在darkmode之前（ToggleButton） darkmode要在comments之前（volantis.dark.push）-->
+
+  <script>
+const rootElement = document.documentElement;
+const darkModeStorageKey = "color-scheme";
+const rootElementDarkModeAttributeName = "color-scheme";
+const setLS = (k, v) => {
+    localStorage.setItem(k, v);
+};
+const removeLS = (k) => {
+    localStorage.removeItem(k);
+};
+const getLS = (k) => {
+    return localStorage.getItem(k);
+};
+const getModeFromCSSMediaQuery = () => {
+  return window.matchMedia("(prefers-color-scheme: dark)").matches
+    ? "dark"
+    : "light";
+};
+const resetRootDarkModeAttributeAndLS = () => {
+  rootElement.removeAttribute(rootElementDarkModeAttributeName);
+  removeLS(darkModeStorageKey);
+};
+const validColorModeKeys = {
+  dark: true,
+  light: true,
+};
+const applyCustomDarkModeSettings = (mode) => {
+  const currentSetting = mode || getLS(darkModeStorageKey);
+  getCustomDarkMode();
+  if (currentSetting === getModeFromCSSMediaQuery()) {
+    resetRootDarkModeAttributeAndLS();
+  } else if (validColorModeKeys[currentSetting]) {
+    rootElement.setAttribute(rootElementDarkModeAttributeName, currentSetting);
+  } else {
+    resetRootDarkModeAttributeAndLS();
+  }
+};
+const invertDarkModeObj = {
+  dark: "light",
+  light: "dark",
+};
+/**
+ * get target mode
+ */
+ const getCustomDarkMode = () => {
+  let currentSetting = getLS(darkModeStorageKey);
+  if (validColorModeKeys[currentSetting]) {
+    currentSetting = invertDarkModeObj[currentSetting];
+  } else if (currentSetting === null) {
+    currentSetting = invertDarkModeObj[getModeFromCSSMediaQuery()];
+  } else {
+    return;
+  }
+  if(currentSetting=="dark"){
+    volantis.dark.mode="light";
+  }else{
+    volantis.dark.mode="dark";
+  }
+  // console.log(volantis.dark.mode)
+};
+const toggleCustomDarkMode = () => {
+  let currentSetting = getLS(darkModeStorageKey);
+  if (validColorModeKeys[currentSetting]) {
+    currentSetting = invertDarkModeObj[currentSetting];
+  } else if (currentSetting === null) {
+    currentSetting = invertDarkModeObj[getModeFromCSSMediaQuery()];
+  } else {
+    return;
+  }
+  setLS(darkModeStorageKey, currentSetting);
+  return currentSetting;
+};
+/**
+ * 暗黑模式触发器
+ */
+volantis.dark.toggle=()=>{
+  const mode = toggleCustomDarkMode();
+  applyCustomDarkModeSettings(mode);
+  // 使用 volantis.dark.push 方法传入volantis.dark.toggle回调函数 参见layout/_partial/scripts/global.ejs
+  volantis.dark.method.toggle.start();
+}
+/**
+ * bind event for toggle button
+ */
+
+function bindToggleButton() {
+  var btn= document.querySelectorAll("#wrapper .toggle-mode-btn,#rightmenu-wrapper .toggle-mode-btn")
+  btn.forEach(function (e) {
+    volantis.dom.$(e).on('click',volantis.dark.toggle);
+  })
+}
+applyCustomDarkModeSettings();
+document.addEventListener("DOMContentLoaded", ()=>{
+  volantis.requestAnimationFrame(bindToggleButton)
+});
+volantis.pjax.push(bindToggleButton);
+</script>
+
+
+
+
+<script>
+  function loadIssuesJS() {
+    
+      const sites_api = document.getElementById('sites-api');
+      if (sites_api != undefined && typeof SitesJS === 'undefined') {
+        volantis.js("/js/plugins/sites.js?time=1641785418108")
+      }
+    
+    
+      const friends_api = document.getElementById('friends-api');
+      if (friends_api != undefined && typeof FriendsJS === 'undefined') {
+        volantis.js("/js/plugins/friends.js?time=1641785418108")
+      }
+    
+    
+      const contributors_api = document.getElementById('contributors-api');
+      if (contributors_api != undefined && typeof ContributorsJS === 'undefined') {
+        volantis.js("/js/plugins/contributors.js?time=1641785418108")
+      }
+    
+  };
+  loadIssuesJS()
+  volantis.pjax.push(()=>{
+    loadIssuesJS();
+  })
+
+</script>
+
+
+
+
+  <script defer src="https://unpkg.zhimg.com/vanilla-lazyload@17.1.0/dist/lazyload.min.js"></script>
+<script>
+  // https://www.npmjs.com/package/vanilla-lazyload
+  // Set the options globally
+  // to make LazyLoad self-initialize
+  window.lazyLoadOptions = {
+    elements_selector: ".lazyload",
+    threshold: 0
+  };
+  // Listen to the initialization event
+  // and get the instance of LazyLoad
+  window.addEventListener(
+    "LazyLoad::Initialized",
+    function (event) {
+      window.lazyLoadInstance = event.detail.instance;
+    },
+    false
+  );
+  document.addEventListener('DOMContentLoaded', function () {
+    lazyLoadInstance.update();
+  });
+  document.addEventListener('pjax:complete', function () {
+    lazyLoadInstance.update();
+  });
+</script>
+
+
+
+
+  
+
+<script>
+  window.FPConfig = {
+	delay: 0,
+	ignoreKeywords: ["#"],
+	maxRPS: 6,
+	hoverDelay: 0
+  };
+</script>
+<script defer src="https://cdn.jsdelivr.net/gh/gijo-varghese/flying-pages@2.1.2/flying-pages.min.js"></script>
+
+
+
+
+
+   <script type="text/javascript">
+  function pjax_scrollrebeal() {
+    ScrollReveal().reveal("#l_main .reveal", {
+      distance: "32px",
+      duration: "800",
+      interval: "20",
+      scale: "1",
+      easing: "ease-out",
+    });
+  }
+  function init_scrollrebeal() {
+    if (typeof ScrollReveal == "undefined") {
+      volantis.requestAnimationFrame(init_scrollrebeal);
+    } else {
+      pjax_scrollrebeal();
+    }
+  }
+  volantis.js("https://unpkg.zhimg.com/scrollreveal@4.0.9/dist/scrollreveal.min.js");
+  document.addEventListener("DOMContentLoaded", init_scrollrebeal);
+  volantis.pjax.push(
+    pjax_scrollrebeal,
+    "pjax_scrollrebeal",
+    (setRequestAnimationFrame = false)
+  );
+</script>
+
+
+
+
+  <script>
+  volantis.APlayerController = {}; // 音乐播放控制 - All
+  volantis.APlayerController.id = '4953591522';  // 设定全局音乐播放ID
+  volantis.APlayerController.volume = '0.7';
+  volantis.css("https://cdn.jsdelivr.net/npm/aplayer@1.10/dist/APlayer.min.css");
+  (async () => {
+    // APlayer 需要在  MetingJS 之前加载
+    await volantis.js("https://cdn.jsdelivr.net/gh/volantis-x/cdn-volantis@master/js/APlayer.mini.js")
+    await volantis.js("https://unpkg.zhimg.com/meting@2.0/dist/Meting.min.js")
+  
+    // 右键 music 需要在 APlayer  MetingJS 之后加载
+    await volantis.js('/js/aplayer.js?time=1641785418113')
+    volantis.APlayerController.music = true;
+  
+  })();
+
+  function SetAPlayerPlugin(){
+    let Metings = document.querySelectorAll('meting-js');
+    if (Metings.length === 0) {
+      volantis.APlayerController.status = undefined;
+      
+      if(typeof MainAPlayer === 'undefined'){
+        MainAPlayer = {};
+        MainAPlayer.Aplayer = {};
+      }
+      
+      return;
+    };
+    if (Metings[0].aplayer && Metings[0].aplayer.on) {
+      // improve the accessibility https://web.dev/button-name/
+      document.querySelectorAll(".aplayer-icon-menu").forEach(e=>{
+        e.setAttribute("aria-label","Aplayer Menu")
+      })
+      // message see: /layout/_plugins/message/script.ejs
+      
+        try {
+          setTimeout(() => {
+            Metings.forEach((item, index) => {
+              const aplayerItem = item.aplayer; if(!aplayerItem) return;
+              const rightMenuAplayer = item.meta.id === volantis.APlayerController.id && volantis.APlayerController.music;
+              if(rightMenuAplayer) MainAPlayer.checkAPlayer();
+              if(aplayerItem.events.events.play.every(item => {return item.name !== 'messagePlay'})) {
+                aplayerItem.on('play', function messagePlay() {
+                  let index = aplayerItem.list.index;
+                  let title = aplayerItem.list.audios[index].title;
+                  let artist = aplayerItem.list.audios[index].artist;
+                  setTimeout(() => {
+                    volantis.message('音乐通知', title + ' - ' + artist, {
+                      icon: 'far fa-pause-circle PETERRIVE',
+                      transitionIn: 'flipInX',
+                      transitionOut: 'flipOutX'
+                    });
+                  }, 100)
+                  if(rightMenuAplayer && volantis.APlayerController) volantis.APlayerController.status = 'play';
+                });
+              }
+              if(aplayerItem.events.events.pause.every(item => {return item.name !== 'messagePause'})) {
+                aplayerItem.on('pause', function messagePause() {
+                  let index = aplayerItem.list.index;
+                  let title = aplayerItem.list.audios[index].title;
+                  let artist = aplayerItem.list.audios[index].artist;
+                  setTimeout(() => {
+                    // 歌曲播放结束也会触发 pause 事件，为了避免错误提示，等待一会儿
+                    if(aplayerItem.paused) {
+                      volantis.message('音乐通知', title + ' - ' + artist, {
+                        icon: 'far fa-play-circle POMEGRANATE',
+                        transitionIn: 'flipInX',
+                        transitionOut: 'flipOutX'
+                      });
+                    }
+                  }, 100)
+                  if(rightMenuAplayer && volantis.APlayerController) volantis.APlayerController.status = 'pause';
+                });
+              }
+            });
+          }, 500)
+        } catch (error) { console.error(error); }
+      
+    }else{
+      volantis.requestAnimationFrame(SetAPlayerPlugin)
+    }
+  }
+
+  document.addEventListener("DOMContentLoaded", ()=>{
+    SetAPlayerPlugin();
+  });
+  volantis.pjax.push(SetAPlayerPlugin);
+</script>
+
+
+
+
+  <!-- 评论框美化 -->
+<style>
+/* comment-输入框背景图片 */
+.v[data-class=v] .veditor {
+    min-height: 10rem;
+    background-image: url(https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/other/comment-bg.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right;
+    background-color: rgba(255,255,255,0);
+    font-size: 1.4em;
+    resize: none;
+}
+</style>
+<script>
+  volantis.layoutHelper("comments",`<div id="waline"><i class="fas fa-cog fa-spin fa-fw fa-2x"></i></div>`)
+  function pjax_waline() {
+    if(!document.querySelector("#waline"))return;
+    let pagePlaceholder = pdata.commentPlaceholder || "✍ 写评论";
+    let path = pdata.commentPath;
+    if (path.length == 0) {
+      let defaultPath = '';
+      path = defaultPath || decodeURI(window.location.pathname);
+    }
+    new Waline(Object.assign(Object.assign({"js":"https://unpkg.zhimg.com/@waline/client/dist/Waline.min.js","path":null,"langMode":{"admin":"博主兼管理员","nick":"昵称","mail":"邮箱","link":"网站","sofa":"这里冷冷清清的，快来留下脚印吧！"},"placeholder":"✍ 写评论","imageHosting":"https://7bu.top/api/upload","meta":["nick","mail","link"],"requiredFields":["nick","mail"],"serverURL":"waline.qikaile.tk","pageSize":10,"lang":"zh-CN","visitor":true,"emoji":["https://cdn.jsdelivr.net/gh/walinejs/emojis@1.0.0/weibo","https://cdn.jsdelivr.net/gh/walinejs/emojis@1.0.0/bilibili","https://cdn.jsdelivr.net/gh/walinejs/emojis@1.0.0/tw-emoji","https://cdn.jsdelivr.net/gh/walinejs/emojis@1.0.0/qq"],"dark":"auto","copyright":false}, {
+     el: '#waline',
+     path: path,
+     placeholder: pagePlaceholder,
+     uploadImage: function(file) {
+      const formData = new FormData();
+      formData.append('image', file);
+      return fetch('https://7bu.top/api/upload', {
+      	method: 'POST',
+      	body: formData
+      }).then(resp => resp.json()).then(resp => resp.data.url);
+   },
+  }),pdata.commentConfig));
+  }
+  volantis.js('https://unpkg.zhimg.com/@waline/client/dist/Waline.min.js').then(pjax_waline)
+  volantis.pjax.push(pjax_waline);
+</script>
+
+
+
+
+  <script defer src="https://cdn.jsdelivr.net/gh/volantis-x/cdn-busuanzi@2.3/js/busuanzi.pure.mini.js" data-pjax></script>
+
+
+
+<script src="/js/app.js?time=1641785418108.js"></script>
+
+
+<!-- optional -->
+
+  <script>
+  const SearchServiceDataPathRoot = ("/" || "/").endsWith("/")
+    ? "/" || "/"
+    : "//" || "/";
+  const SearchServiceDataPath = SearchServiceDataPathRoot + "content.json";
+
+  function loadSearchScript() {
+    // see: layout/_partial/scripts/_ctrl/cdnCtrl.ejs
+    return volantis.js("/js/search/hexo.js?time=1641785418108");
+  }
+
+  function loadSearchService() {
+    loadSearchScript();
+    document.querySelectorAll(".input.u-search-input").forEach((e) => {
+      e.removeEventListener("focus", loadSearchService, false);
+    });
+  }
+
+  // 打开并搜索 字符串 s
+  function OpenSearch(s) {
+    loadSearchScript().then(() => {
+      SearchService.setQueryText(s);
+      SearchService.search();
+    });
+  }
+
+  // 访问含有 ?s=xxx  的链接时打开搜索 // 与搜索引擎 structured data 相关: /scripts/helpers/structured-data/lib/config.js
+  if (window.location.search && /^\?s=/g.test(window.location.search)) {
+    let queryText = decodeURI(window.location.search)
+      .replace(/\ /g, "-")
+      .replace(/^\?s=/g, "");
+    OpenSearch(queryText);
+  }
+
+  // 搜索输入框获取焦点时加载搜索
+  document.querySelectorAll(".input.u-search-input").forEach((e) => {
+    e.addEventListener("focus", loadSearchService, false);
+  });
+</script>
+
+
+
+
+  
+<script src="https://unpkg.zhimg.com/node-waves@0.7.6/dist/waves.min.js"></script>
+
+<script type="text/javascript">
+document.addEventListener("DOMContentLoaded", function () {
+  Waves.attach('.flat-btn', ['waves-button']);
+  Waves.attach('.float-btn', ['waves-button', 'waves-float']);
+  Waves.attach('.float-btn-light', ['waves-button', 'waves-float', 'waves-light']);
+  Waves.attach('.flat-box', ['waves-block']);
+  Waves.attach('.float-box', ['waves-block', 'waves-float']);
+  Waves.attach('.waves-image');
+  Waves.init();
+});
+</script>
+
+
+
+  
+<script src="https://cdn.jsdelivr.net/gh/volantis-x/cdn-volantis@2/js/comment_typing.js"></script>
+
+
+
+
+  <script>
+
+
+
+  function pjax_highlightjs_copyCode(){
+    if (!(document.querySelector(".highlight .code pre") ||
+      document.querySelector(".article pre code"))) {
+      return;
+    }
+    VolantisApp.copyCode(".highlight .code pre, .article pre code")
+  }
+  volantis.requestAnimationFrame(pjax_highlightjs_copyCode)
+  volantis.pjax.push(pjax_highlightjs_copyCode)
+
+</script>
+
+
+
+
+  <script defer>
+
+  const LCCounter = {
+    app_id: 'QJxW5v8BlvRP9LYqYmrNRekF-MdYXbMMI',
+    app_key: 'YtfMVlMfTdU4Y4zTo9k0Pj3h',
+    custom_api_server: '',
+
+    // 查询存储的记录
+    getRecord(Counter, url, title) {
+      return new Promise(function (resolve, reject) {
+        Counter('get', '/classes/Counter?where=' + encodeURIComponent(JSON.stringify({url})))
+          .then(resp => resp.json())
+          .then(({results, code, error}) => {
+            if (code === 401) {
+              throw error;
+            }
+            if (results && results.length > 0) {
+              var record = results[0];
+              resolve(record);
+            } else {
+              Counter('post', '/classes/Counter', {url, title: title, times: 0})
+                .then(resp => resp.json())
+                .then((record, error) => {
+                  if (error) {
+                    throw error;
+                  }
+                  resolve(record);
+                }).catch(error => {
+                console.error('Failed to create', error);
+                reject(error);
+              });
+            }
+          }).catch((error) => {
+          console.error('LeanCloud Counter Error:', error);
+          reject(error);
+        });
+      })
+    },
+
+    // 发起自增请求
+    increment(Counter, incrArr) {
+      return new Promise(function (resolve, reject) {
+        Counter('post', '/batch', {
+          "requests": incrArr
+        }).then((res) => {
+          res = res.json();
+          if (res.error) {
+            throw res.error;
+          }
+          resolve(res);
+        }).catch((error) => {
+          console.error('Failed to save visitor count', error);
+          reject(error);
+        });
+      });
+    },
+
+    // 构建自增请求体
+    buildIncrement(objectId) {
+      return {
+        "method": "PUT",
+        "path": `/1.1/classes/Counter/${ objectId }`,
+        "body": {
+          "times": {
+            '__op': 'Increment',
+            'amount': 1
+          }
+        }
+      }
+    },
+
+    // 校验是否为有效的 UV
+    validUV() {
+      var key = 'LeanCloudUVTimestamp';
+      var flag = localStorage.getItem(key);
+      if (flag) {
+        // 距离标记小于 24 小时则不计为 UV
+        if (new Date().getTime() - parseInt(flag) <= 86400000) {
+          return false;
+        }
+      }
+      localStorage.setItem(key, new Date().getTime().toString());
+      return true;
+    },
+
+    addCount(Counter) {
+      var enableIncr = '' === 'true' && window.location.hostname !== 'localhost';
+      enableIncr = true;
+      var getterArr = [];
+      var incrArr = [];
+      // 请求 PV 并自增
+      var pvCtn = document.querySelector('#lc-sv');
+      if (pvCtn || enableIncr) {
+        var pvGetter = this.getRecord(Counter, 'https://qikaile.tk' + '/#lc-sv', 'Visits').then((record) => {
+          incrArr.push(this.buildIncrement(record.objectId))
+          var eles = document.querySelectorAll('#lc-sv #number');
+          if (eles.length > 0) {
+            eles.forEach((el,index,array)=>{
+              el.innerText = record.times + 1;
+              if (pvCtn) {
+                pvCtn.style.display = 'inline';
+              }
+            })
+          }
+        });
+        getterArr.push(pvGetter);
+      }
+
+      // 请求 UV 并自增
+      var uvCtn = document.querySelector('#lc-uv');
+      if (uvCtn || enableIncr) {
+        var uvGetter = this.getRecord(Counter, 'https://qikaile.tk' + '/#lc-uv', 'Visitors').then((record) => {
+          var vuv = this.validUV();
+          vuv && incrArr.push(this.buildIncrement(record.objectId))
+          var eles = document.querySelectorAll('#lc-uv #number');
+          if (eles.length > 0) {
+            eles.forEach((el,index,array)=>{
+              el.innerText = record.times + (vuv ? 1 : 0);
+              if (uvCtn) {
+                uvCtn.style.display = 'inline';
+              }
+            })
+          }
+        });
+        getterArr.push(uvGetter);
+      }
+
+      // 请求文章的浏览数，如果是当前页面就自增
+      var allPV = document.querySelectorAll('#lc-pv');
+      if (allPV.length > 0 || enableIncr) {
+        for (i = 0; i < allPV.length; i++) {
+          let pv = allPV[i];
+          let title = pv.getAttribute('data-title');
+          var url = 'https://qikaile.tk' + pv.getAttribute('data-path');
+          if (url) {
+            var viewGetter = this.getRecord(Counter, url, title).then((record) => {
+              // 是当前页面就自增
+              let curPath = window.location.pathname;
+              if (curPath.includes('index.html')) {
+                curPath = curPath.substring(0, curPath.lastIndexOf('index.html'));
+              }
+              if (pv.getAttribute('data-path') == curPath) {
+                incrArr.push(this.buildIncrement(record.objectId));
+              }
+              if (pv) {
+                var ele = pv.querySelector('#lc-pv #number');
+                if (ele) {
+                  if (pv.getAttribute('data-path') == curPath) {
+                    ele.innerText = (record.times || 0) + 1;
+                  } else {
+                    ele.innerText = record.times || 0;
+                  }
+                  pv.style.display = 'inline';
+                }
+              }
+            });
+            getterArr.push(viewGetter);
+          }
+        }
+      }
+
+      // 如果启动计数自增，批量发起自增请求
+      if (enableIncr) {
+        Promise.all(getterArr).then(() => {
+          incrArr.length > 0 && this.increment(Counter, incrArr);
+        })
+      }
+
+    },
+
+
+    fetchData(api_server) {
+      var Counter = (method, url, data) => {
+        return fetch(`${ api_server }/1.1${ url }`, {
+          method,
+          headers: {
+            'X-LC-Id': this.app_id,
+            'X-LC-Key': this.app_key,
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify(data)
+        });
+      };
+      this.addCount(Counter);
+    },
+
+    refreshCounter() {
+      var api_server = this.app_id.slice(-9) !== '-MdYXbMMI' ? this.custom_api_server : `https://${ this.app_id.slice(0, 8).toLowerCase() }.api.lncldglobal.com`;
+      if (api_server) {
+        this.fetchData(api_server);
+      } else {
+        fetch('https://app-router.leancloud.cn/2/route?appId=' + this.app_id)
+          .then(resp => resp.json())
+          .then(({api_server}) => {
+            this.fetchData('https://' + api_server);
+          });
+      }
+    }
+
+  };
+
+  LCCounter.refreshCounter();
+
+  document.addEventListener('pjax:complete', function () {
+    LCCounter.refreshCounter();
+  });
+</script>
+
+
+
+
+
+
+
+
+
+<!-- pjax 标签必须存在于所有页面 否则 pjax error -->
+<pjax>
+
+</pjax>
+
+<script>
+  function listennSidebarTOC() {
+    const navItems = document.querySelectorAll(".toc li");
+    if (!navItems.length) return;
+    const sections = [...navItems].map((element) => {
+      const link = element.querySelector(".toc-link");
+      const target = document.getElementById(
+        decodeURI(link.getAttribute("href")).replace("#", "")
+      );
+      // 解除 a 标签 href 的 锚点定位, a 标签 href 的 锚点定位 会随机启用?? 产生错位???
+      link.setAttribute("onclick","return false;")
+      link.setAttribute("toc-action","toc-"+decodeURI(link.getAttribute("href")).replace("#", ""))
+      link.setAttribute("href","/")
+      // 配置 点击 触发新的锚点定位
+      link.addEventListener("click", (event) => {
+        event.preventDefault();
+        // 这里的 addTop 是通过错位使得 toc 自动展开.
+        volantis.scroll.to(target,{addTop: 5, observer:true})
+        // Anchor id
+        history.pushState(null, document.title, "#" + target.id);
+      });
+      return target;
+    });
+
+    function activateNavByIndex(target) {
+      if (target.classList.contains("active-current")) return;
+
+      document.querySelectorAll(".toc .active").forEach((element) => {
+        element.classList.remove("active", "active-current");
+      });
+      target.classList.add("active", "active-current");
+      let parent = target.parentNode;
+      while (!parent.matches(".toc")) {
+        if (parent.matches("li")) parent.classList.add("active");
+        parent = parent.parentNode;
+      }
+    }
+
+    function findIndex(entries) {
+      let index = 0;
+      let entry = entries[index];
+      if (entry.boundingClientRect.top > 0) {
+        index = sections.indexOf(entry.target);
+        return index === 0 ? 0 : index - 1;
+      }
+      for (; index < entries.length; index++) {
+        if (entries[index].boundingClientRect.top <= 0) {
+          entry = entries[index];
+        } else {
+          return sections.indexOf(entry.target);
+        }
+      }
+      return sections.indexOf(entry.target);
+    }
+
+    function createIntersectionObserver(marginTop) {
+      marginTop = Math.floor(marginTop + 10000);
+      let intersectionObserver = new IntersectionObserver(
+        (entries, observe) => {
+          let scrollHeight = document.documentElement.scrollHeight;
+          if (scrollHeight > marginTop) {
+            observe.disconnect();
+            createIntersectionObserver(scrollHeight);
+            return;
+          }
+          let index = findIndex(entries);
+          activateNavByIndex(navItems[index]);
+        }, {
+          rootMargin: marginTop + "px 0px -100% 0px",
+          threshold: 0,
+        }
+      );
+      sections.forEach((element) => {
+        element && intersectionObserver.observe(element);
+      });
+    }
+
+    createIntersectionObserver(document.documentElement.scrollHeight);
+  }
+
+  document.addEventListener("DOMContentLoaded", ()=>{
+    volantis.requestAnimationFrame(listennSidebarTOC)
+  });
+  document.addEventListener("pjax:success", ()=>{
+    volantis.requestAnimationFrame(listennSidebarTOC)
+  });
+</script>
+
+<script>
+  // https://web.dev/content-visibility/
+  // https://www.caniuse.com/?search=content-visibility
+  // https://infrequently.org/2020/12/content-visibility-scroll-fix/
+  // https://infrequently.org/2020/12/resize-resilient-deferred-rendering/
+
+  // 备注 目前已知的问题:
+  // 动态修改导致的内容高度变化(例如评论框异步渲染的外部盒子高度变化) 无法提前获知, 进而导致的首次滚动条跳动无法去除 (wontfix) 事实上不使用 content-visibility 也会有跳动, 不过是比使用 content-visibility 跳动提前
+  // scrollreveal 插件潜在问题 目前尚不明确
+
+  let eqIsh = (a, b, fuzz = 2) => {
+    return Math.abs(a - b) <= fuzz;
+  };
+
+  let rectNotEQ = (a, b) => {
+    return !eqIsh(a.width, b.width) || !eqIsh(a.height, b.height);
+  };
+
+  // Keep a map of elements and the dimensions of
+  // their place-holders, re-setting the element's
+  // intrinsic size when we get updated measurements
+  // from observers.
+  let spaced = new WeakMap();
+
+  // Only call this when known cheap, post layout
+  let reserveSpace = (el, rect = el.getClientBoundingRect()) => {
+    let old = spaced.get(el);
+    // Set intrinsic size to prevent jumping on un-painting:
+    //    https://drafts.csswg.org/css-sizing-4/#intrinsic-size-override
+    if (!old || rectNotEQ(old, rect)) {
+      spaced.set(el, rect);
+      el.style["contain-intrinsic-size"] = `${rect.width}px ${rect.height}px`;
+    }
+  };
+
+  let iObs = new IntersectionObserver(
+    (entries, o) => {
+      entries.forEach((entry) => {
+        // We don't care if the element is intersecting or
+        // has been laid out as our page structure ensures
+        // they'll get the right width.
+        reserveSpace(entry.target, entry.boundingClientRect);
+      });
+    },
+    { rootMargin: "500px 0px 500px 0px" }
+  );
+
+  let rObs = new ResizeObserver((entries, o) => {
+    entries.forEach((entry) => {
+      reserveSpace(entry.target, entry.contentRect);
+    });
+  });
+
+  let resizeResilientDeferredRendering = (Selector) => {
+    let articles = document.querySelectorAll(Selector);
+
+    if (articles.length) {
+      articles.forEach((el) => {
+        iObs.observe(el);
+        rObs.observe(el);
+      });
+
+      // Workaround for Chrome bug, part 2.
+      //
+      // Re-enable browser management of rendering for the
+      // first article after the first paint. Double-rAF
+      // to ensure we get called after a layout.
+      requestAnimationFrame(() => {
+        requestAnimationFrame(() => {
+          articles[0].style["content-visibility"] = "auto";
+        });
+      });
+    }
+  };
+
+  let contentVisibilityScrollFix = () => {
+    if (!("content-visibility" in document.documentElement.style)) {
+      return;
+    }
+    resizeResilientDeferredRendering(".post-story");
+    resizeResilientDeferredRendering("article");
+    resizeResilientDeferredRendering(".post-wrapper");
+  };
+  contentVisibilityScrollFix();
+  volantis.pjax.push(contentVisibilityScrollFix);
+</script>
+
+
+
+  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"云墨小站","url":"https://qikaile.tk/","logo":{"@type":"ImageObject","url":"https://cdn.jsdelivr.net/gh/Qikaile/cdn@master/img/bloglogo.36pedn0vy2w0.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"TJYS","image":{"@type":"ImageObject","url":"https://cdn.jsdelivr.net/gh/Qikaile/cdn@master/img/bloglogo.36pedn0vy2w0.png"},"url":"https://qikaile.tk/","sameAs":["https://github.com/qikaile"],"description":"心静思远，志行千里。"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"https://qikaile.tk/","name":"云墨小站"}},{"@type":"ListItem","position":2,"item":{"@id":"https://qikaile.tk/categories/Hexo/","name":"Hexo"}},{"@type":"ListItem","position":3,"item":{"@id":"https://qikaile.tk/hexo-emoji.html","name":"Hexo中使用emoji表情"}}]},{"@context":"http://schema.org","@type":"BlogPosting","headline":"Hexo中使用emoji表情","description":"Hexo 开启欢乐的 emoji 之旅 💛","datePublished":"2021-01-20T03:13:23.000Z","dateModified":"2021-01-20T11:39:57.601Z","inLanguage":"zh-CN","mainEntityOfPage":{"@type":"WebPage","@id":"https://qikaile.tk/hexo-emoji.html"},"author":{"@type":"Person","name":"TJYS","image":{"@type":"ImageObject","url":"https://cdn.jsdelivr.net/gh/Qikaile/cdn@master/img/bloglogo.36pedn0vy2w0.png"},"url":"https://qikaile.tk/"},"publisher":{"@type":"Organization","name":"云墨小站","logo":{"@type":"ImageObject","url":"https://cdn.jsdelivr.net/gh/Qikaile/cdn@master/img/bloglogo.36pedn0vy2w0.png","width":192,"height":192}},"url":"https://qikaile.tk/hexo-emoji.html","wordCount":0,"articleSection":"Hexo","keywords":"Hexo,Emoji","image":{"@type":"ImageObject","url":"https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/015.jpg","width":1024,"height":768}}]</script>
+
+
+<!-- more -->
+
+
+
+      
+        <!-- 
+  pjax重载区域接口：
+  1.  <pjax></pjax> 标签 pjax 标签必须存在于所有页面 否则 pjax error
+  2.  script[data-pjax]
+  3.  .pjax-reload script
+  4.  .pjax
+-->
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/pjax@0.2.8/pjax.min.js"></script>
+
+
+<script>
+    var pjax;
+    document.addEventListener('DOMContentLoaded', function () {
+      pjax = new Pjax({
+        elements: 'a[href]:not([href^="#"]):not([href="javascript:void(0)"]):not([pjax-fancybox]):not([onclick="return false;"]):not([target="_blank"]):not([target="view_window"]):not([href$=".xml"])',
+        selectors: [
+          "head title",
+          
+          "#l_main",
+          "#pjax-header-nav-list",
+          ".pjax",
+          "pjax", // <pjax></pjax> 标签
+          "script[data-pjax], .pjax-reload script" // script标签添加data-pjax 或 script标签外层添加.pjax-reload 的script代码段重载
+        ],
+        cacheBust: false,   // url 地址追加时间戳，用以避免浏览器缓存
+        timeout: 5000
+      });
+    });
+
+    document.addEventListener('pjax:send', function (e) {
+      //window.stop(); // 相当于点击了浏览器的停止按钮
+
+      try {
+        var currentUrl = window.location.pathname;
+        var targetUrl = e.triggerElement.href;
+        var banUrl = ["/artitalk/", "/bbtalk/"];
+        if (banUrl[0] != "") {
+          banUrl.forEach(item => {
+            if(currentUrl.indexOf(item) != -1 || targetUrl.indexOf(item) != -1) {
+              window.location.href = targetUrl;
+            }
+          });
+        }
+      } catch (error) {}
+
+      // 使用 volantis.pjax.send 方法传入pjax:send回调函数 参见layout/_partial/scripts/global.ejs
+      volantis.pjax.method.send.start();
+    });
+
+    document.addEventListener('pjax:complete', function () {
+      // 使用 volantis.pjax.push 方法传入重载函数 参见layout/_partial/scripts/global.ejs
+      volantis.pjax.method.complete.start();
+    });
+
+    document.addEventListener('pjax:error', function (e) {
+      // 使用 volantis.pjax.error 方法传入pjax:error回调函数 参见layout/_partial/scripts/global.ejs
+      volantis.pjax.method.error.start();
+      window.location.href = e.triggerElement.href;
+    });
+</script>
+
+      
+    </div>
+  <!-- Custom Files bodyEnd begin-->
+  
+  <!-- Custom Files bodyEnd end-->
+  <!-- hexo injector body_end start --><script data-pjax>function electric_clock_injector_config(){
+                var parent_div_git = document.getElementById('clock');
+                var item_html = '<div class="card-widget card-clock"><div class="card-glass"><div class="card-background"><div class="card-content"><div id="hexo_electric_clock"><img id="card-clock-loading" src="https://cdn.jsdelivr.net/gh/Zfour/Butterfly-clock/clock/images/weather/loading.gif" class="lazyload" data-srcset="https://cdn.jsdelivr.net/gh/Zfour/Butterfly-clock/clock/images/weather/loading.gif" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" style="height: 120px; width: 100%;" data-ll-status="loading" class="entered loading lazyload" alt="This is a picture without description" ></div></div></div></div></div>';
+                console.log('已挂载electric_clock')
+                // parent_div_git.innerHTML=item_html+parent_div_git.innerHTML // 无报错，但不影响使用(支持pjax跳转)
+                parent_div_git.insertAdjacentHTML("afterbegin",item_html) // 有报错，但不影响使用(支持pjax跳转)
+            }if( document.getElementById('clock') && (location.pathname ==='all'|| 'all' ==='all')){
+
+            electric_clock_injector_config()
+        } </script><script src="https://pv.sohu.com/cityjson?ie=utf-8"></script><script data-pjax  src="https://cdn.jsdelivr.net/gh/Zfour/hexo-electric-clock@1.0.6/clock.js"></script><!-- hexo injector body_end end --></body>
+</html>
