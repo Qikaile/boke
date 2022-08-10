@@ -510,8 +510,8 @@ const volantisFancyBox = (() => {
 
   fn.loadFancyBox = (done) => {
     if (!document.querySelector(".md .gallery img, .fancybox")) return;
-    volantis.css(" https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css");
-    volantis.js('https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.js').then(() => {
+    volantis.css(" https://unpkg.com/@fancyapps/ui/dist/fancybox.css");
+    volantis.js('https://unpkg.com/@fancyapps/ui/dist/fancybox.umd.js').then(() => {
       fn.initFB();
       if (done) done();
     })
