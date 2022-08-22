@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
     <head hexo-theme='https://github.com/volantis-x/hexo-theme-volantis/tree/5.0.0-rc.1'>
-  <meta name="generator" content="Hexo 5.4.0">
+  <meta name="generator" content="Hexo 5.4.2">
   <meta charset="utf-8">
   <!-- SEO相关 -->
   
@@ -20,7 +20,7 @@
   <meta content="云墨小站" name="apple-mobile-web-app-title">
   <meta content="black-translucent" name="apple-mobile-web-app-status-bar-style">
   <meta content="telephone=no" name="format-detection">
-  <link rel="preload" href="/css/style.css?time=1660131013164" as="style">
+  <link rel="preload" href="/css/style.css?time=1661166723435" as="style">
   
   <!-- 页面元数据 -->
   <title>机器学习课程 - 云墨小站</title>
@@ -1762,8 +1762,8 @@ ul.list-v >li>a:hover {
 }
 
   </style>
-  <link rel="stylesheet" href="/css/style.css?time=1660131013164" media="print" onload="this.media='all';this.onload=null">
-  <noscript><link rel="stylesheet" href="/css/style.css?time=1660131013164"></noscript>
+  <link rel="stylesheet" href="/css/style.css?time=1661166723435" media="print" onload="this.media='all';this.onload=null">
+  <noscript><link rel="stylesheet" href="/css/style.css?time=1661166723435"></noscript>
     <script>
       var userColorScheme=localStorage.getItem("color-scheme")
       if(userColorScheme){
@@ -3007,21 +3007,21 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
               
               
               active-action="action-archives">
-              <i class='fad fa-archive PETERRIVE fa-fw'></i><p>归档</p>
+              <i class='fad fa-archive fa-fw CARROT fa-fw'></i><p>归档</p>
             </a>
           
             <a href="/shuoshuo/"
               
               
               active-action="action-shuoshuo">
-              <i class='fad fa-comment-dots fa-fw EMERALD fa-fw'></i><p>说说</p>
+              <i class='fad fa-microphone-alt fa-fw EMERALD fa-fw'></i><p>说说</p>
             </a>
           
             <a href="/links/"
               
               
               active-action="action-links">
-              <i class='fad fa-link CARROT fa-fw'></i><p>友链</p>
+              <i class='fad fa-link PETERRIVE fa-fw'></i><p>友链</p>
             </a>
           
             <a target="_blank" rel="noopener" href="https://travellings.link/"
@@ -3125,6 +3125,23 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
           
         
+          
+            
+  <div class="new-meta-item browse busuanzi">
+    <a class='notlink' href="/" onclick="return false;" title="Click me!" >
+      <i class="fal fa-eye NEPHRITIS fa-fw" aria-hidden="true"></i>
+      <p>
+        <span id="busuanzi_value_page_pv">
+          <i class="fas fa-circle-notch fa-spin fa-fw" aria-hidden="true"></i>
+        </span>
+        次浏览
+      </p>
+    </a>
+  </div>
+
+
+          
+        
         <!-- Custom Files topMeta begin-->
         
         <!-- Custom Files topMeta end-->
@@ -3207,7 +3224,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 <li><strong>应用</strong></li>
 </ul>
 <p>代码：</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> sklearn.feature_extraction.text <span class="keyword">import</span> CountVectorizer,TfidfVectorizer</span><br><span class="line"><span class="keyword">import</span> jieba</span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">cut_word</span>(<span class="params">text</span>):</span></span><br><span class="line">    <span class="comment"># 用jieba对中文字符串进行分词</span></span><br><span class="line">    text = <span class="string">&quot; &quot;</span>.join(<span class="built_in">list</span>(jieba.cut(text)))</span><br><span class="line">    <span class="keyword">return</span> text</span><br><span class="line"><span class="comment">#对中文进行特征抽取</span></span><br><span class="line">data = [<span class="string">&quot;一种还是一种今天很残酷，明天更残酷，后天很美好，但绝对大部分是死在明天晚上，所以每个人不要放弃今天。&quot;</span>,</span><br><span class="line">            <span class="string">&quot;我们看到的从很远星系来的光是在几百万年之前发出的，这样当我们看到宇宙时，我们是在看它的过去。&quot;</span>,</span><br><span class="line">            <span class="string">&quot;如果只用一种方式了解某样事物，你就不会真正了解它。了解事物真正含义的秘密取决于如何将其与我们所了解的事物相联系。&quot;</span>,</span><br><span class="line">            <span class="string">&quot;life is short,i like like python&quot;</span>, <span class="string">&quot;life is too long,i dislike python&quot;</span>]</span><br><span class="line"><span class="comment"># 将原始数据转换成分好词的形式</span></span><br><span class="line">text_list = []</span><br><span class="line"><span class="keyword">for</span> sent <span class="keyword">in</span> data:</span><br><span class="line">	text_list.append(cut_word(sent))</span><br><span class="line"><span class="built_in">print</span>(text_list)</span><br><span class="line"><span class="comment"># 1、实例化一个转换器类</span></span><br><span class="line">transfer = CountVectorizer()</span><br><span class="line"><span class="comment">#transfer = TfidfVectorizer()</span></span><br><span class="line"><span class="comment"># 2、调用fit_transform</span></span><br><span class="line">data = transfer.fit_transform(text_list)</span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;文本特征抽取的结果：\n&quot;</span>, data.toarray())</span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;返回特征名字：\n&quot;</span>, transfer.get_feature_names())</span><br></pre></td></tr></table></figure>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> sklearn.feature_extraction.text <span class="keyword">import</span> CountVectorizer,TfidfVectorizer</span><br><span class="line"><span class="keyword">import</span> jieba</span><br><span class="line"><span class="keyword">def</span> <span class="title function_">cut_word</span>(<span class="params">text</span>):</span><br><span class="line">    <span class="comment"># 用jieba对中文字符串进行分词</span></span><br><span class="line">    text = <span class="string">&quot; &quot;</span>.join(<span class="built_in">list</span>(jieba.cut(text)))</span><br><span class="line">    <span class="keyword">return</span> text</span><br><span class="line"><span class="comment">#对中文进行特征抽取</span></span><br><span class="line">data = [<span class="string">&quot;一种还是一种今天很残酷，明天更残酷，后天很美好，但绝对大部分是死在明天晚上，所以每个人不要放弃今天。&quot;</span>,</span><br><span class="line">            <span class="string">&quot;我们看到的从很远星系来的光是在几百万年之前发出的，这样当我们看到宇宙时，我们是在看它的过去。&quot;</span>,</span><br><span class="line">            <span class="string">&quot;如果只用一种方式了解某样事物，你就不会真正了解它。了解事物真正含义的秘密取决于如何将其与我们所了解的事物相联系。&quot;</span>,</span><br><span class="line">            <span class="string">&quot;life is short,i like like python&quot;</span>, <span class="string">&quot;life is too long,i dislike python&quot;</span>]</span><br><span class="line"><span class="comment"># 将原始数据转换成分好词的形式</span></span><br><span class="line">text_list = []</span><br><span class="line"><span class="keyword">for</span> sent <span class="keyword">in</span> data:</span><br><span class="line">	text_list.append(cut_word(sent))</span><br><span class="line"><span class="built_in">print</span>(text_list)</span><br><span class="line"><span class="comment"># 1、实例化一个转换器类</span></span><br><span class="line">transfer = CountVectorizer()</span><br><span class="line"><span class="comment">#transfer = TfidfVectorizer()</span></span><br><span class="line"><span class="comment"># 2、调用fit_transform</span></span><br><span class="line">data = transfer.fit_transform(text_list)</span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;文本特征抽取的结果：\n&quot;</span>, data.toarray())</span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;返回特征名字：\n&quot;</span>, transfer.get_feature_names())</span><br></pre></td></tr></table></figure>
 
 <p>输出结果：</p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">[<span class="string">&#x27;一种 还是 一种 今天 很 残酷 ， 明天 更 残酷 ， 后天 很 美好 ， 但 绝对 大部分 是 死 在 明天 晚上 ， 所以 每个 人 不要 放弃 今天 。&#x27;</span>, <span class="string">&#x27;我们 看到 的 从 很 远 星系 来 的 光是在 几百万年 之前 发出 的 ， 这样 当 我们 看到 宇宙 时 ， 我们 是 在 看 它 的 过去 。&#x27;</span>, <span class="string">&#x27;如果 只用 一种 方式 了解 某样 事物 ， 你 就 不会 真正 了解 它 。 了解 事物 真正 含义 的 秘密 取决于 如何 将 其 与 我们 所 了解 的 事物 相 联系 。&#x27;</span>, <span class="string">&#x27;life   is   short , i   like   like   python&#x27;</span>, <span class="string">&#x27;life   is   too   long , i   dislike   python&#x27;</span>]</span><br><span class="line">文本特征抽取的结果：</span><br><span class="line"> [[<span class="number">0</span> <span class="number">0</span> <span class="number">0</span> <span class="number">0</span> <span class="number">0</span> <span class="number">0</span> <span class="number">0</span> <span class="number">0</span> <span class="number">2</span> <span class="number">0</span> <span class="number">1</span> <span class="number">0</span> <span class="number">0</span> <span class="number">0</span> <span class="number">2</span> <span class="number">0</span> <span class="number">0</span> <span class="number">0</span> <span class="number">0</span> <span class="number">0</span> <span class="number">1</span> <span class="number">0</span> <span class="number">1</span> <span class="number">0</span> <span class="number">0</span> <span class="number">0</span> <span class="number">0</span> <span class="number">1</span> <span class="number">1</span> <span class="number">0</span> <span class="number">2</span> <span class="number">0</span> <span class="number">1</span> <span class="number">0</span> <span class="number">2</span> <span class="number">1</span></span><br><span class="line">  <span class="number">0</span> <span class="number">0</span> <span class="number">0</span> <span class="number">1</span> <span class="number">1</span> <span class="number">0</span> <span class="number">0</span> <span class="number">1</span> <span class="number">0</span>]</span><br><span class="line"> [<span class="number">0</span> <span class="number">0</span> <span class="number">0</span> <span class="number">0</span> <span class="number">0</span> <span class="number">0</span> <span class="number">0</span> <span class="number">0</span> <span class="number">0</span> <span class="number">0</span> <span class="number">0</span> <span class="number">1</span> <span class="number">0</span> <span class="number">0</span> <span class="number">0</span> <span class="number">1</span> <span class="number">1</span> <span class="number">1</span> <span class="number">0</span> <span class="number">0</span> <span class="number">0</span> <span class="number">0</span> <span class="number">0</span> <span class="number">0</span> <span class="number">0</span> <span class="number">1</span> <span class="number">3</span> <span class="number">0</span> <span class="number">0</span> <span class="number">0</span> <span class="number">0</span> <span class="number">1</span> <span class="number">0</span> <span class="number">0</span> <span class="number">0</span> <span class="number">0</span></span><br><span class="line">  <span class="number">2</span> <span class="number">0</span> <span class="number">0</span> <span class="number">0</span> <span class="number">0</span> <span class="number">0</span> <span class="number">1</span> <span class="number">0</span> <span class="number">1</span>]</span><br><span class="line"> [<span class="number">0</span> <span class="number">0</span> <span class="number">0</span> <span class="number">0</span> <span class="number">0</span> <span class="number">0</span> <span class="number">0</span> <span class="number">0</span> <span class="number">1</span> <span class="number">1</span> <span class="number">0</span> <span class="number">0</span> <span class="number">4</span> <span class="number">3</span> <span class="number">0</span> <span class="number">0</span> <span class="number">0</span> <span class="number">0</span> <span class="number">1</span> <span class="number">1</span> <span class="number">0</span> <span class="number">1</span> <span class="number">0</span> <span class="number">1</span> <span class="number">1</span> <span class="number">0</span> <span class="number">1</span> <span class="number">0</span> <span class="number">0</span> <span class="number">1</span> <span class="number">0</span> <span class="number">0</span> <span class="number">0</span> <span class="number">1</span> <span class="number">0</span> <span class="number">0</span></span><br><span class="line">  <span class="number">0</span> <span class="number">2</span> <span class="number">1</span> <span class="number">0</span> <span class="number">0</span> <span class="number">1</span> <span class="number">0</span> <span class="number">0</span> <span class="number">0</span>]</span><br><span class="line"> [<span class="number">0</span> <span class="number">1</span> <span class="number">1</span> <span class="number">2</span> <span class="number">0</span> <span class="number">1</span> <span class="number">1</span> <span class="number">0</span> <span class="number">0</span> <span class="number">0</span> <span class="number">0</span> <span class="number">0</span> <span class="number">0</span> <span class="number">0</span> <span class="number">0</span> <span class="number">0</span> <span class="number">0</span> <span class="number">0</span> <span class="number">0</span> <span class="number">0</span> <span class="number">0</span> <span class="number">0</span> <span class="number">0</span> <span class="number">0</span> <span class="number">0</span> <span class="number">0</span> <span class="number">0</span> <span class="number">0</span> <span class="number">0</span> <span class="number">0</span> <span class="number">0</span> <span class="number">0</span> <span class="number">0</span> <span class="number">0</span> <span class="number">0</span> <span class="number">0</span></span><br><span class="line">  <span class="number">0</span> <span class="number">0</span> <span class="number">0</span> <span class="number">0</span> <span class="number">0</span> <span class="number">0</span> <span class="number">0</span> <span class="number">0</span> <span class="number">0</span>]</span><br><span class="line"> [<span class="number">1</span> <span class="number">1</span> <span class="number">1</span> <span class="number">0</span> <span class="number">1</span> <span class="number">1</span> <span class="number">0</span> <span class="number">1</span> <span class="number">0</span> <span class="number">0</span> <span class="number">0</span> <span class="number">0</span> <span class="number">0</span> <span class="number">0</span> <span class="number">0</span> <span class="number">0</span> <span class="number">0</span> <span class="number">0</span> <span class="number">0</span> <span class="number">0</span> <span class="number">0</span> <span class="number">0</span> <span class="number">0</span> <span class="number">0</span> <span class="number">0</span> <span class="number">0</span> <span class="number">0</span> <span class="number">0</span> <span class="number">0</span> <span class="number">0</span> <span class="number">0</span> <span class="number">0</span> <span class="number">0</span> <span class="number">0</span> <span class="number">0</span> <span class="number">0</span></span><br><span class="line">  <span class="number">0</span> <span class="number">0</span> <span class="number">0</span> <span class="number">0</span> <span class="number">0</span> <span class="number">0</span> <span class="number">0</span> <span class="number">0</span> <span class="number">0</span>]]</span><br><span class="line">返回特征名字：</span><br><span class="line"> [<span class="string">&#x27;dislike&#x27;</span>, <span class="string">&#x27;is&#x27;</span>, <span class="string">&#x27;life&#x27;</span>, <span class="string">&#x27;like&#x27;</span>, <span class="string">&#x27;long&#x27;</span>, <span class="string">&#x27;python&#x27;</span>, <span class="string">&#x27;short&#x27;</span>, <span class="string">&#x27;too&#x27;</span>, <span class="string">&#x27;一种&#x27;</span>, <span class="string">&#x27;不会&#x27;</span>, <span class="string">&#x27;不要&#x27;</span>, <span class="string">&#x27;之前&#x27;</span>, <span class="string">&#x27;了解&#x27;</span>, <span class="string">&#x27;事物&#x27;</span>, <span class="string">&#x27;今天&#x27;</span>, <span class="string">&#x27;光是在&#x27;</span>, <span class="string">&#x27;几百万年&#x27;</span>, <span class="string">&#x27;发出&#x27;</span>, <span class="string">&#x27;取决于&#x27;</span>, <span class="string">&#x27;只用&#x27;</span>, <span class="string">&#x27;后天&#x27;</span>, <span class="string">&#x27;含义&#x27;</span>, <span class="string">&#x27;大部分&#x27;</span>, <span class="string">&#x27;如何&#x27;</span>, <span class="string">&#x27;如果&#x27;</span>, <span class="string">&#x27;宇宙&#x27;</span>, <span class="string">&#x27;我们&#x27;</span>, <span class="string">&#x27;所以&#x27;</span>, <span class="string">&#x27;放弃&#x27;</span>, <span class="string">&#x27;方式&#x27;</span>, <span class="string">&#x27;明天&#x27;</span>, <span class="string">&#x27;星系&#x27;</span>, <span class="string">&#x27;晚上&#x27;</span>, <span class="string">&#x27;某样&#x27;</span>, <span class="string">&#x27;残酷&#x27;</span>, <span class="string">&#x27;每个&#x27;</span>, <span class="string">&#x27;看到&#x27;</span>, <span class="string">&#x27;真正&#x27;</span>, <span class="string">&#x27;秘密&#x27;</span>, <span class="string">&#x27;绝对&#x27;</span>, <span class="string">&#x27;美好&#x27;</span>, <span class="string">&#x27;联系&#x27;</span>, <span class="string">&#x27;过去&#x27;</span>, <span class="string">&#x27;还是&#x27;</span>, <span class="string">&#x27;这样&#x27;</span>]</span><br></pre></td></tr></table></figure>
@@ -3238,7 +3255,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> pandas <span class="keyword">as</span> pd</span><br><span class="line">df = pd.DataFrame([</span><br><span class="line">            [<span class="string">&#x27;green&#x27;</span>, <span class="string">&#x27;M&#x27;</span>, <span class="number">10.1</span>, <span class="string">&#x27;class1&#x27;</span>], </span><br><span class="line">            [<span class="string">&#x27;red&#x27;</span>, <span class="string">&#x27;L&#x27;</span>, <span class="number">13.5</span>, <span class="string">&#x27;class2&#x27;</span>], </span><br><span class="line">            [<span class="string">&#x27;blue&#x27;</span>, <span class="string">&#x27;XL&#x27;</span>, <span class="number">15.3</span>, <span class="string">&#x27;class1&#x27;</span>]])</span><br><span class="line">df.columns = [<span class="string">&#x27;color&#x27;</span>, <span class="string">&#x27;size&#x27;</span>, <span class="string">&#x27;prize&#x27;</span>, <span class="string">&#x27;class label&#x27;</span>]</span><br><span class="line"><span class="comment">#标签处理</span></span><br><span class="line">class_mapping = &#123;label:idx <span class="keyword">for</span> idx,label <span class="keyword">in</span> <span class="built_in">enumerate</span>(<span class="built_in">set</span>(df[<span class="string">&#x27;class label&#x27;</span>]))&#125;</span><br><span class="line">df[<span class="string">&#x27;class label&#x27;</span>] = df[<span class="string">&#x27;class label&#x27;</span>].<span class="built_in">map</span>(class_mapping)</span><br><span class="line"><span class="built_in">print</span>(df)</span><br><span class="line"><span class="built_in">print</span>(<span class="string">&#x27;-----------------------------------&#x27;</span>)</span><br><span class="line">size_mapping = &#123;</span><br><span class="line">           <span class="string">&#x27;XL&#x27;</span>: <span class="number">3</span>,</span><br><span class="line">           <span class="string">&#x27;L&#x27;</span>: <span class="number">2</span>,</span><br><span class="line">           <span class="string">&#x27;M&#x27;</span>: <span class="number">1</span>&#125;</span><br><span class="line"></span><br><span class="line">df[<span class="string">&#x27;size&#x27;</span>] = df[<span class="string">&#x27;size&#x27;</span>].<span class="built_in">map</span>(size_mapping)</span><br><span class="line"><span class="built_in">print</span>(df)</span><br></pre></td></tr></table></figure>
 
 <p>输出结果:</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">   color size  prize  <span class="class"><span class="keyword">class</span> <span class="title">label</span></span></span><br><span class="line"><span class="class">0  <span class="title">green</span>    <span class="title">M</span>   10.1            1</span></span><br><span class="line"><span class="class">1    <span class="title">red</span>    <span class="title">L</span>   13.5            0</span></span><br><span class="line"><span class="class">2   <span class="title">blue</span>   <span class="title">XL</span>   15.3            1</span></span><br><span class="line"><span class="class">-----------------------------------</span></span><br><span class="line"><span class="class">   <span class="title">color</span>  <span class="title">size</span>  <span class="title">prize</span>  <span class="title">class</span> <span class="title">label</span></span></span><br><span class="line"><span class="class">0  <span class="title">green</span>     1   10.1            1</span></span><br><span class="line"><span class="class">1    <span class="title">red</span>     2   13.5            0</span></span><br><span class="line"><span class="class">2   <span class="title">blue</span>     3   15.3            1</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">   color size  prize  <span class="keyword">class</span> <span class="title class_">label</span></span><br><span class="line"><span class="number">0</span>  green    M   <span class="number">10.1</span>            <span class="number">1</span></span><br><span class="line"><span class="number">1</span>    red    L   <span class="number">13.5</span>            <span class="number">0</span></span><br><span class="line"><span class="number">2</span>   blue   XL   <span class="number">15.3</span>            <span class="number">1</span></span><br><span class="line">-----------------------------------</span><br><span class="line">   color  size  prize  <span class="keyword">class</span> <span class="title class_">label</span></span><br><span class="line"><span class="number">0</span>  green     <span class="number">1</span>   <span class="number">10.1</span>            <span class="number">1</span></span><br><span class="line"><span class="number">1</span>    red     <span class="number">2</span>   <span class="number">13.5</span>            <span class="number">0</span></span><br><span class="line"><span class="number">2</span>   blue     <span class="number">3</span>   <span class="number">15.3</span>            <span class="number">1</span></span><br></pre></td></tr></table></figure>
 
 <p>（2）<strong>二值化</strong></p>
 <p>二值化的过程是将数值型的属性转换为布尔值的属性，设定一个阈值作为划分属性值为0和1的分隔点。</p>
@@ -3250,7 +3267,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> pandas <span class="keyword">as</span> pd</span><br><span class="line">df = pd.DataFrame([</span><br><span class="line">            [<span class="string">&#x27;green&#x27;</span>, <span class="string">&#x27;M&#x27;</span>, <span class="number">10.1</span>, <span class="string">&#x27;class1&#x27;</span>], </span><br><span class="line">            [<span class="string">&#x27;red&#x27;</span>, <span class="string">&#x27;L&#x27;</span>, <span class="number">13.5</span>, <span class="string">&#x27;class2&#x27;</span>], </span><br><span class="line">            [<span class="string">&#x27;blue&#x27;</span>, <span class="string">&#x27;XL&#x27;</span>, <span class="number">15.3</span>, <span class="string">&#x27;class1&#x27;</span>]])</span><br><span class="line">df.columns = [<span class="string">&#x27;color&#x27;</span>, <span class="string">&#x27;size&#x27;</span>, <span class="string">&#x27;prize&#x27;</span>, <span class="string">&#x27;class label&#x27;</span>]</span><br><span class="line"><span class="built_in">print</span>(df)</span><br><span class="line"><span class="built_in">print</span>(<span class="string">&#x27;----------------------------------------------------------------------&#x27;</span>)</span><br><span class="line"><span class="comment">#print(df.transpose().to_dict().values())</span></span><br><span class="line"><span class="comment">#print(&#x27;----------------------------------------------------------------------&#x27;)</span></span><br><span class="line">feature = df.iloc[:, :-<span class="number">1</span>]</span><br><span class="line"><span class="built_in">print</span>(feature)</span><br><span class="line"><span class="built_in">print</span>(<span class="string">&#x27;----------------------------------------------------------------------&#x27;</span>)</span><br><span class="line"><span class="comment"># ②对于x转换成字典数据</span></span><br><span class="line">feature=feature.to_dict(orient=<span class="string">&quot;records&quot;</span>)</span><br><span class="line"><span class="comment">#feature=feature.transpose().to_dict().values() #对所有的数据都做了映射</span></span><br><span class="line"><span class="comment">#使用 DictVectorizer将得到特征的字典</span></span><br><span class="line"><span class="keyword">from</span> sklearn.feature_extraction <span class="keyword">import</span> DictVectorizer</span><br><span class="line">dvec = DictVectorizer(sparse=<span class="literal">False</span>)</span><br><span class="line">X = dvec.fit_transform(feature)</span><br><span class="line"><span class="built_in">print</span>(dvec.get_feature_names())</span><br><span class="line"><span class="built_in">print</span>(<span class="string">&#x27;----------------------------------------------------------------------&#x27;</span>)</span><br><span class="line"><span class="built_in">print</span>(X)</span><br><span class="line"><span class="built_in">print</span>(<span class="string">&#x27;----------------------------------------------------------------------&#x27;</span>)</span><br><span class="line"><span class="comment">#可以调用 get_feature_names 来返回新的列的名字，其中0和1就代表是不是这个属性.</span></span><br><span class="line">data=pd.DataFrame(X, columns=dvec.get_feature_names())</span><br><span class="line"><span class="built_in">print</span>(data)</span><br></pre></td></tr></table></figure>
 
 <p>输出结果:</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line">   color size  prize <span class="class"><span class="keyword">class</span> <span class="title">label</span></span></span><br><span class="line"><span class="class">0  <span class="title">green</span>    <span class="title">M</span>   10.1      <span class="title">class1</span></span></span><br><span class="line"><span class="class">1    <span class="title">red</span>    <span class="title">L</span>   13.5      <span class="title">class2</span></span></span><br><span class="line"><span class="class">2   <span class="title">blue</span>   <span class="title">XL</span>   15.3      <span class="title">class1</span></span></span><br><span class="line"><span class="class">----------------------------------------------------------------------</span></span><br><span class="line"><span class="class">   <span class="title">color</span> <span class="title">size</span>  <span class="title">prize</span></span></span><br><span class="line"><span class="class">0  <span class="title">green</span>    <span class="title">M</span>   10.1</span></span><br><span class="line"><span class="class">1    <span class="title">red</span>    <span class="title">L</span>   13.5</span></span><br><span class="line"><span class="class">2   <span class="title">blue</span>   <span class="title">XL</span>   15.3</span></span><br><span class="line"><span class="class">----------------------------------------------------------------------</span></span><br><span class="line"><span class="class">[&#x27;<span class="title">color</span>=<span class="title">blue</span>&#x27;, &#x27;<span class="title">color</span>=<span class="title">green</span>&#x27;, &#x27;<span class="title">color</span>=<span class="title">red</span>&#x27;, &#x27;<span class="title">prize</span>&#x27;, &#x27;<span class="title">size</span>=<span class="title">L</span>&#x27;, &#x27;<span class="title">size</span>=<span class="title">M</span>&#x27;, &#x27;<span class="title">size</span>=<span class="title">XL</span>&#x27;]</span></span><br><span class="line"><span class="class">----------------------------------------------------------------------</span></span><br><span class="line"><span class="class">[[ 0.   1.   0.  10.1  0.   1.   0. ]</span></span><br><span class="line"><span class="class"> [ 0.   0.   1.  13.5  1.   0.   0. ]</span></span><br><span class="line"><span class="class"> [ 1.   0.   0.  15.3  0.   0.   1. ]]</span></span><br><span class="line"><span class="class">----------------------------------------------------------------------</span></span><br><span class="line"><span class="class">   <span class="title">color</span>=<span class="title">blue</span>  <span class="title">color</span>=<span class="title">green</span>  <span class="title">color</span>=<span class="title">red</span>  <span class="title">prize</span>  <span class="title">size</span>=<span class="title">L</span>  <span class="title">size</span>=<span class="title">M</span>  <span class="title">size</span>=<span class="title">XL</span></span></span><br><span class="line"><span class="class">0         0.0          1.0        0.0   10.1     0.0     1.0      0.0</span></span><br><span class="line"><span class="class">1         0.0          0.0        1.0   13.5     1.0     0.0      0.0</span></span><br><span class="line"><span class="class">2         1.0          0.0        0.0   15.3     0.0     0.0      1.0</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line">   color size  prize <span class="keyword">class</span> <span class="title class_">label</span></span><br><span class="line"><span class="number">0</span>  green    M   <span class="number">10.1</span>      class1</span><br><span class="line"><span class="number">1</span>    red    L   <span class="number">13.5</span>      class2</span><br><span class="line"><span class="number">2</span>   blue   XL   <span class="number">15.3</span>      class1</span><br><span class="line">----------------------------------------------------------------------</span><br><span class="line">   color size  prize</span><br><span class="line"><span class="number">0</span>  green    M   <span class="number">10.1</span></span><br><span class="line"><span class="number">1</span>    red    L   <span class="number">13.5</span></span><br><span class="line"><span class="number">2</span>   blue   XL   <span class="number">15.3</span></span><br><span class="line">----------------------------------------------------------------------</span><br><span class="line">[<span class="string">&#x27;color=blue&#x27;</span>, <span class="string">&#x27;color=green&#x27;</span>, <span class="string">&#x27;color=red&#x27;</span>, <span class="string">&#x27;prize&#x27;</span>, <span class="string">&#x27;size=L&#x27;</span>, <span class="string">&#x27;size=M&#x27;</span>, <span class="string">&#x27;size=XL&#x27;</span>]</span><br><span class="line">----------------------------------------------------------------------</span><br><span class="line">[[ <span class="number">0.</span>   <span class="number">1.</span>   <span class="number">0.</span>  <span class="number">10.1</span>  <span class="number">0.</span>   <span class="number">1.</span>   <span class="number">0.</span> ]</span><br><span class="line"> [ <span class="number">0.</span>   <span class="number">0.</span>   <span class="number">1.</span>  <span class="number">13.5</span>  <span class="number">1.</span>   <span class="number">0.</span>   <span class="number">0.</span> ]</span><br><span class="line"> [ <span class="number">1.</span>   <span class="number">0.</span>   <span class="number">0.</span>  <span class="number">15.3</span>  <span class="number">0.</span>   <span class="number">0.</span>   <span class="number">1.</span> ]]</span><br><span class="line">----------------------------------------------------------------------</span><br><span class="line">   color=blue  color=green  color=red  prize  size=L  size=M  size=XL</span><br><span class="line"><span class="number">0</span>         <span class="number">0.0</span>          <span class="number">1.0</span>        <span class="number">0.0</span>   <span class="number">10.1</span>     <span class="number">0.0</span>     <span class="number">1.0</span>      <span class="number">0.0</span></span><br><span class="line"><span class="number">1</span>         <span class="number">0.0</span>          <span class="number">0.0</span>        <span class="number">1.0</span>   <span class="number">13.5</span>     <span class="number">1.0</span>     <span class="number">0.0</span>      <span class="number">0.0</span></span><br><span class="line"><span class="number">2</span>         <span class="number">1.0</span>          <span class="number">0.0</span>        <span class="number">0.0</span>   <span class="number">15.3</span>     <span class="number">0.0</span>     <span class="number">0.0</span>      <span class="number">1.0</span></span><br></pre></td></tr></table></figure>
 
 <p>（4）<strong>独热编码</strong>（One-HotEncoding）</p>
 <p>独热编码采用N位状态寄存器来对N个可能的取值进行编码，每个状态都由独立的寄存器来表示，并且在任意时刻只有其中一位有效。</p>
@@ -3259,7 +3276,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> pandas <span class="keyword">as</span> pd</span><br><span class="line">df = pd.DataFrame([</span><br><span class="line">            [<span class="string">&#x27;green&#x27;</span>, <span class="string">&#x27;M&#x27;</span>, <span class="number">10.1</span>, <span class="string">&#x27;class1&#x27;</span>], </span><br><span class="line">            [<span class="string">&#x27;red&#x27;</span>, <span class="string">&#x27;L&#x27;</span>, <span class="number">13.5</span>, <span class="string">&#x27;class2&#x27;</span>], </span><br><span class="line">            [<span class="string">&#x27;blue&#x27;</span>, <span class="string">&#x27;XL&#x27;</span>, <span class="number">15.3</span>, <span class="string">&#x27;class1&#x27;</span>]])</span><br><span class="line">df.columns = [<span class="string">&#x27;color&#x27;</span>, <span class="string">&#x27;size&#x27;</span>, <span class="string">&#x27;prize&#x27;</span>, <span class="string">&#x27;class label&#x27;</span>]</span><br><span class="line"><span class="comment">#OneHotEncoder 必须使用整数作为输入，所以得先使用scikit LabelEncoder处理一下</span></span><br><span class="line"><span class="keyword">from</span> sklearn.preprocessing <span class="keyword">import</span> LabelEncoder</span><br><span class="line">class_le = LabelEncoder()</span><br><span class="line">df[<span class="string">&#x27;class label&#x27;</span>] = class_le.fit_transform(df[<span class="string">&#x27;class label&#x27;</span>])</span><br><span class="line"><span class="built_in">print</span>(df)</span><br><span class="line"><span class="built_in">print</span>(<span class="string">&#x27;-----------------------------------&#x27;</span>)</span><br><span class="line"><span class="keyword">from</span> sklearn.preprocessing <span class="keyword">import</span> OneHotEncoder</span><br><span class="line">ohe = OneHotEncoder(sparse=<span class="literal">False</span>)</span><br><span class="line">X = ohe.fit_transform(df[[<span class="string">&#x27;color&#x27;</span>]].values)</span><br><span class="line"><span class="built_in">print</span>(X)</span><br></pre></td></tr></table></figure>
 
 <p>输出结果:</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">   color size  prize  <span class="class"><span class="keyword">class</span> <span class="title">label</span></span></span><br><span class="line"><span class="class">0  <span class="title">green</span>    <span class="title">M</span>   10.1            0</span></span><br><span class="line"><span class="class">1    <span class="title">red</span>    <span class="title">L</span>   13.5            1</span></span><br><span class="line"><span class="class">2   <span class="title">blue</span>   <span class="title">XL</span>   15.3            0</span></span><br><span class="line"><span class="class">-----------------------------------</span></span><br><span class="line"><span class="class">[[0. 1. 0.]</span></span><br><span class="line"><span class="class"> [0. 0. 1.]</span></span><br><span class="line"><span class="class"> [1. 0. 0.]]</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">   color size  prize  <span class="keyword">class</span> <span class="title class_">label</span></span><br><span class="line"><span class="number">0</span>  green    M   <span class="number">10.1</span>            <span class="number">0</span></span><br><span class="line"><span class="number">1</span>    red    L   <span class="number">13.5</span>            <span class="number">1</span></span><br><span class="line"><span class="number">2</span>   blue   XL   <span class="number">15.3</span>            <span class="number">0</span></span><br><span class="line">-----------------------------------</span><br><span class="line">[[<span class="number">0.</span> <span class="number">1.</span> <span class="number">0.</span>]</span><br><span class="line"> [<span class="number">0.</span> <span class="number">0.</span> <span class="number">1.</span>]</span><br><span class="line"> [<span class="number">1.</span> <span class="number">0.</span> <span class="number">0.</span>]]</span><br></pre></td></tr></table></figure>
 
 <p>注：Pandas库中同样有类似的操作，使用get_dummies也可以得到相应的特征</p>
 <p>（5）<strong>pandas get_dummies</strong></p>
@@ -3968,7 +3985,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 <li><p><em>coef</em>:回归系数</p>
 </li>
 </ul>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">_BaseRidgeCV</span>(<span class="params">LinearModel</span>):</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">__init__</span>(<span class="params">self, alphas=(<span class="params"><span class="number">0.1</span>, <span class="number">1.0</span>, <span class="number">10.0</span></span>),</span></span></span><br><span class="line"><span class="params"><span class="function">                 fit_intercept=<span class="literal">True</span>, normalize=<span class="literal">False</span>, scoring=<span class="literal">None</span>,</span></span></span><br><span class="line"><span class="params"><span class="function">                 cv=<span class="literal">None</span>, gcv_mode=<span class="literal">None</span>,</span></span></span><br><span class="line"><span class="params"><span class="function">                 store_cv_values=<span class="literal">False</span></span>):</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">_BaseRidgeCV</span>(<span class="title class_ inherited__">LinearModel</span>):</span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">__init__</span>(<span class="params">self, alphas=(<span class="params"><span class="number">0.1</span>, <span class="number">1.0</span>, <span class="number">10.0</span></span>),</span></span><br><span class="line"><span class="params">                 fit_intercept=<span class="literal">True</span>, normalize=<span class="literal">False</span>, scoring=<span class="literal">None</span>,</span></span><br><span class="line"><span class="params">                 cv=<span class="literal">None</span>, gcv_mode=<span class="literal">None</span>,</span></span><br><span class="line"><span class="params">                 store_cv_values=<span class="literal">False</span></span>):</span><br></pre></td></tr></table></figure>
 
 
 </li>
@@ -4127,7 +4144,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
 <p><img src="https://gitee.com/sky_mirrors_the_clouds/cloudimg/raw/master/https://gitee.com/sky_mirrors_the_clouds/cloudimg/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E5%9B%BE%E5%BA%93/20190611144159116.png" class="lazyload" data-srcset="https://gitee.com/sky_mirrors_the_clouds/cloudimg/raw/master/https://gitee.com/sky_mirrors_the_clouds/cloudimg/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E5%9B%BE%E5%BA%93/20190611144159116.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="img"></p>
 <p>混淆矩阵可视化</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> matplotlib.pyplot <span class="keyword">as</span> plt</span><br><span class="line"><span class="keyword">import</span> numpy <span class="keyword">as</span> np</span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">plot_confusion_matrix</span>(<span class="params">confusion_mat</span>):</span>  <span class="comment">#将混淆矩阵画图并显示出来&#x27;&#x27;&#x27; </span></span><br><span class="line">	plt.title(<span class="string">&#x27;Confusion matrix&#x27;</span>)</span><br><span class="line">	plt.imshow(confusion_mat,interpolation=<span class="string">&#x27;nearest&#x27;</span>,cmap=plt.cm.gray)</span><br><span class="line">	plt.colorbar()</span><br><span class="line">	tick_marks=np.arange(confusion_mat.shape[<span class="number">0</span>])</span><br><span class="line">	plt.xticks(tick_marks,tick_marks)</span><br><span class="line">	plt.yticks(tick_marks,tick_marks)</span><br><span class="line">	plt.ylabel(<span class="string">&#x27;True label&#x27;</span>)</span><br><span class="line">	plt.xlabel(<span class="string">&#x27;Predicted label&#x27;</span>)</span><br><span class="line">	plt.show()</span><br><span class="line">plot_confusion_matrix(confusion_mat)</span><br></pre></td></tr></table></figure>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> matplotlib.pyplot <span class="keyword">as</span> plt</span><br><span class="line"><span class="keyword">import</span> numpy <span class="keyword">as</span> np</span><br><span class="line"><span class="keyword">def</span> <span class="title function_">plot_confusion_matrix</span>(<span class="params">confusion_mat</span>):  <span class="comment">#将混淆矩阵画图并显示出来&#x27;&#x27;&#x27; </span></span><br><span class="line">	plt.title(<span class="string">&#x27;Confusion matrix&#x27;</span>)</span><br><span class="line">	plt.imshow(confusion_mat,interpolation=<span class="string">&#x27;nearest&#x27;</span>,cmap=plt.cm.gray)</span><br><span class="line">	plt.colorbar()</span><br><span class="line">	tick_marks=np.arange(confusion_mat.shape[<span class="number">0</span>])</span><br><span class="line">	plt.xticks(tick_marks,tick_marks)</span><br><span class="line">	plt.yticks(tick_marks,tick_marks)</span><br><span class="line">	plt.ylabel(<span class="string">&#x27;True label&#x27;</span>)</span><br><span class="line">	plt.xlabel(<span class="string">&#x27;Predicted label&#x27;</span>)</span><br><span class="line">	plt.show()</span><br><span class="line">plot_confusion_matrix(confusion_mat)</span><br></pre></td></tr></table></figure>
 
 <p><img src="https://gitee.com/sky_mirrors_the_clouds/cloudimg/raw/master/https://gitee.com/sky_mirrors_the_clouds/cloudimg/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E5%9B%BE%E5%BA%93/Figure_111.png" class="lazyload" data-srcset="https://gitee.com/sky_mirrors_the_clouds/cloudimg/raw/master/https://gitee.com/sky_mirrors_the_clouds/cloudimg/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E5%9B%BE%E5%BA%93/Figure_111.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="Figure_111"></p>
 <p><strong>分类评估报告API</strong></p>
@@ -4547,311 +4564,6 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     
     
 
-<section class="widget blogger shadow floatable desktop pjax">
-  <div class='content'>
-    
-      
-        <a class='avatar flat-box circle' href='/about/'>
-          <img no-lazy src='https://gcore.jsdelivr.net/gh/Qikaile/cdn/img/circle-cropped.png'height="120" width="120"  alt="This is a picture without description" />
-        </a>
-      
-    
-    
-      <div class='text'>
-        
-          <h2><span class="p  red">云</span> <span class="p  yellow">生</span> <span class="p  green">の</span> <span class="p  blue">博</span> <span class="p  cyan">客</span></h2>
-        
-        
-          <p>心静思远，志行千里。</p>
-
-        
-        
-      </div>
-    
-    
-      <div class="social-wrapper">
-        
-          
-            <a href="/atom.xml"
-              class="social fas fa-rss flat-btn"
-              target="_blank"
-              rel="external nofollow noopener noreferrer">
-              
-            </a>
-          
-        
-          
-            <a href="mailto:admin@qikaile.tk"
-              class="social fas fa-envelope flat-btn"
-              target="_blank"
-              rel="external nofollow noopener noreferrer">
-              
-            </a>
-          
-        
-          
-            <a href="https://github.com/qikaile/"
-              class="social fab fa-github flat-btn"
-              target="_blank"
-              rel="external nofollow noopener noreferrer">
-              
-            </a>
-          
-        
-          
-            <a href="https://music.qikaile.tk/"
-              class="social fas fa-headphones-alt flat-btn"
-              target="_blank"
-              rel="external nofollow noopener noreferrer">
-              
-            </a>
-          
-        
-          
-            <a href="http://wpa.qq.com/msgrd?v=3&amp;amp;uin=【2649019047】&amp;amp;site=qq&amp;amp;menu=yes"
-              class="social fab fa-qq flat-btn"
-              target="_blank"
-              rel="external nofollow noopener noreferrer">
-              
-            </a>
-          
-        
-      </div>
-    
-  </div>
-</section>
-
-  
-
-  
-    
-    
-
-<section class="widget text shadow floatable desktop pjax">
-  
-  <header>
-    
-      <i class="fad fa-bullhorn AMETHYST fa-fw" aria-hidden="true"></i><span class='name'>公告信息</span>
-    
-  </header>
-
-
-  <div class='content'>
-    <div id="clock"></div>
-    <div id="clock"></div>
-    
-      <p>唤醒原系统菜单: <kbd>Ctrl</kbd>+<kbd>右键</kbd></p>
-
-    
-  </div>
-</section>
-
-  
-
-  
-    
-    
-
-<section class="widget grid shadow floatable desktop pjax">
-  
-  <header>
-    
-      <i class="fal fa-map-signs PETERRIVE fa-fw" aria-hidden="true"></i><span class='name'>站内导航</span>
-    
-  </header>
-
-
-  <div class='content'>
-    <div class="grid navigation">
-      
-        <a class="flat-box" target="_blank" href="https://tjys.js.org"
-          
-            rel="nofollow noopener"
-          
-          
-          active-action="action-https:tjysjsorg">
-          
-            <i class="fad fa-books TURQUOISE fa-fw" aria-hidden="true"></i>
-          
-          文档笔记
-        </a>
-      
-        <a class="flat-box" href="/guestbook/"
-          
-          
-          active-action="action-guestbook">
-          
-            <i class="fad fa-comment-alt-smile PETERRIVE fa-fw" aria-hidden="true"></i>
-          
-          留言板
-        </a>
-      
-        <a class="flat-box" href="/about/"
-          
-          
-          active-action="action-about">
-          
-            <i class="fal fa-drafting-compass NEPHRITIS fa-fw" aria-hidden="true"></i>
-          
-          关于
-        </a>
-      
-        <a class="flat-box" href="/shuoshuo/"
-          
-          
-          active-action="action-shuoshuo">
-          
-            <i class="fad fa-comment-dots WISTERIA fa-fw" aria-hidden="true"></i>
-          
-          闲言碎语
-        </a>
-      
-        <a class="flat-box" href="/links/"
-          
-          
-          active-action="action-links">
-          
-            <i class="fad fa-users EMERALD fa-fw" aria-hidden="true"></i>
-          
-          友链
-        </a>
-      
-        <a class="flat-box" target="_blank" href="https://travellings.link/"
-          
-            rel="nofollow noopener"
-          
-          
-          active-action="action-https:travellingslink">
-          
-            <i class="fa-fw fad fa-subway AMETHYST fa-fw" aria-hidden="true"></i>
-          
-          开往
-        </a>
-      
-    </div>
-  </div>
-</section>
-
-  
-
-  
-    
-    
-
-<section class="widget shadow floatable desktop pjax">
-  
-  <header>
-    
-      <i class="fal fa-award NEPHRITIS fa-fw" aria-hidden="true"></i><span class='name'>站点信息</span>
-    
-  </header>
-
-
-  <div class='content'>
-    <div class="webinfo">
-      
-        <div class="webinfo-item">
-          <div>文章数目：</div>
-          <div>28 篇</div>
-        </div>
-      
-
-      
-        <div class="webinfo-item">
-          <div>已运行时间：</div>
-          <div id="webinfo-runtime-count" publish_date="03/24/2020 21:34:09"></div>
-        </div>
-        <script>
-          var BirthDay = new Date(new Date('2020/11/16'));
-          var today = new Date();
-          var timeold = (today.getTime() - BirthDay.getTime());
-          var daysold = Math.floor(timeold / (24 * 60 * 60 * 1000));
-          document.getElementById('webinfo-runtime-count').innerHTML = daysold + ' 天';
-        </script>
-      
-
-
-      
-        <div class="webinfo-item">
-          <div>本站总字数：</div>
-          <div>111.8k 字</div>
-        </div>
-      
-
-      
-
-      
-
-      
-        <div class="webinfo-item">
-          <div>最后活动时间：</div>
-          
-            <div id="last-update" style="display: none;">Wed Aug 10 2022 19:30:03 GMT+0800 (GMT+08:00)</div>
-            <div id="last-update-show">2022-08-10 日</div>
-          
-        </div>
-        
-        <script>
-          function timeago(dateTimeStamp) {
-              var minute = 1000 * 60; //把分，时，天，周，半个月，一个月用毫秒表示
-              var hour = minute * 60;
-              var day = hour * 24;
-              var week = day * 7;
-              var month = day * 30;
-              var now = new Date().getTime(); //获取当前时间毫秒
-              var diffValue = now - dateTimeStamp; //时间差
-              if (diffValue < 0) {
-                  return;
-              }
-              var minC = diffValue / minute; //计算时间差的分，时，天，周，月
-              var hourC = diffValue / hour;
-              var dayC = diffValue / day;
-              var weekC = diffValue / week;
-              var monthC = diffValue / month;
-              if (monthC >= 1 && monthC <= 3) {
-                  result = " " + parseInt(monthC) + " 月前"
-              } else if (weekC >= 1 && weekC <= 3) {
-                  result = " " + parseInt(weekC) + " 周前"
-              } else if (dayC >= 1 && dayC <= 6) {
-                  result = " " + parseInt(dayC) + " 天前"
-              } else if (hourC >= 1 && hourC <= 23) {
-                  result = " " + parseInt(hourC) + " 小时前"
-              } else if (minC >= 1 && minC <= 59) {
-                  result = " " + parseInt(minC) + " 分钟前"
-              } else if (diffValue >= 0 && diffValue <= minute) {
-                  result = "刚刚"
-              } else {
-                  var datetime = new Date();
-                  datetime.setTime(dateTimeStamp);
-                  var Nyear = datetime.getFullYear();
-                  var Nmonth = datetime.getMonth() + 1 < 10 ? "0" + (datetime.getMonth() + 1) : datetime.getMonth() + 1;
-                  var Ndate = datetime.getDate() < 10 ? "0" + datetime.getDate() : datetime.getDate();
-                  var Nhour = datetime.getHours() < 10 ? "0" + datetime.getHours() : datetime.getHours();
-                  var Nminute = datetime.getMinutes() < 10 ? "0" + datetime.getMinutes() : datetime.getMinutes();
-                  var Nsecond = datetime.getSeconds() < 10 ? "0" + datetime.getSeconds() : datetime.getSeconds();
-                  result = Nyear + "-" + Nmonth + "-" + Ndate
-              }
-              return result;
-          }
-          var lastUpDate = document.getElementById('last-update').innerHTML;
-          try {
-            document.getElementById('last-update-show').innerHTML = timeago(new Date(lastUpDate));
-          } catch (error) {
-            document.getElementById('last-update-show').innerHTML = '2022-08-10 日';
-          }
-        </script>
-        
-      
-    </div>
-  </div>
-</section>
-
-  
-
-  
-    
-    
-
 
 
   <section class="widget toc-wrapper shadow floatable desktop pjax" id="toc-div" >
@@ -4872,6 +4584,22 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
 
 <!-- 没有 pjax 占位会报错 万恶的 pjax -->
+
+  <div class="pjax">
+    <!-- pjax占位 -->
+  </div>
+
+  <div class="pjax">
+    <!-- pjax占位 -->
+  </div>
+
+  <div class="pjax">
+    <!-- pjax占位 -->
+  </div>
+
+  <div class="pjax">
+    <!-- pjax占位 -->
+  </div>
 
   <div class="pjax">
     <!-- pjax占位 -->
@@ -5020,8 +4748,8 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   <script>
   volantis.message = (title, message, option = {}, done = null) => {
     if (typeof iziToast === "undefined") {
-      volantis.css('/css/message.css?time=1660131013164')
-      volantis.js('/js/message.js?time=1660131013164', () => {
+      volantis.css('/css/message.css?time=1661166723435')
+      volantis.js('/js/message.js?time=1661166723435', () => {
         tozashMessage(title, message, option, done);
       });
     } else {
@@ -5066,8 +4794,8 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
   volantis.question = (title, message, option = {}, success = null, cancel = null, done = null) => {
     if (typeof iziToast === "undefined") {
-      volantis.css('/css/message.css?time=1660131013164')
-      volantis.js('/js/message.js?time=1660131013164', () => {
+      volantis.css('/css/message.css?time=1661166723435')
+      volantis.js('/js/message.js?time=1661166723435', () => {
         tozashQuestion(title, message, option, success, cancel, done);
       });
     } else {
@@ -5126,8 +4854,8 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     }
     
     if (typeof iziToast === "undefined") {
-      volantis.css('/css/message.css?time=1660131013164')
-      volantis.js('/js/message.js?time=1660131013164', () => {
+      volantis.css('/css/message.css?time=1661166723435')
+      volantis.js('/js/message.js?time=1661166723435', () => {
         hideMessage(done);
       });
     } else {
@@ -5347,7 +5075,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     
     
     
-    volantis.js('/js/rightMenu.js?time=1660131013164')
+    volantis.js('/js/rightMenu.js?time=1661166723435')
   </script>
 
 
@@ -5460,19 +5188,19 @@ volantis.pjax.push(bindToggleButton);
     
       const sites_api = document.getElementById('sites-api');
       if (sites_api != undefined && typeof SitesJS === 'undefined') {
-        volantis.js("/js/plugins/sites.js?time=1660131013164")
+        volantis.js("/js/plugins/sites.js?time=1661166723435")
       }
     
     
       const friends_api = document.getElementById('friends-api');
       if (friends_api != undefined && typeof FriendsJS === 'undefined') {
-        volantis.js("/js/plugins/friends.js?time=1660131013164")
+        volantis.js("/js/plugins/friends.js?time=1661166723435")
       }
     
     
       const contributors_api = document.getElementById('contributors-api');
       if (contributors_api != undefined && typeof ContributorsJS === 'undefined') {
-        volantis.js("/js/plugins/contributors.js?time=1660131013164")
+        volantis.js("/js/plugins/contributors.js?time=1661166723435")
       }
     
   };
@@ -5571,7 +5299,7 @@ volantis.pjax.push(bindToggleButton);
     await volantis.js("https://unpkg.com/meting@2.0/dist/Meting.min.js")
   
     // 右键 music 需要在 APlayer  MetingJS 之后加载
-    await volantis.js('/js/aplayer.js?time=1660131013179')
+    await volantis.js('/js/aplayer.js?time=1661166723464')
     volantis.APlayerController.music = true;
   
   })();
@@ -5656,17 +5384,17 @@ volantis.pjax.push(bindToggleButton);
   volantis.layoutHelper("comments",`<div id="twikoo_container"><i class="fas fa-cog fa-spin fa-fw fa-2x"></i></div>`)
   function load_twikoo() {
     if(!document.querySelectorAll("#twikoo_container")[0])return;
-    volantis.js("https://unpkg.com/twikoo@1.4.8/dist/twikoo.min.js", pjax_twikoo)
+    volantis.js("https://cdn.staticfile.org/twikoo/1.6.6/twikoo.all.min.js", pjax_twikoo)
   }
   function pjax_twikoo() {
     if(!document.querySelectorAll("#twikoo_container")[0])return;
     let path = pdata.commentPath;
-    let placeholder = pdata.commentPlaceholder || "" || "";
+    let placeholder = pdata.commentPlaceholder || "✍ 写评论" || "";
     if (path.length == 0) {
       let defaultPath = '';
       path = defaultPath || "decodeURI(window.location.pathname)"; //神奇的pathname
     }
-    twikoo.init(Object.assign(Object.assign({"js":"https://unpkg.com/twikoo@1.4.8/dist/twikoo.min.js","path":null,"envId":"https://twikoo.qikaile.tk","placeholder":null}, {
+    twikoo.init(Object.assign(Object.assign({"js":"https://cdn.staticfile.org/twikoo/1.6.6/twikoo.all.min.js","path":null,"envId":"https://twikoo.qikaile.tk","placeholder":"✍ 写评论"}, {
       el: '#twikoo_container',
       path: path,
       placeholder: placeholder,
@@ -5713,7 +5441,7 @@ volantis.pjax.push(bindToggleButton);
 
 
 
-<script src="/js/app.js?time=1660131013164.js"></script>
+<script src="/js/app.js?time=1661166723435.js"></script>
 
 
 <!-- optional -->
@@ -5726,7 +5454,7 @@ volantis.pjax.push(bindToggleButton);
 
   function loadSearchScript() {
     // see: layout/_partial/scripts/_ctrl/cdnCtrl.ejs
-    return volantis.js("/js/search/hexo.js?time=1660131013164");
+    return volantis.js("/js/search/hexo.js?time=1661166723435");
   }
 
   function loadSearchService() {
@@ -5801,215 +5529,6 @@ document.addEventListener("DOMContentLoaded", function () {
 </script>
 
 
-
-
-  <script defer>
-
-  const LCCounter = {
-    app_id: 'QJxW5v8BlvRP9LYqYmrNRekF-MdYXbMMI',
-    app_key: 'YtfMVlMfTdU4Y4zTo9k0Pj3h',
-    custom_api_server: '',
-
-    // 查询存储的记录
-    getRecord(Counter, url, title) {
-      return new Promise(function (resolve, reject) {
-        Counter('get', '/classes/Counter?where=' + encodeURIComponent(JSON.stringify({url})))
-          .then(resp => resp.json())
-          .then(({results, code, error}) => {
-            if (code === 401) {
-              throw error;
-            }
-            if (results && results.length > 0) {
-              var record = results[0];
-              resolve(record);
-            } else {
-              Counter('post', '/classes/Counter', {url, title: title, times: 0})
-                .then(resp => resp.json())
-                .then((record, error) => {
-                  if (error) {
-                    throw error;
-                  }
-                  resolve(record);
-                }).catch(error => {
-                console.error('Failed to create', error);
-                reject(error);
-              });
-            }
-          }).catch((error) => {
-          console.error('LeanCloud Counter Error:', error);
-          reject(error);
-        });
-      })
-    },
-
-    // 发起自增请求
-    increment(Counter, incrArr) {
-      return new Promise(function (resolve, reject) {
-        Counter('post', '/batch', {
-          "requests": incrArr
-        }).then((res) => {
-          res = res.json();
-          if (res.error) {
-            throw res.error;
-          }
-          resolve(res);
-        }).catch((error) => {
-          console.error('Failed to save visitor count', error);
-          reject(error);
-        });
-      });
-    },
-
-    // 构建自增请求体
-    buildIncrement(objectId) {
-      return {
-        "method": "PUT",
-        "path": `/1.1/classes/Counter/${ objectId }`,
-        "body": {
-          "times": {
-            '__op': 'Increment',
-            'amount': 1
-          }
-        }
-      }
-    },
-
-    // 校验是否为有效的 UV
-    validUV() {
-      var key = 'LeanCloudUVTimestamp';
-      var flag = localStorage.getItem(key);
-      if (flag) {
-        // 距离标记小于 24 小时则不计为 UV
-        if (new Date().getTime() - parseInt(flag) <= 86400000) {
-          return false;
-        }
-      }
-      localStorage.setItem(key, new Date().getTime().toString());
-      return true;
-    },
-
-    addCount(Counter) {
-      var enableIncr = '' === 'true' && window.location.hostname !== 'localhost';
-      enableIncr = true;
-      var getterArr = [];
-      var incrArr = [];
-      // 请求 PV 并自增
-      var pvCtn = document.querySelector('#lc-sv');
-      if (pvCtn || enableIncr) {
-        var pvGetter = this.getRecord(Counter, 'https://qikaile.tk' + '/#lc-sv', 'Visits').then((record) => {
-          incrArr.push(this.buildIncrement(record.objectId))
-          var eles = document.querySelectorAll('#lc-sv #number');
-          if (eles.length > 0) {
-            eles.forEach((el,index,array)=>{
-              el.innerText = record.times + 1;
-              if (pvCtn) {
-                pvCtn.style.display = 'inline';
-              }
-            })
-          }
-        });
-        getterArr.push(pvGetter);
-      }
-
-      // 请求 UV 并自增
-      var uvCtn = document.querySelector('#lc-uv');
-      if (uvCtn || enableIncr) {
-        var uvGetter = this.getRecord(Counter, 'https://qikaile.tk' + '/#lc-uv', 'Visitors').then((record) => {
-          var vuv = this.validUV();
-          vuv && incrArr.push(this.buildIncrement(record.objectId))
-          var eles = document.querySelectorAll('#lc-uv #number');
-          if (eles.length > 0) {
-            eles.forEach((el,index,array)=>{
-              el.innerText = record.times + (vuv ? 1 : 0);
-              if (uvCtn) {
-                uvCtn.style.display = 'inline';
-              }
-            })
-          }
-        });
-        getterArr.push(uvGetter);
-      }
-
-      // 请求文章的浏览数，如果是当前页面就自增
-      var allPV = document.querySelectorAll('#lc-pv');
-      if (allPV.length > 0 || enableIncr) {
-        for (i = 0; i < allPV.length; i++) {
-          let pv = allPV[i];
-          let title = pv.getAttribute('data-title');
-          var url = 'https://qikaile.tk' + pv.getAttribute('data-path');
-          if (url) {
-            var viewGetter = this.getRecord(Counter, url, title).then((record) => {
-              // 是当前页面就自增
-              let curPath = window.location.pathname;
-              if (curPath.includes('index.html')) {
-                curPath = curPath.substring(0, curPath.lastIndexOf('index.html'));
-              }
-              if (pv.getAttribute('data-path') == curPath) {
-                incrArr.push(this.buildIncrement(record.objectId));
-              }
-              if (pv) {
-                var ele = pv.querySelector('#lc-pv #number');
-                if (ele) {
-                  if (pv.getAttribute('data-path') == curPath) {
-                    ele.innerText = (record.times || 0) + 1;
-                  } else {
-                    ele.innerText = record.times || 0;
-                  }
-                  pv.style.display = 'inline';
-                }
-              }
-            });
-            getterArr.push(viewGetter);
-          }
-        }
-      }
-
-      // 如果启动计数自增，批量发起自增请求
-      if (enableIncr) {
-        Promise.all(getterArr).then(() => {
-          incrArr.length > 0 && this.increment(Counter, incrArr);
-        })
-      }
-
-    },
-
-
-    fetchData(api_server) {
-      var Counter = (method, url, data) => {
-        return fetch(`${ api_server }/1.1${ url }`, {
-          method,
-          headers: {
-            'X-LC-Id': this.app_id,
-            'X-LC-Key': this.app_key,
-            'Content-Type': 'application/json',
-          },
-          body: JSON.stringify(data)
-        });
-      };
-      this.addCount(Counter);
-    },
-
-    refreshCounter() {
-      var api_server = this.app_id.slice(-9) !== '-MdYXbMMI' ? this.custom_api_server : `https://${ this.app_id.slice(0, 8).toLowerCase() }.api.lncldglobal.com`;
-      if (api_server) {
-        this.fetchData(api_server);
-      } else {
-        fetch('https://app-router.leancloud.cn/2/route?appId=' + this.app_id)
-          .then(resp => resp.json())
-          .then(({api_server}) => {
-            this.fetchData('https://' + api_server);
-          });
-      }
-    }
-
-  };
-
-  LCCounter.refreshCounter();
-
-  document.addEventListener('pjax:complete', function () {
-    LCCounter.refreshCounter();
-  });
-</script>
 
 
 

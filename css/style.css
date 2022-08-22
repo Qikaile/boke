@@ -1913,6 +1913,17 @@ img.lazyload:not(.placeholder):not(.loaded) {
 img.lazyload:not(.placeholder).loaded {
   filter: none;
 }
+.user-bg {
+  width: 100%;
+  height: 120px;
+  background-image: url("https://tva3.sinaimg.cn/large/0084aYsLgy1ggstmn4t0mj30pk08cwgg.jpg");
+  background-position: center center;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+}
 .md >p {
   padding-top: 4px;
 }

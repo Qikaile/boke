@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
     <head hexo-theme='https://github.com/volantis-x/hexo-theme-volantis/tree/5.0.0-rc.1'>
-  <meta name="generator" content="Hexo 5.4.0">
+  <meta name="generator" content="Hexo 5.4.2">
   <meta charset="utf-8">
   <!-- SEO相关 -->
   
@@ -20,7 +20,7 @@
   <meta content="云墨小站" name="apple-mobile-web-app-title">
   <meta content="black-translucent" name="apple-mobile-web-app-status-bar-style">
   <meta content="telephone=no" name="format-detection">
-  <link rel="preload" href="/css/style.css?time=1660131013070" as="style">
+  <link rel="preload" href="/css/style.css?time=1661166723221" as="style">
   
   <!-- 页面元数据 -->
   <title>Python绘图 - 云墨小站</title>
@@ -1762,8 +1762,8 @@ ul.list-v >li>a:hover {
 }
 
   </style>
-  <link rel="stylesheet" href="/css/style.css?time=1660131013070" media="print" onload="this.media='all';this.onload=null">
-  <noscript><link rel="stylesheet" href="/css/style.css?time=1660131013070"></noscript>
+  <link rel="stylesheet" href="/css/style.css?time=1661166723221" media="print" onload="this.media='all';this.onload=null">
+  <noscript><link rel="stylesheet" href="/css/style.css?time=1661166723221"></noscript>
     <script>
       var userColorScheme=localStorage.getItem("color-scheme")
       if(userColorScheme){
@@ -3007,21 +3007,21 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
               
               
               active-action="action-archives">
-              <i class='fad fa-archive PETERRIVE fa-fw'></i><p>归档</p>
+              <i class='fad fa-archive fa-fw CARROT fa-fw'></i><p>归档</p>
             </a>
           
             <a href="/shuoshuo/"
               
               
               active-action="action-shuoshuo">
-              <i class='fad fa-comment-dots fa-fw EMERALD fa-fw'></i><p>说说</p>
+              <i class='fad fa-microphone-alt fa-fw EMERALD fa-fw'></i><p>说说</p>
             </a>
           
             <a href="/links/"
               
               
               active-action="action-links">
-              <i class='fad fa-link CARROT fa-fw'></i><p>友链</p>
+              <i class='fad fa-link PETERRIVE fa-fw'></i><p>友链</p>
             </a>
           
             <a target="_blank" rel="noopener" href="https://travellings.link/"
@@ -3105,6 +3105,23 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
           
         
+          
+            
+  <div class="new-meta-item browse busuanzi">
+    <a class='notlink' href="/" onclick="return false;" title="Click me!" >
+      <i class="fal fa-eye NEPHRITIS fa-fw" aria-hidden="true"></i>
+      <p>
+        <span id="busuanzi_value_page_pv">
+          <i class="fas fa-circle-notch fa-spin fa-fw" aria-hidden="true"></i>
+        </span>
+        次浏览
+      </p>
+    </a>
+  </div>
+
+
+          
+        
         <!-- Custom Files topMeta begin-->
         
         <!-- Custom Files topMeta end-->
@@ -3182,9 +3199,9 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 </blockquote>
 <h3 id="2、散点图"><a href="#2、散点图" class="headerlink" title="2、散点图"></a>2、散点图</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 散点图</span></span><br><span class="line"><span class="keyword">import</span> matplotlib.pyplot <span class="keyword">as</span> plt</span><br><span class="line">plt.rcParams[<span class="string">&#x27;font.sans-serif&#x27;</span>]=[<span class="string">&#x27;SimHei&#x27;</span>] <span class="comment">#显示中文</span></span><br><span class="line">fig = plt.figure(figsize=(<span class="number">6</span>,<span class="number">5</span>))</span><br><span class="line">x = [<span class="number">1.5</span>, <span class="number">1</span>, <span class="number">1</span>, <span class="number">2</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">3</span>, <span class="number">4</span>, <span class="number">4</span>, <span class="number">5</span>, <span class="number">5</span>]</span><br><span class="line">y = [<span class="number">6</span>, <span class="number">7</span>, <span class="number">8</span>, <span class="number">5</span>, <span class="number">9</span>, <span class="number">4</span>, <span class="number">9.5</span>, <span class="number">3</span>, <span class="number">9.5</span>, <span class="number">2</span>, <span class="number">9</span>]</span><br><span class="line">x1 = [<span class="number">6</span>, <span class="number">6</span>, <span class="number">7</span>, <span class="number">7</span>, <span class="number">8</span>, <span class="number">8</span>, <span class="number">9</span>, <span class="number">9</span>, <span class="number">10</span>, <span class="number">10</span>, <span class="number">10.5</span>, <span class="number">11</span>, <span class="number">11</span>]</span><br><span class="line">y1 = [<span class="number">1</span>, <span class="number">8</span>, <span class="number">2</span>, <span class="number">9</span>, <span class="number">3</span>, <span class="number">9</span>, <span class="number">4</span>, <span class="number">9.5</span>, <span class="number">5</span>, <span class="number">9</span>, <span class="number">6</span>, <span class="number">7</span>, <span class="number">8</span>]</span><br><span class="line">plt.scatter(x, y, color=<span class="string">&#x27;r&#x27;</span>, label=<span class="string">&#x27;左心房&#x27;</span>)</span><br><span class="line">plt.scatter(x1, y1, color=<span class="string">&#x27;b&#x27;</span>, label=<span class="string">&#x27;右心房&#x27;</span>)</span><br><span class="line">plt.title(<span class="string">&#x27;love&#x27;</span>)</span><br><span class="line">plt.legend()</span><br><span class="line">plt.show()</span><br></pre></td></tr></table></figure>
 <p><img src="https://gcore.jsdelivr.net/gh/Qikaile/cdn/img/20200716211932720_28537.png" class="lazyload" data-srcset="https://gcore.jsdelivr.net/gh/Qikaile/cdn/img/20200716211932720_28537.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="2"></p>
-<h3 id="3、条形图"><a href="#3、条形图" class="headerlink" title="3、条形图"></a>3、条形图</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> matplotlib</span><br><span class="line"><span class="keyword">import</span> matplotlib.pyplot <span class="keyword">as</span> plt</span><br><span class="line"><span class="keyword">import</span> numpy <span class="keyword">as</span> np</span><br><span class="line"></span><br><span class="line">labels = [<span class="string">&#x27;Monday&#x27;</span>,<span class="string">&#x27;Tuesday&#x27;</span>,<span class="string">&#x27;Friday&#x27;</span>,<span class="string">&#x27;Sunday&#x27;</span>]</span><br><span class="line">men_means = [<span class="number">1.5</span>,<span class="number">0.6</span>,<span class="number">7.8</span>,<span class="number">6</span>]</span><br><span class="line">women_means = [<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>,<span class="number">1</span>]</span><br><span class="line"></span><br><span class="line">x = np.arange(<span class="built_in">len</span>(labels))  <span class="comment"># the label locations</span></span><br><span class="line">width = <span class="number">0.35</span>  <span class="comment"># the width of the bars</span></span><br><span class="line"></span><br><span class="line">fig, ax = plt.subplots()</span><br><span class="line">rects1 = ax.bar(x - width/<span class="number">2</span>, men_means, width, label=<span class="string">&#x27;boy&#x27;</span>)</span><br><span class="line">rects2 = ax.bar(x + width/<span class="number">2</span>, women_means, width, label=<span class="string">&#x27;girl&#x27;</span>)</span><br><span class="line"></span><br><span class="line"><span class="comment"># Add some text for labels, title and custom x-axis tick labels, etc.</span></span><br><span class="line">ax.set_ylabel(<span class="string">&#x27;Scores&#x27;</span>) <span class="comment">#标题</span></span><br><span class="line">ax.set_title(<span class="string">&#x27;Scores by group and gender&#x27;</span>) <span class="comment">#标题</span></span><br><span class="line">ax.set_xticks(x)</span><br><span class="line">ax.set_xticklabels(labels)</span><br><span class="line">ax.legend()</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">autolabel</span>(<span class="params">rects</span>):</span></span><br><span class="line">    <span class="string">&quot;&quot;&quot;Attach a text label above each bar in *rects*, displaying its height.&quot;&quot;&quot;</span></span><br><span class="line">    <span class="keyword">for</span> rect <span class="keyword">in</span> rects:</span><br><span class="line">        height = rect.get_height()</span><br><span class="line">        ax.annotate(<span class="string">&#x27;&#123;&#125;&#x27;</span>.<span class="built_in">format</span>(height),</span><br><span class="line">                    xy=(rect.get_x() + rect.get_width() / <span class="number">2</span>, height),</span><br><span class="line">                    xytext=(<span class="number">0</span>, <span class="number">3</span>),  <span class="comment"># 3 points vertical offset</span></span><br><span class="line">                    textcoords=<span class="string">&quot;offset points&quot;</span>,</span><br><span class="line">                    ha=<span class="string">&#x27;center&#x27;</span>, va=<span class="string">&#x27;bottom&#x27;</span>)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">autolabel(rects1)</span><br><span class="line">autolabel(rects2)</span><br><span class="line">fig.tight_layout()</span><br><span class="line">plt.show()</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<h3 id="3、条形图"><a href="#3、条形图" class="headerlink" title="3、条形图"></a>3、条形图</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> matplotlib</span><br><span class="line"><span class="keyword">import</span> matplotlib.pyplot <span class="keyword">as</span> plt</span><br><span class="line"><span class="keyword">import</span> numpy <span class="keyword">as</span> np</span><br><span class="line"></span><br><span class="line">labels = [<span class="string">&#x27;Monday&#x27;</span>,<span class="string">&#x27;Tuesday&#x27;</span>,<span class="string">&#x27;Friday&#x27;</span>,<span class="string">&#x27;Sunday&#x27;</span>]</span><br><span class="line">men_means = [<span class="number">1.5</span>,<span class="number">0.6</span>,<span class="number">7.8</span>,<span class="number">6</span>]</span><br><span class="line">women_means = [<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>,<span class="number">1</span>]</span><br><span class="line"></span><br><span class="line">x = np.arange(<span class="built_in">len</span>(labels))  <span class="comment"># the label locations</span></span><br><span class="line">width = <span class="number">0.35</span>  <span class="comment"># the width of the bars</span></span><br><span class="line"></span><br><span class="line">fig, ax = plt.subplots()</span><br><span class="line">rects1 = ax.bar(x - width/<span class="number">2</span>, men_means, width, label=<span class="string">&#x27;boy&#x27;</span>)</span><br><span class="line">rects2 = ax.bar(x + width/<span class="number">2</span>, women_means, width, label=<span class="string">&#x27;girl&#x27;</span>)</span><br><span class="line"></span><br><span class="line"><span class="comment"># Add some text for labels, title and custom x-axis tick labels, etc.</span></span><br><span class="line">ax.set_ylabel(<span class="string">&#x27;Scores&#x27;</span>) <span class="comment">#标题</span></span><br><span class="line">ax.set_title(<span class="string">&#x27;Scores by group and gender&#x27;</span>) <span class="comment">#标题</span></span><br><span class="line">ax.set_xticks(x)</span><br><span class="line">ax.set_xticklabels(labels)</span><br><span class="line">ax.legend()</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">autolabel</span>(<span class="params">rects</span>):</span><br><span class="line">    <span class="string">&quot;&quot;&quot;Attach a text label above each bar in *rects*, displaying its height.&quot;&quot;&quot;</span></span><br><span class="line">    <span class="keyword">for</span> rect <span class="keyword">in</span> rects:</span><br><span class="line">        height = rect.get_height()</span><br><span class="line">        ax.annotate(<span class="string">&#x27;&#123;&#125;&#x27;</span>.<span class="built_in">format</span>(height),</span><br><span class="line">                    xy=(rect.get_x() + rect.get_width() / <span class="number">2</span>, height),</span><br><span class="line">                    xytext=(<span class="number">0</span>, <span class="number">3</span>),  <span class="comment"># 3 points vertical offset</span></span><br><span class="line">                    textcoords=<span class="string">&quot;offset points&quot;</span>,</span><br><span class="line">                    ha=<span class="string">&#x27;center&#x27;</span>, va=<span class="string">&#x27;bottom&#x27;</span>)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">autolabel(rects1)</span><br><span class="line">autolabel(rects2)</span><br><span class="line">fig.tight_layout()</span><br><span class="line">plt.show()</span><br><span class="line"></span><br></pre></td></tr></table></figure>
 <p><img src="https://gcore.jsdelivr.net/gh/Qikaile/cdn/img/20200716214226534_22761.png" class="lazyload" data-srcset="https://gcore.jsdelivr.net/gh/Qikaile/cdn/img/20200716214226534_22761.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="3"></p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> matplotlib</span><br><span class="line"><span class="keyword">import</span> matplotlib.pyplot <span class="keyword">as</span> plt</span><br><span class="line"><span class="keyword">import</span> numpy <span class="keyword">as</span> np</span><br><span class="line"> </span><br><span class="line">labels = [<span class="string">&#x27;Monday&#x27;</span>,<span class="string">&#x27;Tuesday&#x27;</span>,<span class="string">&#x27;Friday&#x27;</span>]</span><br><span class="line">men_means = [<span class="number">1.5</span>,<span class="number">0.6</span>,<span class="number">7</span>]</span><br><span class="line">women_means = [<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>]</span><br><span class="line">child=[<span class="number">1</span>,<span class="number">1</span>,<span class="number">2</span>]</span><br><span class="line"> </span><br><span class="line">x = np.arange(<span class="built_in">len</span>(labels))  <span class="comment"># the label locations</span></span><br><span class="line">width = <span class="number">0.35</span>  <span class="comment"># the width of the bars</span></span><br><span class="line"> </span><br><span class="line">fig, ax = plt.subplots()</span><br><span class="line">rects1 = ax.bar(x - <span class="number">3</span>*width/<span class="number">4</span>, men_means, <span class="number">3</span>*width/<span class="number">4</span>, label=<span class="string">&#x27;boy&#x27;</span>)</span><br><span class="line">rects2 = ax.bar(x, women_means,<span class="number">3</span>*width/<span class="number">4</span>, label=<span class="string">&#x27;girl&#x27;</span>)</span><br><span class="line">rects3 = ax.bar(x + <span class="number">3</span>*width/<span class="number">4</span>, child, <span class="number">3</span>*width/<span class="number">4</span>, label=<span class="string">&#x27;child&#x27;</span>)</span><br><span class="line"> </span><br><span class="line"><span class="comment"># Add some text for labels, title and custom x-axis tick labels, etc.</span></span><br><span class="line">ax.set_ylabel(<span class="string">&#x27;Scores&#x27;</span>) <span class="comment">#标题</span></span><br><span class="line">ax.set_title(<span class="string">&#x27;Scores by group and gender&#x27;</span>) <span class="comment">#标题</span></span><br><span class="line">ax.set_xticks(x)</span><br><span class="line">ax.set_xticklabels(labels)</span><br><span class="line">ax.legend()</span><br><span class="line"> </span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">autolabel</span>(<span class="params">rects</span>):</span></span><br><span class="line">    <span class="string">&quot;&quot;&quot;Attach a text label above each bar in *rects*, displaying its height.&quot;&quot;&quot;</span></span><br><span class="line">    <span class="keyword">for</span> rect <span class="keyword">in</span> rects:</span><br><span class="line">        height = rect.get_height()</span><br><span class="line">        ax.annotate(<span class="string">&#x27;&#123;&#125;&#x27;</span>.<span class="built_in">format</span>(height),</span><br><span class="line">                    xy=(rect.get_x() + rect.get_width() / <span class="number">2</span>, height),</span><br><span class="line">                    xytext=(<span class="number">0</span>, <span class="number">3</span>),  <span class="comment"># 3 points vertical offset</span></span><br><span class="line">                    textcoords=<span class="string">&quot;offset points&quot;</span>,</span><br><span class="line">                    ha=<span class="string">&#x27;center&#x27;</span>, va=<span class="string">&#x27;bottom&#x27;</span>)</span><br><span class="line"> </span><br><span class="line">autolabel(rects1)</span><br><span class="line">autolabel(rects2)</span><br><span class="line">autolabel(rects3)</span><br><span class="line"></span><br><span class="line">fig.tight_layout()</span><br><span class="line">plt.show()</span><br></pre></td></tr></table></figure>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> matplotlib</span><br><span class="line"><span class="keyword">import</span> matplotlib.pyplot <span class="keyword">as</span> plt</span><br><span class="line"><span class="keyword">import</span> numpy <span class="keyword">as</span> np</span><br><span class="line"> </span><br><span class="line">labels = [<span class="string">&#x27;Monday&#x27;</span>,<span class="string">&#x27;Tuesday&#x27;</span>,<span class="string">&#x27;Friday&#x27;</span>]</span><br><span class="line">men_means = [<span class="number">1.5</span>,<span class="number">0.6</span>,<span class="number">7</span>]</span><br><span class="line">women_means = [<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>]</span><br><span class="line">child=[<span class="number">1</span>,<span class="number">1</span>,<span class="number">2</span>]</span><br><span class="line"> </span><br><span class="line">x = np.arange(<span class="built_in">len</span>(labels))  <span class="comment"># the label locations</span></span><br><span class="line">width = <span class="number">0.35</span>  <span class="comment"># the width of the bars</span></span><br><span class="line"> </span><br><span class="line">fig, ax = plt.subplots()</span><br><span class="line">rects1 = ax.bar(x - <span class="number">3</span>*width/<span class="number">4</span>, men_means, <span class="number">3</span>*width/<span class="number">4</span>, label=<span class="string">&#x27;boy&#x27;</span>)</span><br><span class="line">rects2 = ax.bar(x, women_means,<span class="number">3</span>*width/<span class="number">4</span>, label=<span class="string">&#x27;girl&#x27;</span>)</span><br><span class="line">rects3 = ax.bar(x + <span class="number">3</span>*width/<span class="number">4</span>, child, <span class="number">3</span>*width/<span class="number">4</span>, label=<span class="string">&#x27;child&#x27;</span>)</span><br><span class="line"> </span><br><span class="line"><span class="comment"># Add some text for labels, title and custom x-axis tick labels, etc.</span></span><br><span class="line">ax.set_ylabel(<span class="string">&#x27;Scores&#x27;</span>) <span class="comment">#标题</span></span><br><span class="line">ax.set_title(<span class="string">&#x27;Scores by group and gender&#x27;</span>) <span class="comment">#标题</span></span><br><span class="line">ax.set_xticks(x)</span><br><span class="line">ax.set_xticklabels(labels)</span><br><span class="line">ax.legend()</span><br><span class="line"> </span><br><span class="line"><span class="keyword">def</span> <span class="title function_">autolabel</span>(<span class="params">rects</span>):</span><br><span class="line">    <span class="string">&quot;&quot;&quot;Attach a text label above each bar in *rects*, displaying its height.&quot;&quot;&quot;</span></span><br><span class="line">    <span class="keyword">for</span> rect <span class="keyword">in</span> rects:</span><br><span class="line">        height = rect.get_height()</span><br><span class="line">        ax.annotate(<span class="string">&#x27;&#123;&#125;&#x27;</span>.<span class="built_in">format</span>(height),</span><br><span class="line">                    xy=(rect.get_x() + rect.get_width() / <span class="number">2</span>, height),</span><br><span class="line">                    xytext=(<span class="number">0</span>, <span class="number">3</span>),  <span class="comment"># 3 points vertical offset</span></span><br><span class="line">                    textcoords=<span class="string">&quot;offset points&quot;</span>,</span><br><span class="line">                    ha=<span class="string">&#x27;center&#x27;</span>, va=<span class="string">&#x27;bottom&#x27;</span>)</span><br><span class="line"> </span><br><span class="line">autolabel(rects1)</span><br><span class="line">autolabel(rects2)</span><br><span class="line">autolabel(rects3)</span><br><span class="line"></span><br><span class="line">fig.tight_layout()</span><br><span class="line">plt.show()</span><br></pre></td></tr></table></figure>
 <p><img src="https://gcore.jsdelivr.net/gh/Qikaile/cdn/img/20200717113623448_10604.png" class="lazyload" data-srcset="https://gcore.jsdelivr.net/gh/Qikaile/cdn/img/20200717113623448_10604.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="Figure_1"></p>
 <h3 id="4、直方图"><a href="#4、直方图" class="headerlink" title="4、直方图"></a>4、直方图</h3><p><strong>直方图与条形图基本类似，不过直方图通常用来对单个数据的单一属性进行描述，而不是用于比较</strong></p>
 <blockquote>
@@ -3210,7 +3227,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 </blockquote>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> matplotlib.pyplot <span class="keyword">as</span> plt</span><br><span class="line">plt.rcParams[<span class="string">&#x27;font.sans-serif&#x27;</span>] = [<span class="string">&#x27;SimHei&#x27;</span>]  <span class="comment"># 中文显示</span></span><br><span class="line">plt.rcParams[<span class="string">&#x27;axes.unicode_minus&#x27;</span>]=<span class="literal">False</span>     <span class="comment"># 正常显示负号</span></span><br><span class="line">labels = [<span class="string">&#x27;育儿&#x27;</span>,<span class="string">&#x27;饮食&#x27;</span>,<span class="string">&#x27;房贷&#x27;</span>,<span class="string">&#x27;其他&#x27;</span>]</span><br><span class="line">x = [<span class="number">5</span>,<span class="number">12</span>,<span class="number">50</span>,<span class="number">9</span>]</span><br><span class="line">explode = (<span class="number">0</span>,<span class="number">0</span>,<span class="number">0.01</span>,<span class="number">0</span>) <span class="comment">#0.01调整中间空格大小</span></span><br><span class="line">plt.pie(x,labels=labels,explode=explode,autopct=<span class="string">&#x27;%1.1f%%&#x27;</span>)</span><br><span class="line">plt.title(<span class="string">&#x27;家庭支出比例&#x27;</span>)</span><br><span class="line">plt.show()</span><br></pre></td></tr></table></figure>
 <p><img src="https://gcore.jsdelivr.net/gh/Qikaile/cdn/img/20200716221511425_1813.png" class="lazyload" data-srcset="https://gcore.jsdelivr.net/gh/Qikaile/cdn/img/20200716221511425_1813.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="5"></p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> numpy <span class="keyword">as</span> np</span><br><span class="line"><span class="keyword">import</span> matplotlib.pyplot <span class="keyword">as</span> plt</span><br><span class="line"></span><br><span class="line">fig, ax = plt.subplots(figsize=(<span class="number">6</span>, <span class="number">3</span>), subplot_kw=<span class="built_in">dict</span>(aspect=<span class="string">&quot;equal&quot;</span>))</span><br><span class="line"></span><br><span class="line">recipe = [<span class="string">&quot;375 g flour&quot;</span>,</span><br><span class="line">          <span class="string">&quot;75 g sugar&quot;</span>,</span><br><span class="line">          <span class="string">&quot;250 g butter&quot;</span>,</span><br><span class="line">          <span class="string">&quot;300 g berries&quot;</span>]</span><br><span class="line"></span><br><span class="line">data = [<span class="built_in">float</span>(x.split()[<span class="number">0</span>]) <span class="keyword">for</span> x <span class="keyword">in</span> recipe]</span><br><span class="line">ingredients = [x.split()[-<span class="number">1</span>] <span class="keyword">for</span> x <span class="keyword">in</span> recipe]</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">func</span>(<span class="params">pct, allvals</span>):</span></span><br><span class="line">    absolute = <span class="built_in">int</span>(pct/<span class="number">100.</span>*np.<span class="built_in">sum</span>(allvals))</span><br><span class="line">    <span class="keyword">return</span> <span class="string">&quot;&#123;:.1f&#125;%\n(&#123;:d&#125; g)&quot;</span>.<span class="built_in">format</span>(pct, absolute)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">wedges, texts, autotexts = ax.pie(data, autopct=<span class="keyword">lambda</span> pct: func(pct, data),</span><br><span class="line">                                  textprops=<span class="built_in">dict</span>(color=<span class="string">&quot;w&quot;</span>))</span><br><span class="line"></span><br><span class="line">ax.legend(wedges, ingredients,</span><br><span class="line">          title=<span class="string">&quot;Ingredients&quot;</span>,</span><br><span class="line">          loc=<span class="string">&quot;center left&quot;</span>,</span><br><span class="line">          bbox_to_anchor=(<span class="number">1</span>, <span class="number">0</span>, <span class="number">0.5</span>, <span class="number">1</span>))</span><br><span class="line"></span><br><span class="line">plt.setp(autotexts, size=<span class="number">8</span>, weight=<span class="string">&quot;bold&quot;</span>)</span><br><span class="line">ax.set_title(<span class="string">&quot;Matplotlib bakery: A pie&quot;</span>)</span><br><span class="line">plt.show()</span><br></pre></td></tr></table></figure>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> numpy <span class="keyword">as</span> np</span><br><span class="line"><span class="keyword">import</span> matplotlib.pyplot <span class="keyword">as</span> plt</span><br><span class="line"></span><br><span class="line">fig, ax = plt.subplots(figsize=(<span class="number">6</span>, <span class="number">3</span>), subplot_kw=<span class="built_in">dict</span>(aspect=<span class="string">&quot;equal&quot;</span>))</span><br><span class="line"></span><br><span class="line">recipe = [<span class="string">&quot;375 g flour&quot;</span>,</span><br><span class="line">          <span class="string">&quot;75 g sugar&quot;</span>,</span><br><span class="line">          <span class="string">&quot;250 g butter&quot;</span>,</span><br><span class="line">          <span class="string">&quot;300 g berries&quot;</span>]</span><br><span class="line"></span><br><span class="line">data = [<span class="built_in">float</span>(x.split()[<span class="number">0</span>]) <span class="keyword">for</span> x <span class="keyword">in</span> recipe]</span><br><span class="line">ingredients = [x.split()[-<span class="number">1</span>] <span class="keyword">for</span> x <span class="keyword">in</span> recipe]</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">func</span>(<span class="params">pct, allvals</span>):</span><br><span class="line">    absolute = <span class="built_in">int</span>(pct/<span class="number">100.</span>*np.<span class="built_in">sum</span>(allvals))</span><br><span class="line">    <span class="keyword">return</span> <span class="string">&quot;&#123;:.1f&#125;%\n(&#123;:d&#125; g)&quot;</span>.<span class="built_in">format</span>(pct, absolute)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">wedges, texts, autotexts = ax.pie(data, autopct=<span class="keyword">lambda</span> pct: func(pct, data),</span><br><span class="line">                                  textprops=<span class="built_in">dict</span>(color=<span class="string">&quot;w&quot;</span>))</span><br><span class="line"></span><br><span class="line">ax.legend(wedges, ingredients,</span><br><span class="line">          title=<span class="string">&quot;Ingredients&quot;</span>,</span><br><span class="line">          loc=<span class="string">&quot;center left&quot;</span>,</span><br><span class="line">          bbox_to_anchor=(<span class="number">1</span>, <span class="number">0</span>, <span class="number">0.5</span>, <span class="number">1</span>))</span><br><span class="line"></span><br><span class="line">plt.setp(autotexts, size=<span class="number">8</span>, weight=<span class="string">&quot;bold&quot;</span>)</span><br><span class="line">ax.set_title(<span class="string">&quot;Matplotlib bakery: A pie&quot;</span>)</span><br><span class="line">plt.show()</span><br></pre></td></tr></table></figure>
 
 <p><img src="https://gcore.jsdelivr.net/gh/Qikaile/cdn/img/20200716221501799_7519.png" class="lazyload" data-srcset="https://gcore.jsdelivr.net/gh/Qikaile/cdn/img/20200716221501799_7519.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="6"></p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> numpy <span class="keyword">as</span> np</span><br><span class="line"><span class="keyword">import</span> matplotlib.pyplot <span class="keyword">as</span> plt</span><br><span class="line">fig, ax = plt.subplots(figsize=(<span class="number">6</span>, <span class="number">3</span>), subplot_kw=<span class="built_in">dict</span>(aspect=<span class="string">&quot;equal&quot;</span>))</span><br><span class="line"></span><br><span class="line">recipe = [<span class="string">&quot;225 g flour&quot;</span>,</span><br><span class="line">          <span class="string">&quot;90 g sugar&quot;</span>,</span><br><span class="line">          <span class="string">&quot;1 egg&quot;</span>,</span><br><span class="line">          <span class="string">&quot;60 g butter&quot;</span>,</span><br><span class="line">          <span class="string">&quot;100 ml milk&quot;</span>,</span><br><span class="line">          <span class="string">&quot;1/2 package of yeast&quot;</span>]</span><br><span class="line"></span><br><span class="line">data = [<span class="number">225</span>, <span class="number">90</span>, <span class="number">50</span>, <span class="number">60</span>, <span class="number">100</span>, <span class="number">5</span>]</span><br><span class="line"></span><br><span class="line">wedges, texts = ax.pie(data, wedgeprops=<span class="built_in">dict</span>(width=<span class="number">0.5</span>), startangle=-<span class="number">40</span>)</span><br><span class="line"></span><br><span class="line">bbox_props = <span class="built_in">dict</span>(boxstyle=<span class="string">&quot;square,pad=0.3&quot;</span>, fc=<span class="string">&quot;w&quot;</span>, ec=<span class="string">&quot;k&quot;</span>, lw=<span class="number">0.72</span>)</span><br><span class="line">kw = <span class="built_in">dict</span>(arrowprops=<span class="built_in">dict</span>(arrowstyle=<span class="string">&quot;-&quot;</span>),</span><br><span class="line">          bbox=bbox_props, zorder=<span class="number">0</span>, va=<span class="string">&quot;center&quot;</span>)</span><br><span class="line"></span><br><span class="line"><span class="keyword">for</span> i, p <span class="keyword">in</span> <span class="built_in">enumerate</span>(wedges):</span><br><span class="line">    ang = (p.theta2 - p.theta1)/<span class="number">2.</span> + p.theta1</span><br><span class="line">    y = np.sin(np.deg2rad(ang))</span><br><span class="line">    x = np.cos(np.deg2rad(ang))</span><br><span class="line">    horizontalalignment = &#123;-<span class="number">1</span>: <span class="string">&quot;right&quot;</span>, <span class="number">1</span>: <span class="string">&quot;left&quot;</span>&#125;[<span class="built_in">int</span>(np.sign(x))]</span><br><span class="line">    connectionstyle = <span class="string">&quot;angle,angleA=0,angleB=&#123;&#125;&quot;</span>.<span class="built_in">format</span>(ang)</span><br><span class="line">    kw[<span class="string">&quot;arrowprops&quot;</span>].update(&#123;<span class="string">&quot;connectionstyle&quot;</span>: connectionstyle&#125;)</span><br><span class="line">    ax.annotate(recipe[i], xy=(x, y), xytext=(<span class="number">1.35</span>*np.sign(x), <span class="number">1.4</span>*y),</span><br><span class="line">                horizontalalignment=horizontalalignment, **kw)</span><br><span class="line"></span><br><span class="line">ax.set_title(<span class="string">&quot;Matplotlib bakery: A donut&quot;</span>)</span><br><span class="line"></span><br><span class="line">plt.show()</span><br></pre></td></tr></table></figure>
@@ -3234,7 +3251,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       <i class="fa fa-graduation-cap fa-fw" aria-hidden="true"></i><span>相关文章</span>
     </section>
     <section class='body'>
-      <div class="vlts-rps"><a class="item" href="\CloudFlare-optional-ip.html" title="使用 CloudFlare 加速你的网站" rel="bookmark "><img src="https://gcore.jsdelivr.net/gh/Qikaile/cdn/img/2021-02-19-01.png" class="lazyload" data-srcset="https://gcore.jsdelivr.net/gh/Qikaile/cdn/img/2021-02-19-01.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  alt="This is a picture without description" /><span class="title">使用 CloudFlare 加速你的网站</span></a></div></section></div>
+      <div class="vlts-rps"><a class="item" href="\10-Minutes-to-pandas.html" title="十分钟搞定 pandas" rel="bookmark "><img src="http://pandas.pydata.org/pandas-docs/stable/_images/series_plot_basic.png" class="lazyload" data-srcset="http://pandas.pydata.org/pandas-docs/stable/_images/series_plot_basic.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  alt="This is a picture without description" /><span class="title">十分钟搞定 pandas</span></a></div></section></div>
       
       
         <div class='copyright'>
@@ -3396,311 +3413,6 @@ KNN、贝叶斯分类、决策树与随机森林、逻辑回...</p>
     
     
 
-<section class="widget blogger shadow floatable desktop pjax">
-  <div class='content'>
-    
-      
-        <a class='avatar flat-box circle' href='/about/'>
-          <img no-lazy src='https://gcore.jsdelivr.net/gh/Qikaile/cdn/img/circle-cropped.png'height="120" width="120"  alt="This is a picture without description" />
-        </a>
-      
-    
-    
-      <div class='text'>
-        
-          <h2><span class="p  red">云</span> <span class="p  yellow">生</span> <span class="p  green">の</span> <span class="p  blue">博</span> <span class="p  cyan">客</span></h2>
-        
-        
-          <p>心静思远，志行千里。</p>
-
-        
-        
-      </div>
-    
-    
-      <div class="social-wrapper">
-        
-          
-            <a href="/atom.xml"
-              class="social fas fa-rss flat-btn"
-              target="_blank"
-              rel="external nofollow noopener noreferrer">
-              
-            </a>
-          
-        
-          
-            <a href="mailto:admin@qikaile.tk"
-              class="social fas fa-envelope flat-btn"
-              target="_blank"
-              rel="external nofollow noopener noreferrer">
-              
-            </a>
-          
-        
-          
-            <a href="https://github.com/qikaile/"
-              class="social fab fa-github flat-btn"
-              target="_blank"
-              rel="external nofollow noopener noreferrer">
-              
-            </a>
-          
-        
-          
-            <a href="https://music.qikaile.tk/"
-              class="social fas fa-headphones-alt flat-btn"
-              target="_blank"
-              rel="external nofollow noopener noreferrer">
-              
-            </a>
-          
-        
-          
-            <a href="http://wpa.qq.com/msgrd?v=3&amp;amp;uin=【2649019047】&amp;amp;site=qq&amp;amp;menu=yes"
-              class="social fab fa-qq flat-btn"
-              target="_blank"
-              rel="external nofollow noopener noreferrer">
-              
-            </a>
-          
-        
-      </div>
-    
-  </div>
-</section>
-
-  
-
-  
-    
-    
-
-<section class="widget text shadow floatable desktop pjax">
-  
-  <header>
-    
-      <i class="fad fa-bullhorn AMETHYST fa-fw" aria-hidden="true"></i><span class='name'>公告信息</span>
-    
-  </header>
-
-
-  <div class='content'>
-    <div id="clock"></div>
-    <div id="clock"></div>
-    
-      <p>唤醒原系统菜单: <kbd>Ctrl</kbd>+<kbd>右键</kbd></p>
-
-    
-  </div>
-</section>
-
-  
-
-  
-    
-    
-
-<section class="widget grid shadow floatable desktop pjax">
-  
-  <header>
-    
-      <i class="fal fa-map-signs PETERRIVE fa-fw" aria-hidden="true"></i><span class='name'>站内导航</span>
-    
-  </header>
-
-
-  <div class='content'>
-    <div class="grid navigation">
-      
-        <a class="flat-box" target="_blank" href="https://tjys.js.org"
-          
-            rel="nofollow noopener"
-          
-          
-          active-action="action-https:tjysjsorg">
-          
-            <i class="fad fa-books TURQUOISE fa-fw" aria-hidden="true"></i>
-          
-          文档笔记
-        </a>
-      
-        <a class="flat-box" href="/guestbook/"
-          
-          
-          active-action="action-guestbook">
-          
-            <i class="fad fa-comment-alt-smile PETERRIVE fa-fw" aria-hidden="true"></i>
-          
-          留言板
-        </a>
-      
-        <a class="flat-box" href="/about/"
-          
-          
-          active-action="action-about">
-          
-            <i class="fal fa-drafting-compass NEPHRITIS fa-fw" aria-hidden="true"></i>
-          
-          关于
-        </a>
-      
-        <a class="flat-box" href="/shuoshuo/"
-          
-          
-          active-action="action-shuoshuo">
-          
-            <i class="fad fa-comment-dots WISTERIA fa-fw" aria-hidden="true"></i>
-          
-          闲言碎语
-        </a>
-      
-        <a class="flat-box" href="/links/"
-          
-          
-          active-action="action-links">
-          
-            <i class="fad fa-users EMERALD fa-fw" aria-hidden="true"></i>
-          
-          友链
-        </a>
-      
-        <a class="flat-box" target="_blank" href="https://travellings.link/"
-          
-            rel="nofollow noopener"
-          
-          
-          active-action="action-https:travellingslink">
-          
-            <i class="fa-fw fad fa-subway AMETHYST fa-fw" aria-hidden="true"></i>
-          
-          开往
-        </a>
-      
-    </div>
-  </div>
-</section>
-
-  
-
-  
-    
-    
-
-<section class="widget shadow floatable desktop pjax">
-  
-  <header>
-    
-      <i class="fal fa-award NEPHRITIS fa-fw" aria-hidden="true"></i><span class='name'>站点信息</span>
-    
-  </header>
-
-
-  <div class='content'>
-    <div class="webinfo">
-      
-        <div class="webinfo-item">
-          <div>文章数目：</div>
-          <div>28 篇</div>
-        </div>
-      
-
-      
-        <div class="webinfo-item">
-          <div>已运行时间：</div>
-          <div id="webinfo-runtime-count" publish_date="03/24/2020 21:34:09"></div>
-        </div>
-        <script>
-          var BirthDay = new Date(new Date('2020/11/16'));
-          var today = new Date();
-          var timeold = (today.getTime() - BirthDay.getTime());
-          var daysold = Math.floor(timeold / (24 * 60 * 60 * 1000));
-          document.getElementById('webinfo-runtime-count').innerHTML = daysold + ' 天';
-        </script>
-      
-
-
-      
-        <div class="webinfo-item">
-          <div>本站总字数：</div>
-          <div>111.8k 字</div>
-        </div>
-      
-
-      
-
-      
-
-      
-        <div class="webinfo-item">
-          <div>最后活动时间：</div>
-          
-            <div id="last-update" style="display: none;">Wed Aug 10 2022 19:30:00 GMT+0800 (GMT+08:00)</div>
-            <div id="last-update-show">2022-08-10 日</div>
-          
-        </div>
-        
-        <script>
-          function timeago(dateTimeStamp) {
-              var minute = 1000 * 60; //把分，时，天，周，半个月，一个月用毫秒表示
-              var hour = minute * 60;
-              var day = hour * 24;
-              var week = day * 7;
-              var month = day * 30;
-              var now = new Date().getTime(); //获取当前时间毫秒
-              var diffValue = now - dateTimeStamp; //时间差
-              if (diffValue < 0) {
-                  return;
-              }
-              var minC = diffValue / minute; //计算时间差的分，时，天，周，月
-              var hourC = diffValue / hour;
-              var dayC = diffValue / day;
-              var weekC = diffValue / week;
-              var monthC = diffValue / month;
-              if (monthC >= 1 && monthC <= 3) {
-                  result = " " + parseInt(monthC) + " 月前"
-              } else if (weekC >= 1 && weekC <= 3) {
-                  result = " " + parseInt(weekC) + " 周前"
-              } else if (dayC >= 1 && dayC <= 6) {
-                  result = " " + parseInt(dayC) + " 天前"
-              } else if (hourC >= 1 && hourC <= 23) {
-                  result = " " + parseInt(hourC) + " 小时前"
-              } else if (minC >= 1 && minC <= 59) {
-                  result = " " + parseInt(minC) + " 分钟前"
-              } else if (diffValue >= 0 && diffValue <= minute) {
-                  result = "刚刚"
-              } else {
-                  var datetime = new Date();
-                  datetime.setTime(dateTimeStamp);
-                  var Nyear = datetime.getFullYear();
-                  var Nmonth = datetime.getMonth() + 1 < 10 ? "0" + (datetime.getMonth() + 1) : datetime.getMonth() + 1;
-                  var Ndate = datetime.getDate() < 10 ? "0" + datetime.getDate() : datetime.getDate();
-                  var Nhour = datetime.getHours() < 10 ? "0" + datetime.getHours() : datetime.getHours();
-                  var Nminute = datetime.getMinutes() < 10 ? "0" + datetime.getMinutes() : datetime.getMinutes();
-                  var Nsecond = datetime.getSeconds() < 10 ? "0" + datetime.getSeconds() : datetime.getSeconds();
-                  result = Nyear + "-" + Nmonth + "-" + Ndate
-              }
-              return result;
-          }
-          var lastUpDate = document.getElementById('last-update').innerHTML;
-          try {
-            document.getElementById('last-update-show').innerHTML = timeago(new Date(lastUpDate));
-          } catch (error) {
-            document.getElementById('last-update-show').innerHTML = '2022-08-10 日';
-          }
-        </script>
-        
-      
-    </div>
-  </div>
-</section>
-
-  
-
-  
-    
-    
-
 
 
   <section class="widget toc-wrapper shadow floatable desktop pjax" id="toc-div" >
@@ -3721,6 +3433,22 @@ KNN、贝叶斯分类、决策树与随机森林、逻辑回...</p>
 
 
 <!-- 没有 pjax 占位会报错 万恶的 pjax -->
+
+  <div class="pjax">
+    <!-- pjax占位 -->
+  </div>
+
+  <div class="pjax">
+    <!-- pjax占位 -->
+  </div>
+
+  <div class="pjax">
+    <!-- pjax占位 -->
+  </div>
+
+  <div class="pjax">
+    <!-- pjax占位 -->
+  </div>
 
   <div class="pjax">
     <!-- pjax占位 -->
@@ -3869,8 +3597,8 @@ KNN、贝叶斯分类、决策树与随机森林、逻辑回...</p>
   <script>
   volantis.message = (title, message, option = {}, done = null) => {
     if (typeof iziToast === "undefined") {
-      volantis.css('/css/message.css?time=1660131013070')
-      volantis.js('/js/message.js?time=1660131013070', () => {
+      volantis.css('/css/message.css?time=1661166723221')
+      volantis.js('/js/message.js?time=1661166723221', () => {
         tozashMessage(title, message, option, done);
       });
     } else {
@@ -3915,8 +3643,8 @@ KNN、贝叶斯分类、决策树与随机森林、逻辑回...</p>
 
   volantis.question = (title, message, option = {}, success = null, cancel = null, done = null) => {
     if (typeof iziToast === "undefined") {
-      volantis.css('/css/message.css?time=1660131013070')
-      volantis.js('/js/message.js?time=1660131013070', () => {
+      volantis.css('/css/message.css?time=1661166723221')
+      volantis.js('/js/message.js?time=1661166723221', () => {
         tozashQuestion(title, message, option, success, cancel, done);
       });
     } else {
@@ -3975,8 +3703,8 @@ KNN、贝叶斯分类、决策树与随机森林、逻辑回...</p>
     }
     
     if (typeof iziToast === "undefined") {
-      volantis.css('/css/message.css?time=1660131013070')
-      volantis.js('/js/message.js?time=1660131013070', () => {
+      volantis.css('/css/message.css?time=1661166723221')
+      volantis.js('/js/message.js?time=1661166723221', () => {
         hideMessage(done);
       });
     } else {
@@ -4196,7 +3924,7 @@ KNN、贝叶斯分类、决策树与随机森林、逻辑回...</p>
     
     
     
-    volantis.js('/js/rightMenu.js?time=1660131013070')
+    volantis.js('/js/rightMenu.js?time=1661166723221')
   </script>
 
 
@@ -4309,19 +4037,19 @@ volantis.pjax.push(bindToggleButton);
     
       const sites_api = document.getElementById('sites-api');
       if (sites_api != undefined && typeof SitesJS === 'undefined') {
-        volantis.js("/js/plugins/sites.js?time=1660131013070")
+        volantis.js("/js/plugins/sites.js?time=1661166723221")
       }
     
     
       const friends_api = document.getElementById('friends-api');
       if (friends_api != undefined && typeof FriendsJS === 'undefined') {
-        volantis.js("/js/plugins/friends.js?time=1660131013070")
+        volantis.js("/js/plugins/friends.js?time=1661166723221")
       }
     
     
       const contributors_api = document.getElementById('contributors-api');
       if (contributors_api != undefined && typeof ContributorsJS === 'undefined') {
-        volantis.js("/js/plugins/contributors.js?time=1660131013070")
+        volantis.js("/js/plugins/contributors.js?time=1661166723221")
       }
     
   };
@@ -4420,7 +4148,7 @@ volantis.pjax.push(bindToggleButton);
     await volantis.js("https://unpkg.com/meting@2.0/dist/Meting.min.js")
   
     // 右键 music 需要在 APlayer  MetingJS 之后加载
-    await volantis.js('/js/aplayer.js?time=1660131013076')
+    await volantis.js('/js/aplayer.js?time=1661166723234')
     volantis.APlayerController.music = true;
   
   })();
@@ -4505,17 +4233,17 @@ volantis.pjax.push(bindToggleButton);
   volantis.layoutHelper("comments",`<div id="twikoo_container"><i class="fas fa-cog fa-spin fa-fw fa-2x"></i></div>`)
   function load_twikoo() {
     if(!document.querySelectorAll("#twikoo_container")[0])return;
-    volantis.js("https://unpkg.com/twikoo@1.4.8/dist/twikoo.min.js", pjax_twikoo)
+    volantis.js("https://cdn.staticfile.org/twikoo/1.6.6/twikoo.all.min.js", pjax_twikoo)
   }
   function pjax_twikoo() {
     if(!document.querySelectorAll("#twikoo_container")[0])return;
     let path = pdata.commentPath;
-    let placeholder = pdata.commentPlaceholder || "" || "";
+    let placeholder = pdata.commentPlaceholder || "✍ 写评论" || "";
     if (path.length == 0) {
       let defaultPath = '';
       path = defaultPath || "decodeURI(window.location.pathname)"; //神奇的pathname
     }
-    twikoo.init(Object.assign(Object.assign({"js":"https://unpkg.com/twikoo@1.4.8/dist/twikoo.min.js","path":null,"envId":"https://twikoo.qikaile.tk","placeholder":null}, {
+    twikoo.init(Object.assign(Object.assign({"js":"https://cdn.staticfile.org/twikoo/1.6.6/twikoo.all.min.js","path":null,"envId":"https://twikoo.qikaile.tk","placeholder":"✍ 写评论"}, {
       el: '#twikoo_container',
       path: path,
       placeholder: placeholder,
@@ -4562,7 +4290,7 @@ volantis.pjax.push(bindToggleButton);
 
 
 
-<script src="/js/app.js?time=1660131013070.js"></script>
+<script src="/js/app.js?time=1661166723221.js"></script>
 
 
 <!-- optional -->
@@ -4575,7 +4303,7 @@ volantis.pjax.push(bindToggleButton);
 
   function loadSearchScript() {
     // see: layout/_partial/scripts/_ctrl/cdnCtrl.ejs
-    return volantis.js("/js/search/hexo.js?time=1660131013070");
+    return volantis.js("/js/search/hexo.js?time=1661166723221");
   }
 
   function loadSearchService() {
@@ -4650,215 +4378,6 @@ document.addEventListener("DOMContentLoaded", function () {
 </script>
 
 
-
-
-  <script defer>
-
-  const LCCounter = {
-    app_id: 'QJxW5v8BlvRP9LYqYmrNRekF-MdYXbMMI',
-    app_key: 'YtfMVlMfTdU4Y4zTo9k0Pj3h',
-    custom_api_server: '',
-
-    // 查询存储的记录
-    getRecord(Counter, url, title) {
-      return new Promise(function (resolve, reject) {
-        Counter('get', '/classes/Counter?where=' + encodeURIComponent(JSON.stringify({url})))
-          .then(resp => resp.json())
-          .then(({results, code, error}) => {
-            if (code === 401) {
-              throw error;
-            }
-            if (results && results.length > 0) {
-              var record = results[0];
-              resolve(record);
-            } else {
-              Counter('post', '/classes/Counter', {url, title: title, times: 0})
-                .then(resp => resp.json())
-                .then((record, error) => {
-                  if (error) {
-                    throw error;
-                  }
-                  resolve(record);
-                }).catch(error => {
-                console.error('Failed to create', error);
-                reject(error);
-              });
-            }
-          }).catch((error) => {
-          console.error('LeanCloud Counter Error:', error);
-          reject(error);
-        });
-      })
-    },
-
-    // 发起自增请求
-    increment(Counter, incrArr) {
-      return new Promise(function (resolve, reject) {
-        Counter('post', '/batch', {
-          "requests": incrArr
-        }).then((res) => {
-          res = res.json();
-          if (res.error) {
-            throw res.error;
-          }
-          resolve(res);
-        }).catch((error) => {
-          console.error('Failed to save visitor count', error);
-          reject(error);
-        });
-      });
-    },
-
-    // 构建自增请求体
-    buildIncrement(objectId) {
-      return {
-        "method": "PUT",
-        "path": `/1.1/classes/Counter/${ objectId }`,
-        "body": {
-          "times": {
-            '__op': 'Increment',
-            'amount': 1
-          }
-        }
-      }
-    },
-
-    // 校验是否为有效的 UV
-    validUV() {
-      var key = 'LeanCloudUVTimestamp';
-      var flag = localStorage.getItem(key);
-      if (flag) {
-        // 距离标记小于 24 小时则不计为 UV
-        if (new Date().getTime() - parseInt(flag) <= 86400000) {
-          return false;
-        }
-      }
-      localStorage.setItem(key, new Date().getTime().toString());
-      return true;
-    },
-
-    addCount(Counter) {
-      var enableIncr = '' === 'true' && window.location.hostname !== 'localhost';
-      enableIncr = true;
-      var getterArr = [];
-      var incrArr = [];
-      // 请求 PV 并自增
-      var pvCtn = document.querySelector('#lc-sv');
-      if (pvCtn || enableIncr) {
-        var pvGetter = this.getRecord(Counter, 'https://qikaile.tk' + '/#lc-sv', 'Visits').then((record) => {
-          incrArr.push(this.buildIncrement(record.objectId))
-          var eles = document.querySelectorAll('#lc-sv #number');
-          if (eles.length > 0) {
-            eles.forEach((el,index,array)=>{
-              el.innerText = record.times + 1;
-              if (pvCtn) {
-                pvCtn.style.display = 'inline';
-              }
-            })
-          }
-        });
-        getterArr.push(pvGetter);
-      }
-
-      // 请求 UV 并自增
-      var uvCtn = document.querySelector('#lc-uv');
-      if (uvCtn || enableIncr) {
-        var uvGetter = this.getRecord(Counter, 'https://qikaile.tk' + '/#lc-uv', 'Visitors').then((record) => {
-          var vuv = this.validUV();
-          vuv && incrArr.push(this.buildIncrement(record.objectId))
-          var eles = document.querySelectorAll('#lc-uv #number');
-          if (eles.length > 0) {
-            eles.forEach((el,index,array)=>{
-              el.innerText = record.times + (vuv ? 1 : 0);
-              if (uvCtn) {
-                uvCtn.style.display = 'inline';
-              }
-            })
-          }
-        });
-        getterArr.push(uvGetter);
-      }
-
-      // 请求文章的浏览数，如果是当前页面就自增
-      var allPV = document.querySelectorAll('#lc-pv');
-      if (allPV.length > 0 || enableIncr) {
-        for (i = 0; i < allPV.length; i++) {
-          let pv = allPV[i];
-          let title = pv.getAttribute('data-title');
-          var url = 'https://qikaile.tk' + pv.getAttribute('data-path');
-          if (url) {
-            var viewGetter = this.getRecord(Counter, url, title).then((record) => {
-              // 是当前页面就自增
-              let curPath = window.location.pathname;
-              if (curPath.includes('index.html')) {
-                curPath = curPath.substring(0, curPath.lastIndexOf('index.html'));
-              }
-              if (pv.getAttribute('data-path') == curPath) {
-                incrArr.push(this.buildIncrement(record.objectId));
-              }
-              if (pv) {
-                var ele = pv.querySelector('#lc-pv #number');
-                if (ele) {
-                  if (pv.getAttribute('data-path') == curPath) {
-                    ele.innerText = (record.times || 0) + 1;
-                  } else {
-                    ele.innerText = record.times || 0;
-                  }
-                  pv.style.display = 'inline';
-                }
-              }
-            });
-            getterArr.push(viewGetter);
-          }
-        }
-      }
-
-      // 如果启动计数自增，批量发起自增请求
-      if (enableIncr) {
-        Promise.all(getterArr).then(() => {
-          incrArr.length > 0 && this.increment(Counter, incrArr);
-        })
-      }
-
-    },
-
-
-    fetchData(api_server) {
-      var Counter = (method, url, data) => {
-        return fetch(`${ api_server }/1.1${ url }`, {
-          method,
-          headers: {
-            'X-LC-Id': this.app_id,
-            'X-LC-Key': this.app_key,
-            'Content-Type': 'application/json',
-          },
-          body: JSON.stringify(data)
-        });
-      };
-      this.addCount(Counter);
-    },
-
-    refreshCounter() {
-      var api_server = this.app_id.slice(-9) !== '-MdYXbMMI' ? this.custom_api_server : `https://${ this.app_id.slice(0, 8).toLowerCase() }.api.lncldglobal.com`;
-      if (api_server) {
-        this.fetchData(api_server);
-      } else {
-        fetch('https://app-router.leancloud.cn/2/route?appId=' + this.app_id)
-          .then(resp => resp.json())
-          .then(({api_server}) => {
-            this.fetchData('https://' + api_server);
-          });
-      }
-    }
-
-  };
-
-  LCCounter.refreshCounter();
-
-  document.addEventListener('pjax:complete', function () {
-    LCCounter.refreshCounter();
-  });
-</script>
 
 
 

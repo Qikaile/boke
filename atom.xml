@@ -6,7 +6,7 @@
   <link href="https://qikaile.tk/atom.xml" rel="self"/>
   
   <link href="https://qikaile.tk/"/>
-  <updated>2022-08-10T09:28:25.051Z</updated>
+  <updated>2022-08-10T09:28:17.888Z</updated>
   <id>https://qikaile.tk/</id>
   
   <author>
@@ -15,27 +15,6 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
-  
-  <entry>
-    <title>Hello World</title>
-    <link href="https://qikaile.tk/hello-world.html"/>
-    <id>https://qikaile.tk/hello-world.html</id>
-    <published>2022-08-10T09:05:36.524Z</published>
-    <updated>2022-08-10T09:28:25.051Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\assets\js\APlayer.min.js&quot;</summary>
-        
-      
-    
-    
-    
-    
-  </entry>
   
   <entry>
     <title>如何在百度收录平台注册账号获取Token</title>
@@ -473,6 +452,31 @@
     
     
     <category term="hexo" scheme="https://qikaile.tk/tags/hexo/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>PS功能精通课</title>
+    <link href="https://qikaile.tk/PS-note.html"/>
+    <id>https://qikaile.tk/PS-note.html</id>
+    <published>2020-11-17T12:13:45.000Z</published>
+    <updated>2022-08-10T09:28:35.821Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\assets\js\APlayer.min.js&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="photoshop" scheme="https://qikaile.tk/categories/photoshop/"/>
+    
+    
+    <category term="photoshop" scheme="https://qikaile.tk/tags/photoshop/"/>
     
   </entry>
   
